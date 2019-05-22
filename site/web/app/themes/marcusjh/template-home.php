@@ -1,6 +1,8 @@
-
-
-<body id="page-top">
+<?php
+/**
+ * Template Name:  Homepage Template
+ */
+?>
 	<section id="about" class="light-bg">
 		<div class="container">
 			<div class="row">
@@ -529,4 +531,3 @@
 			</div>
 		</div>
 	</div>
-</body>

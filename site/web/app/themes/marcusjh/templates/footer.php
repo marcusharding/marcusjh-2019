@@ -1,6 +1,4 @@
-<p id="back-top">
-	<a href="#top"><i class="fa fa-angle-up"></i></a>
-</p>
+
 
 <footer>
     <div class="container text-center">
@@ -16,7 +14,7 @@
 <script src="<?php echo get_bloginfo('template_directory'); ?>/assets/src/js/bootstrap.min.js"></script>
 <script src="<?php echo get_bloginfo('template_directory'); ?>/assets/src/js/owl.carousel.min.js"></script>
 <script src="<?php echo get_bloginfo('template_directory'); ?>/assets/src/js/cbpAnimatedHeader.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>assets/src/js/theme-scripts.js"></script>
+<script src="<?php echo get_bloginfo('template_directory'); ?>/assets/src/js/theme-scripts.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="<?php echo get_bloginfo('template_directory'); ?>/assets/src/js/ie10-viewport-bug-workaround.js"></script>
 
