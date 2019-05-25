@@ -97,8 +97,8 @@ Config::define('DISALLOW_FILE_MODS', true);
 /**
  * Debugging Settings
  */
-Config::define('WP_DEBUG_DISPLAY', false);
-Config::define('SCRIPT_DEBUG', false);
+Config::define('WP_DEBUG_DISPLAY', true);
+Config::define('SCRIPT_DEBUG', true);
 ini_set('display_errors', 0);
 
 /**

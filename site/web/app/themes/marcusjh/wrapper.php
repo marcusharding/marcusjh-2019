@@ -1,11 +1,8 @@
-<?php 
-    use Roots\Sage\Wrapper;
-?>
 
 <!DOCTYPE html>
 <html lang="en">
     <!-- Pulling in head content -->
-    <?php get_template_part('templates/head'); ?>
+    <?php get_template_part('head'); ?>
     <!-- BODY CONTENT -->
     <body id="page-top" <?php body_class();?>>
         <!-- PAGE CONTENT -->

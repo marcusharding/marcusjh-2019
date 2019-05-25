@@ -19,4 +19,3 @@
 <script src="<?php echo get_bloginfo('template_directory'); ?>/assets/src/js/ie10-viewport-bug-workaround.js"></script>
 
 <?php wp_footer(); ?>
-</html>

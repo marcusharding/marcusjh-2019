@@ -3,6 +3,16 @@
  * Template Name:  Homepage Template
  */
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<?php get_template_part('templates/head'); ?>
+
+<?php get_template_part('templates/header'); ?>
+
+<?php get_template_part('templates/hero'); ?>
+
 	<section id="about" class="light-bg">
 		<div class="container">
 			<div class="row">
@@ -531,3 +541,7 @@
 			</div>
 		</div>
 	</div>
+
+	<?php get_template_part('templates/footer'); ?>
+
+</html>

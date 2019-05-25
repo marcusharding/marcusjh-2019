@@ -38,6 +38,5 @@
 		</div>
 		<!-- /.container-fluid -->
 	</nav>
-	<?php wp_nav();?>
 
 	
