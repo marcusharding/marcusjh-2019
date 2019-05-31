@@ -7,13 +7,9 @@
 	<meta name="author" content="">
 	<link rel="icon" href="favicon.ico">
 	<title><?php echo get_bloginfo( 'name' ); ?></title>
-	<!-- Bootstrap core CSS -->
-	<link href="<?php echo get_bloginfo('template_directory'); ?>/assets/src/css/bootstrap.min.css" rel="stylesheet">
+	<!-- core CSS -->
+	<link href="<?php echo get_bloginfo('template_directory'); ?>/assets/dist/css/main.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<!-- Custom styles for this template -->
-	<link href="<?php echo get_bloginfo('template_directory'); ?>/assets/src/css/owl.carousel.css" rel="stylesheet">
-	<link href="<?php echo get_bloginfo('template_directory'); ?>/assets/src/css/owl.theme.default.min.css" rel="stylesheet">
-	<link href="<?php echo get_bloginfo('template_directory'); ?>/assets/src/css/style.css" rel="stylesheet">
 	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 	<script src="assets/src/js/ie-emulation-modes-warning.js"></script>

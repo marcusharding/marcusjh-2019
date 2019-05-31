@@ -25,7 +25,7 @@ class My_Wrapping {
 		self::$base = substr( basename( self::$main_template ), 0, -4 );
 		if ( 'index' == self::$base )
 			self::$base = false;
-		$templates = array( 'base.php' );
+		$templates = array( 'index.php' );
 		if ( self::$base )
 			array_unshift( $templates, sprintf( '-%s.php', self::$base ) );
 		return locate_template( $templates );
