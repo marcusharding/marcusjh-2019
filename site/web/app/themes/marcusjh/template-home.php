@@ -13,7 +13,7 @@
 				get_template_part('templates/header');
         	?>
 			<!-- PAGE HERO -->
-			<?php get_template_part('templates/hero'); ?>
+			<?php get_template_part('templates/partials/homepage-hero'); ?>
 			<!-- ABOUT SECTION -->
 			<?php get_template_part('templates/partials/about'); ?>
 			<!-- SKILLS SECTION -->

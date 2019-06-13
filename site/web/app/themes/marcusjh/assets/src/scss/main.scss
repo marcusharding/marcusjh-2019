@@ -14,14 +14,19 @@
 $is-oldie: false !default;
 
 // # BOOTSTRAP
-
-
-@import 'bootstrap';
-@import 'style';
-@import 'owl.carousel';
+// @import 'bootstrap/bootstrap';
+// @import 'bootstrap/style';
+// @import 'owl.carousel';
 
 // # SETTINGS
 // ==========================================================================
+
+// # TEMPLATES
+// ==========================================================================
+
+@import 'templates/all';
+
+// @import 'templates/**';
 
 // # PACKAGES
 // ==========================================================================
@@ -29,8 +34,14 @@ $is-oldie: false !default;
 // # UTILS - http://sass-guidelin.es/#utils-folder
 // ==========================================================================
 
-// # BASE - http://sass-guidelin.es/#base-folder
+// # FRAMEWORK - http://sass-guidelin.es/#base-folder
 // ==========================================================================
+
+@import 'framework/base';
+@import 'framework/tailwind';
+@import 'framework/normalize';
+@import 'framework/typography';
+
 
 // # LAYOUT - http://sass-guidelin.es/#layout-folder
 // ==========================================================================

@@ -10,21 +10,20 @@ var gulp = require("gulp"),
     sourcemaps = require("gulp-sourcemaps"),
     browserSync = require("browser-sync").create();
 
+
 // ==========================================================================
 // # PATHS
 // ==========================================================================
 
     var paths = {
         styles: {
-            // By using styles/**/*.sass we're telling gulp to check all folders for any sass file
             src: "./src/scss/*.scss",
-            // Compiled files will end up in whichever folder it's found in (partials are not compiled)
             dest: "./dist/css"
         },
         js: {
             src: "./src/js/*.js",
             dest: "./dist/js"
-        }
+        },
     };
 
     
@@ -35,12 +34,15 @@ var gulp = require("gulp"),
     function style() {
         return gulp
             .src(paths.styles.src)
-            // Initialize sourcemaps before compilation starts
             .pipe(sourcemaps.init())
             .pipe(sass())
             .on("error", sass.logError)
             // Use postcss with autoprefixer and compress the compiled file using cssnano
-            .pipe(postcss([autoprefixer(), cssnano()]))
+            .pipe(postcss([
+                cssnano(),
+                require('tailwindcss'),
+                autoprefixer(),
+            ]))
             // Now add/write the sourcemaps
             .pipe(sourcemaps.write())
             .pipe(gulp.dest(paths.styles.dest))
@@ -53,17 +55,19 @@ var gulp = require("gulp"),
         browserSync.reload();
     }
 
+
 // ==========================================================================
 // # WATCH
 // ==========================================================================
 
-// Add browsersync initialization at the start of the watch task
 function watch() {
     browserSync.init({
         proxy: "marcusjh.test"
     });
     gulp.watch(paths.styles.src, style);
     gulp.watch(paths.styles.src, reload);
+    gulp.watch("../*.php");
+
 }
 
 // ==========================================================================
@@ -87,10 +91,7 @@ var build = gulp.parallel(style, watch);
  * You can still use `gulp.task` to expose tasks
  */
 gulp.task('build', build);
- 
-/*
- * Define default task that can be called by just running `gulp` from cli
- */
+
 gulp.task('default', build);
 
 
