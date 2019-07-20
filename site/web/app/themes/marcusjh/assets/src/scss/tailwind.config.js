@@ -18,6 +18,18 @@ module.exports = {
 			],
     extend: {}
   },
+  fontSize: {
+	'2xs': '10px',
+	xs: '12px',
+	sm: '14px',
+	base: '16px',
+	md: '19px',
+	lg: '22px',
+	xl: '25px',
+	'2xl': '35px',
+	'3xl': '47px',
+	'4xl': '80px'
+},
   variants: {},
   plugins: []
   },
