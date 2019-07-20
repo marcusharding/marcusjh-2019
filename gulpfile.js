@@ -17,12 +17,12 @@ var gulp = require("gulp"),
 
     var paths = {
         styles: {
-            src: "./src/scss/*.scss",
-            dest: "./dist/css"
+            src: "./site/web/app/themes/marcusjh/assets/src/scss/*.scss",
+            dest: "./site/web/app/themes/marcusjh/assets/dist/css"
         },
         js: {
-            src: "./src/js/*.js",
-            dest: "./dist/js"
+            src: "./site/web/app/themes/marcusjh/assets/src/js/*.js",
+            dest: "./site/web/app/themes/marcusjh/assets/dist/js"
         },
     };
 

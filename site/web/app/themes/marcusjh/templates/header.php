@@ -1,6 +1,6 @@
 <!-- Header -->
 <header class="fixed w-full z-10">
-	<?php include './03-global/nav.php'; ?>
+	<?php get_template_part('templates/03-global/nav'); ?>
 	<!-- END Global navigation -->
 </header>
 
