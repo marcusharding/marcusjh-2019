@@ -1,5 +1,5 @@
 <section id="about" class="light-bg">
-			<div class="container">
+			<div class="wrapper">
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<div class="section-title">
@@ -48,5 +48,5 @@
 					<!-- end about module -->
 				</div>
 			</div>
-			<!-- /.container -->
+			<!-- /.wrapper -->
 		</section>

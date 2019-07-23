@@ -1,5 +1,5 @@
 <section>
-			<div class="container">
+			<div class="wrapper">
 				<div class="row">
 					<div class="col-md-6">
 						<div class="skills-text">

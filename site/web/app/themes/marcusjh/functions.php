@@ -55,3 +55,12 @@ function marcusjh_setup() {
 }
 endif; // myfirsttheme_setup
 add_action( 'after_setup_theme', 'marcusjh_setup' );
+
+/** 
+ * Referencing the init.php file in order to grab theme directories
+ */
+// add_action('init', 'include_init_file');
+// function include_init_file() {
+//     // use correct path here
+//     require_once get_stylesheet_directory() . '';
+// }

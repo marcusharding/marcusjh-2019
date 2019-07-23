@@ -1,0 +1,37 @@
+/* Nav */
+
+@mixin open {
+	@apply h-screen opacity-100 pointer-events-auto visible mt-20;
+	transition-delay: 0ms;
+	z-index: 1000;
+	position: absolute;
+}
+
+// <nav>
+.g-nav {
+	@apply opacity-0 inset-0 overflow-auto flex pointer-events-none invisible text-center;
+
+	position: fixed;
+	// repainting on scroll.
+	// see https://www.youtube.com/watch?v=2vFrZXWiwIc
+	transform: translateZ(0);
+	transition: opacity 300ms ease;
+    z-index: 1000;
+    
+	&.is-open {
+		@include open;
+	}
+
+	@screen lg {
+		@apply opacity-100 ml-auto pointer-events-auto relative items-center h-auto block visible;
+	}
+}
+
+// <nav><ul>
+.g-nav__list {
+	@apply bg-black flex flex-col w-full py-4;
+
+	@screen lg {
+		@apply bg-transparent flex-row items-center pt-0 pb-1;
+	}
+}

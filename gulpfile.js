@@ -9,6 +9,7 @@ var gulp = require("gulp"),
     cssnano = require("cssnano"),
     sourcemaps = require("gulp-sourcemaps"),
     browserSync = require("browser-sync").create();
+    sassGlob = require('gulp-sass-glob');
 
 
 // ==========================================================================
@@ -17,12 +18,13 @@ var gulp = require("gulp"),
 
     var paths = {
         styles: {
-            src: "./site/web/app/themes/marcusjh/assets/src/scss/*.scss",
+            src: [  './site/web/app/themes/marcusjh/assets/src/scss/**/**.scss', 
+                    './site/web/app/themes/marcusjh/assets/src/templates/**/**.scss'
+                ],
             dest: "./site/web/app/themes/marcusjh/assets/dist/css"
         },
-        js: {
-            src: "./site/web/app/themes/marcusjh/assets/src/js/*.js",
-            dest: "./site/web/app/themes/marcusjh/assets/dist/js"
+        base: {
+            src: "./site/web/app/themes/marcusjh/assets/src/templates/**/**.php",
         },
     };
 
@@ -35,6 +37,7 @@ var gulp = require("gulp"),
         return gulp
             .src(paths.styles.src)
             .pipe(sourcemaps.init())
+            .pipe(sassGlob())
             .pipe(sass())
             .on("error", sass.logError)
             // Use postcss with autoprefixer and compress the compiled file using cssnano
@@ -66,8 +69,6 @@ function watch() {
     });
     gulp.watch(paths.styles.src, style);
     gulp.watch(paths.styles.src, reload);
-    gulp.watch("../*.php");
-
 }
 
 // ==========================================================================
@@ -93,6 +94,3 @@ var build = gulp.parallel(style, watch);
 gulp.task('build', build);
 
 gulp.task('default', build);
-
-
-console.log( 'hello' )

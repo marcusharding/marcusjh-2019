@@ -1,7 +1,7 @@
 
 
 <footer>
-    <div class="container text-center">
+    <div class="wrapper text-center">
         <p>Designed by <a href="http://moozthemes.com"><span>MOOZ</span>Themes.com</a></p>
     </div>
 </footer>

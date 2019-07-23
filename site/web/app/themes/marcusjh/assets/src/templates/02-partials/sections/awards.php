@@ -1,5 +1,5 @@
 <section class="overlay-dark bg-img1 dark-bg short-section">
-			<div class="container text-center">
+			<div class="wrapper text-center">
 				<div class="row">
 					<div class="col-md-3 mb-sm-30">
 						<div class="counter-item">

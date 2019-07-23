@@ -1,5 +1,5 @@
 <section id="portfolio" class="light-bg">
-			<div class="container">
+			<div class="wrapper">
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<div class="section-title">
@@ -97,5 +97,5 @@
 					</div>
 					<!-- end portfolio item -->
 				</div>
-			</div><!-- end container -->
+			</div><!-- end wrapper -->
 		</section>
