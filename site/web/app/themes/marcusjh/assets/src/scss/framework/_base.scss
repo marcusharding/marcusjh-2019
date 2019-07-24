@@ -7,10 +7,31 @@
 
 html,
 body {
-	// @apply font-body;
-    font-family: roboto;
+	font-family: 'Montserrat-Regular';
 	height: 100%;
 	min-height: 100%;
+}
+
+// FONTS 
+
+.text-light{
+    font-family: 'Montserrat-Light';
+}
+
+.text-bold{
+    font-family: 'Montserrat-Bold';
+}
+
+.text-extra-bold{
+    font-family: 'Montserrat-ExtraBold';
+}
+
+.text-thin{
+    font-family: 'Montserrat-Thin';
+}
+
+.text-medium{
+    font-family: 'Montserrat-Medium';
 }
 
 /*

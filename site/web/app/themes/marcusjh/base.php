@@ -13,7 +13,7 @@ use Roots\Sage;
         <![endif]-->
         <?php
             do_action('get_header');
-            get_template_part('./assets/src/templates/header');
+            get_template_part('./assets/src/templates/03-global/header/header');
         ?>
         <div class="" role="document">
             <div class="">
@@ -29,7 +29,7 @@ use Roots\Sage;
         </div><!-- /.wrap -->
         <?php
             do_action('get_footer');
-            get_template_part('./assets/src/templates/footer');
+            get_template_part('./assets/src/templates/03-global/footer/footer');
             wp_footer();
         ?>
     </body>
