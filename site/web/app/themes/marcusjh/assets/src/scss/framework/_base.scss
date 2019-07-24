@@ -57,3 +57,12 @@ img {
 .bg-currentColor {
 	background-color: currentColor;
 }
+
+// Media Elements
+video,
+audio {
+        border-radius: inherit;
+        height: auto;
+        vertical-align: middle;
+        width: 100%;
+    }

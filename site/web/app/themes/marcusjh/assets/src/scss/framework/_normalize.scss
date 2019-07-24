@@ -1,3 +1,13 @@
 li {
 	list-style-type: none;
 }
+
+
+// # Correct `inline-block` display not defined in IE 8/9.
+// ==========================================================================
+
+audio,
+canvas,
+video {
+	display: inline-block;
+}

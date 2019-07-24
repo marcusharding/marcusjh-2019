@@ -41,6 +41,19 @@ module.exports = {
 	'3xl': px2rem('47px'),
 	'4xl': px2rem('80px')
 },
+colors: {
+	grey: {
+		100: '#f7fafc',
+		200: '#f2f2f2',
+		300: '#e1e1e1',
+		400: '#cbd5e0',
+		500: '#a0aec0',
+		600: '#718096',
+		700: '#4a5568',
+		800: '#2d3748',
+		900: '#1a202c'
+	}
+},
   variants: {},
   plugins: []
   },

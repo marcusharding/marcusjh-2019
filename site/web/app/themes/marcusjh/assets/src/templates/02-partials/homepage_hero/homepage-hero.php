@@ -6,10 +6,10 @@ $subHeading = get_field('sub_heading');
  ?>
 
 <!-- HERO -->
-<div class="relative w-full overflow-hidden h-screen">
+<div class="section-video">
 	<div class="overlay"></div>
 	<?php if(!empty($video)): ?>
-		<video autoplay="autoplay" loop="loop" muted="muted" style="background-color: black;" class="homepage-video">
+		<video autoplay="autoplay" loop="loop" muted="muted" class="opacity-50">
 			<source src="<?php echo $video['url']; ?>" type="video/mp4">
 		</video>
 	<?php endif; ?>
