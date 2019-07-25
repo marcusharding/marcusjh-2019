@@ -10,6 +10,12 @@ var gulp = require("gulp"),
     sourcemaps = require("gulp-sourcemaps"),
     browserSync = require("browser-sync").create();
     sassGlob = require('gulp-sass-glob');
+    print = require('gulp-print');
+    gutil = require("gulp-util");
+    del = require('del');
+    vinylPaths = require('vinyl-paths');
+    webpack_stream = require('webpack-stream');
+    webpack_config = require('./webpack.config.js');
 
 
 // ==========================================================================
@@ -23,8 +29,9 @@ var gulp = require("gulp"),
                 ],
             dest: "./site/web/app/themes/marcusjh/assets/dist/css"
         },
-        base: {
-            src: "./site/web/app/themes/marcusjh/assets/src/templates/**/**.php",
+        webpack: {
+            src: "./site/web/app/themes/marcusjh/assets/src/js/",
+            build: "./site/web/app/themes/marcusjh/assets/dist/js"
         },
     };
 
@@ -72,6 +79,30 @@ function watch() {
 }
 
 // ==========================================================================
+// # WEBPACK 
+// ==========================================================================
+
+function clean() {
+    return gulp
+    .src(paths.webpack.build)
+    // .pipe(gprint(paths.webpack.build))
+    .pipe(vinylPaths(del));
+}
+
+
+function webpack() {
+    return webpack_stream(webpack_config)
+    .pipe(gulp.dest(paths.webpack.build))
+}
+
+gulp.task('clean', () => {
+    return gulp.src(`${paths.build}*`)
+        .pipe(gprint())
+        .pipe(vinylPaths(del));
+});
+
+
+// ==========================================================================
 // # EXPORTS AND TASK RUNNERS
 // ==========================================================================
 
@@ -86,7 +117,7 @@ exports.style = style;
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
-var build = gulp.parallel(style, watch);
+var build = gulp.parallel(style, watch, webpack, clean);
  
 /*
  * You can still use `gulp.task` to expose tasks

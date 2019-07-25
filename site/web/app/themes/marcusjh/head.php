@@ -11,7 +11,7 @@
 	<link href="<?php echo get_bloginfo('template_directory'); ?>/assets/dist/css/main.css" rel="stylesheet">
 	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-	<script type="text/javascript" src="<?php echo get_bloginfo('template_directory'); ?>/assets/src/js/app.js"></script>
+	<script type="module" src="<?php echo get_bloginfo('template_directory'); ?>/assets/dist/js/app.bundle.js"></script>
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
