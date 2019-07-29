@@ -1,15 +1,15 @@
 /*
-  Automatically instantiates modules based on data-behaviours
+  Automatically instantiates modules based on data-attributes
   specifying module file-names.
 */
 
-const behaviourElements = document.querySelectorAll('[data-behaviour]')
+const moduleElements = document.querySelectorAll('[data-module]')
 
-for (var i = 0; i < behaviourElements.length; i++) {
-  const node = behaviourElements[i]
-  const name = node.getAttribute('data-behaviour')
-  const Behaviour = require(`./${name}`).default
-  new Behaviour(node)
+for (var i = 0; i < moduleElements.length; i++) {
+  const el = moduleElements[i]
+  const name = el.getAttribute('data-module')
+  const Module = require(`./${name}`).default
+  new Module(el)
 }
 
 /*
@@ -18,7 +18,7 @@ for (var i = 0; i < behaviourElements.length; i++) {
 
   html
   ----
-  <button data-behaviour="disappear">disappear!</button>
+  <button data-module="disappear">disappear!</button>
 
   js
   --

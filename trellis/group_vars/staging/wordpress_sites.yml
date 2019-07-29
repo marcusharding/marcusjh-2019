@@ -5,7 +5,7 @@
 wordpress_sites:
   marcusjh:
     site_hosts:
-      - canonical: marcusjh.marcusjh-staging.co.uk
+      - canonical: marcusjh.co.uk
         # redirects:
         #   - otherdomain.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
