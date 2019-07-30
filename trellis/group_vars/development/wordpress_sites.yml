@@ -9,7 +9,7 @@ wordpress_sites:
         redirects:
           - www.marcusjh.test
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: marcus@marcusjh.test
+    admin_email: marcus.harding01@googlemail.com
     multisite:
       enabled: false
     ssl:
