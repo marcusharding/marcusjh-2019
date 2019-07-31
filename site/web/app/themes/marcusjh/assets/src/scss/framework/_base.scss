@@ -1,89 +1,89 @@
-
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-	font-family: 'Montserrat-Regular';
-	height: 100%;
-	min-height: 100%;
+  font-family: "Montserrat-Regular";
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
 }
 
-// FONTS 
+// FONTS
 
-.text-light{
-    font-family: 'Montserrat-Light';
+.text-light {
+  font-family: "Montserrat-Light";
 }
 
-.text-bold{
-    font-family: 'Montserrat-Bold';
+.text-bold {
+  font-family: "Montserrat-Bold";
 }
 
-.text-extra-bold{
-    font-family: 'Montserrat-ExtraBold';
+.text-extra-bold {
+  font-family: "Montserrat-ExtraBold";
 }
 
-.text-thin{
-    font-family: 'Montserrat-Thin';
+.text-thin {
+  font-family: "Montserrat-Thin";
 }
 
-.text-medium{
-    font-family: 'Montserrat-Medium';
+.text-medium {
+  font-family: "Montserrat-Medium";
 }
 
 /*
 	IMAGE DEFAULTS
 */
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*
 	CLASS USED FOR LAZYLOADING IAMGES, COMBINED WITH DATA-SRC
 */
 .lazyload {
-	opacity: 0;
-	transition: opacity 300ms ease-in-out;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
 }
 
 // ==========================================================================
 // BASE CONTAINER CLASS
 // ==========================================================================
 
-.wrapper{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1170px;
-    width: 90%;
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+  width: 90%;
 }
 
-.visuallyhidden{
-	border: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-	white-space: nowrap;
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
 
 .bg-currentColor {
-	background-color: currentColor;
+  background-color: currentColor;
 }
 
 // Media Elements
 video,
 audio {
-        border-radius: inherit;
-        height: auto;
-        vertical-align: middle;
-        width: 100%;
-    }
+  border-radius: inherit;
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
