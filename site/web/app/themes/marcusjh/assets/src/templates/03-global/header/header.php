@@ -2,7 +2,7 @@
 HEADER
 ------------>
 
-<header class="fixed w-full z-10 py-4">
+<header data-module="siteHeader" id="siteHeader" class="header">
 	<div class="header-wrapper flex justify-between">
 		<!-- Include logo -->
 		<?php include $_SERVER["DOCUMENT_ROOT"] . '/app/themes/marcusjh/assets/src/templates/01-objects/logo/logo.php'; ?>

@@ -1,11 +1,8 @@
-/*
-  Automatically instantiates modules based on data-attributes
-  specifying module file-names.
-*/
+/* eslint-disable */
 
 const moduleElements = document.querySelectorAll('[data-module]')
 
-for (var i = 0; i < moduleElements.length; i++) {
+for (let i = 0; i < moduleElements.length; i += 1) {
   const el = moduleElements[i]
   const name = el.getAttribute('data-module')
   const Module = require(`./${name}`).default

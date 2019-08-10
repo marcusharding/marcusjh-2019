@@ -1,49 +1,49 @@
 /* Nav */
 
 @mixin open {
-	@apply h-screen opacity-100 pointer-events-auto visible mt-20;
-	transition-delay: 0ms;
-	z-index: 1000;
-	position: absolute;
+  @apply h-screen opacity-100 pointer-events-auto visible;
+  transition-delay: 0ms;
+  transition: opacity 300ms ease;
+  position: absolute;
 }
 
 // <nav>
 .g-nav {
-	@apply opacity-0 inset-0 overflow-auto flex pointer-events-none invisible text-center;
+  @apply opacity-0 inset-0 overflow-auto flex pointer-events-none invisible text-center;
 
-	position: fixed;
-	// repainting on scroll.
-	// see https://www.youtube.com/watch?v=2vFrZXWiwIc
-	transform: translateZ(0);
-	transition: opacity 300ms ease;
-    z-index: 1000;
-    
-	&.is-open {
-		@include open;
-	}
+  position: fixed;
+  // repainting on scroll.
+  // see https://www.youtube.com/watch?v=2vFrZXWiwIc
+  transform: translateZ(0);
+  transition: opacity 300ms ease;
 
-	@screen lg {
-		@apply opacity-100 ml-auto pointer-events-auto relative items-center h-auto flex visible;
-	}
+  &.is-open {
+    @include open;
+  }
+
+  @screen lg {
+    @apply opacity-100 ml-auto pointer-events-auto relative items-center h-auto flex visible;
+  }
 }
 
 // <nav><ul>
 .g-nav__list {
-	@apply bg-black flex flex-col w-full py-4;
+  @apply bg-black flex flex-col w-full py-4;
 
-	@screen lg {
-		@apply bg-transparent flex-row items-center pt-0 pb-1;
-	}
+  @screen lg {
+    @apply bg-transparent flex-row items-center pt-0 pb-1;
+  }
 }
 
-.g-nav__link{
-	@apply relative text-xl inline-block no-underline py-2 text-white;
-    margin: 0px 5px;
-    outline: none;
-    text-transform: uppercase;
+.g-nav__link {
+  @apply relative text-xl inline-block no-underline py-2 text-white;
+  margin: 0px 5px;
+  outline: none;
+  text-transform: uppercase;
 
-	&:after{
-	position: absolute;
+  // global nav hover after element to show
+  &:after {
+    position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
@@ -57,16 +57,16 @@
     -webkit-transform: translateY(10px);
     -moz-transform: translateY(10px);
     transform: translateY(10px);
-	}
+  }
 
-	&:hover{
-		&:after{
-			transform: translateY(0px);
-			opacity: 1;
-		}
-	}
+  &:hover {
+    &:after {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 
-	@screen md{
-		@apply border-none p-0;
-	}
+  @screen md {
+    @apply border-none p-0;
+  }
 }

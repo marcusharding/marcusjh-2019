@@ -1,27 +1,27 @@
 @mixin btn {
-	@apply inline-flex items-center text-center relative z-10 uppercase;
-	padding: 10px 30px;
-	cursor: pointer;
-	font-weight: 600;
-	font-size: 13px;
+  @apply inline-flex items-center text-center relative uppercase;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
 }
 
 .btn {
-	@include btn;
+  @include btn;
 }
 
 .btn--black {
-	border: solid black;
-	@apply text-black;
-	&:hover {
-		@apply text-white bg-black;
-	}
+  border: solid black;
+  @apply text-black;
+  &:hover {
+    @apply text-white bg-black;
+  }
 }
 
 .btn--white {
-	border: solid white;
-	@apply text-white;
-	&:hover {
-		@apply text-black bg-white;
-	}
+  border: solid white;
+  @apply text-white;
+  &:hover {
+    @apply text-black bg-white;
+  }
 }
