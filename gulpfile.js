@@ -9,13 +9,15 @@ var gulp = require("gulp"),
   cssnano = require("cssnano"),
   sourcemaps = require("gulp-sourcemaps"),
   browserSync = require("browser-sync").create();
-sassGlob = require("gulp-sass-glob");
-print = require("gulp-print");
-gutil = require("gulp-util");
-del = require("del");
-vinylPaths = require("vinyl-paths");
-webpack_stream = require("webpack-stream");
-webpack_config = require("./webpack.config.js");
+  sassGlob = require("gulp-sass-glob");
+  print = require("gulp-print");
+  gutil = require("gulp-util");
+  del = require("del");
+  vinylPaths = require("vinyl-paths");
+  webpack_stream = require("webpack-stream");
+  webpack_config = require("./webpack.config.js");
+  cleanCSS = require('gulp-clean-css');
+  purgecss = require('gulp-purgecss');
 
 // ==========================================================================
 // # PATHS
@@ -68,14 +70,22 @@ function style() {
     return (
       gulp
         .src(paths.styles.src)
+        // Now init the sourcemaps
         .pipe(sourcemaps.init())
         .pipe(sassGlob())
         .pipe(sass())
         .on("error", sass.logError)
         // Use postcss with autoprefixer and compress the compiled file using cssnano
         .pipe(postcss([cssnano(), require("tailwindcss"), autoprefixer()]))
-        // Now add/write the sourcemaps
+        // Include cleanCSS 
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        // Write the sourcemaps
         .pipe(sourcemaps.write())
+        // purge css 
+        // .pipe(purgecss({
+        //   content: paths.styles.src
+        // })
+        //   )
         .pipe(gulp.dest(paths.styles.dest))
         // Add browsersync stream pipe after compilation
         .pipe(browserSync.stream())

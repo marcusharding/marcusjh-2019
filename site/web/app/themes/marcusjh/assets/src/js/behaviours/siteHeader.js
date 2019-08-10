@@ -1,10 +1,12 @@
 
 function siteHeader(node) {
     const el = node
-    let scrollPosyY = window.scrollTop
-    console.log(scrollPosyY)
-    window.onscroll = () => {
-        el.classList.add('on-scroll')
+    let scrollPosY = window.pageYOffset | document.body.scrollTop
+    console.log(scrollPosY)
+    if (scrollPosY >= 100) {
+        window.onscroll = () => {
+            el.classList.add('on-scroll')
+        }
     }
 }
 
