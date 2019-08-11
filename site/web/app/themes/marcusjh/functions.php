@@ -79,26 +79,44 @@ function register_post_types() {
 
    // Register Featured Work post type
    $featured_work_args = array(
-    'labels' => array ( 
-            'name' => __( 'Featured Work', 'featured work' ), 
-            'singular_name' => __( 'Featured Work', 'featured work' ),
-         ),
-    'description' => 'Add a new project',
-    'supports' => array( 'title', 'thumbnail' ),
-    'taxonomies' => array( 'projects' ), 
-    'public' => true,
-    'menu_position' => 50,
-    'menu_icon' => 'dashicons-images-alt2',  
-    'has_archive' => true,
-    'capability_type' => 'post',
-    'rewrite' => array('slug' => 'project', ),
-);
+        'labels' => array ( 
+                'name' => __( 'Featured Work', 'featured work' ), 
+                'singular_name' => __( 'Featured Work', 'featured work' ),
+            ),
+        'description' => 'Add a new project',
+        'supports' => array( 'title', 'thumbnail' ),
+        'taxonomies' => array( 'projects' ), 
+        'public' => true,
+        'menu_position' => 50,
+        'menu_icon' => 'dashicons-images-alt2',  
+        'has_archive' => true,
+        'capability_type' => 'post',
+        'rewrite' => array('slug' => 'project', ),
+    );
+
+    // Register Testimonials post type
+    $testimonials_args = array(
+        'labels' => array ( 
+                'name' => __( 'Testimonials', 'testimonials' ), 
+                'singular_name' => __( 'Testimonial', 'testimonial' ),
+            ),
+        'description' => 'Add a new testimonial',
+        'supports' => array( 'title' ),
+        'taxonomies' => array( 'testimonials' ), 
+        'public' => true,
+        'menu_position' => 50,
+        'menu_icon' => 'dashicons-images-alt2',  
+        'has_archive' => true,
+        'capability_type' => 'post',
+        'rewrite' => array('slug' => 'testimonial', ),
+    );
 
    // Register Quotes
    register_post_type( 'quotes', $quote_args );
-
    // Register Featured Work
    register_post_type( 'Featured Work', $featured_work_args );
+   // Register Testimonials
+   register_post_type( 'Testimonials', $testimonials_args );
 } 
 
 add_action( 'init', 'register_post_types' );

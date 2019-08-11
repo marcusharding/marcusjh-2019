@@ -10,7 +10,7 @@
 
 
 <div class="wrapper">
-    <p class="uppercase text-grey-900 text-lg text-medium py-12">Featured Work</p>
+    <p class="uppercase text-grey-900 text-lg text-bold py-12">Featured Work</p>
     <?php if($projects): ?>
         <div class="flex">
             <?php foreach ($projects as $project) : ?>

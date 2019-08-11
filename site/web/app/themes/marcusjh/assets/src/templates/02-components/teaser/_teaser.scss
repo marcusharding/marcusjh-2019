@@ -1,6 +1,7 @@
 .teaser-featured-work__container {
-  @apply mr-8;
+  @apply mr-8 p-8 bg-grey-900;
   border: #111517 solid;
   border-radius: 5px;
-  border-width: 2px;
+  border-width: 0px;
+  box-shadow: 0px 4px 12px rgba(17, 21, 23, 0.7);
 }
