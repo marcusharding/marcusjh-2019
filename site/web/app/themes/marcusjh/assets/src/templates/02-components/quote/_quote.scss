@@ -1,0 +1,13 @@
+.quote {
+  &:before {
+    content: open-quote;
+    color: white;
+    font-size: 1em;
+  }
+
+  &:after {
+    content: close-quote;
+    color: white;
+    font-size: 1em;
+  }
+}

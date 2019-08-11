@@ -15,8 +15,8 @@ $subHeading = get_field('sub_heading');
 	<?php endif; ?>
 	<div class="wrapper h-screen flex flex-col justify-center items-center relative text-center">
 		<div class="">
-			<H1 class="text-white text-4xl text-bold uppercase"><?php echo $heading; ?></H1>
-			<h2 class="text-white text-2xl mb-8 text-light"><?php echo $subHeading; ?></h2>
+			<H1 class="text-white text-2xl text-bold uppercase"><?php echo $heading; ?></H1>
+			<h2 class="text-white text-xl mb-8 text-light"><?php echo $subHeading; ?></h2>
 			<a href="/about/" class="page-scroll btn btn--white text-white">Tell Me More</a>
 		</div>
 	</div>

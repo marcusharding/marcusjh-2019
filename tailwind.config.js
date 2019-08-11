@@ -1,13 +1,20 @@
-// const BASE_FONT_SIZE = 16
-// function px2rem(value, unit = 'rem') {
-// 	let num = value
+const R = require('ramda')
+const stripUnits = R.compose(
+	R.head,
+	R.match(/\d+/g)
+)
 
-// 	if (typeof value === 'string') {
-// 		num = stripUnits(value)
-// 	}
+const BASE_FONT_SIZE = 16
+function px2rem(value, unit = 'rem') {
+	let num = value
 
-// 	return `${(num / BASE_FONT_SIZE).toFixed(4)}${unit}`
-// }
+	if (typeof value === 'string') {
+		num = stripUnits(value)
+	}
+
+	return `${(num / BASE_FONT_SIZE).toFixed(4)}${unit}`
+}
+
 
 module.exports = {
   theme: {
@@ -43,17 +50,17 @@ module.exports = {
 		},
 		colors: {
 			black: '#111517',
-			// grey: {
-			// 	100: '#f7fafc',
-			// 	200: '#f2f2f2',
-			// 	300: '#e1e1e1',
-			// 	400: '#cbd5e0',
-			// 	500: '#a0aec0',
-			// 	600: '#718096',
-			// 	700: '#4a5568',
-			// 	800: '#2d3748',
-			// 	900: '#1a202c'
-			// },
+			grey: {
+				100: '#f7fafc',
+				200: '#f2f2f2',
+				300: '#e1e1e1',
+				400: '#cbd5e0',
+				500: '#a0aec0',
+				600: '#718096',
+				700: '#4a5568',
+				800: '#2d3748',
+				900: '#1a202c'
+			},
 		},	
 		},
 	},

@@ -53,8 +53,55 @@ function marcusjh_setup() {
      */
     add_theme_support( 'post-formats', array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
 }
+
 endif; // myfirsttheme_setup
 add_action( 'after_setup_theme', 'marcusjh_setup' );
+
+// Regtister custom post types 
+function register_post_types() {
+
+    // Register Quotes post type
+    $quote_args = array(
+        'labels' => array ( 
+                'name' => __( 'Quotes', 'quotes' ), 
+                'singular_name' => __( 'Quote', 'quote' ),
+             ),
+        'description' => 'Add a new quote',
+        'supports' => array( 'title' ),
+        'taxonomies' => array( 'quotes' ), 
+        'public' => true,
+        'menu_position' => 50,
+        'menu_icon' => 'dashicons-images-alt2',  
+        'has_archive' => true,
+        'capability_type' => 'post',
+        'rewrite' => array('slug' => 'quote', ),
+   );
+
+   // Register Featured Work post type
+   $featured_work_args = array(
+    'labels' => array ( 
+            'name' => __( 'Featured Work', 'featured work' ), 
+            'singular_name' => __( 'Featured Work', 'featured work' ),
+         ),
+    'description' => 'Add a new project',
+    'supports' => array( 'title', 'thumbnail' ),
+    'taxonomies' => array( 'projects' ), 
+    'public' => true,
+    'menu_position' => 50,
+    'menu_icon' => 'dashicons-images-alt2',  
+    'has_archive' => true,
+    'capability_type' => 'post',
+    'rewrite' => array('slug' => 'project', ),
+);
+
+   // Register Quotes
+   register_post_type( 'quotes', $quote_args );
+
+   // Register Featured Work
+   register_post_type( 'Featured Work', $featured_work_args );
+} 
+
+add_action( 'init', 'register_post_types' );
 
 // Add sage wrapper functionality https://github.com/mcaskill/wp-sage-theme-wrapper
 add_filter('template_include', [ '\\Roots\\Sage\\Wrapper', 'wrap'], 109);
