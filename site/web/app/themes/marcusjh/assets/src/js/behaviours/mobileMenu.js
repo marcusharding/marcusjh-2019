@@ -1,8 +1,6 @@
-
-
 function mobileMenu(node) {
   const el = node
-  const siteNav = document.getElementById('site-nav')
+  const siteNav = document.getElementById('siteNav')
   const burger = node.querySelector('button')
   el.onclick = () => {
     siteNav.classList.toggle('is-open')
