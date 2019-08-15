@@ -1,13 +1,33 @@
 
 function siteHeader(node) {
     const el = node
-    let scrollPosY = window.pageYOffset | document.body.scrollTop
-    console.log(scrollPosY)
+    // const scrollPosY = window.pageYOffset | document.body.scrollTop
+
+
+    function siteHeaderInit() {
+    const scrollPosY = window.pageYOffset | document.body.scrollTop
     if (scrollPosY >= 100) {
-        window.onscroll = () => {
-            el.classList.add('on-scroll')
-        }
+        el.classList.add('on-scroll')
     }
+
+    if (scrollPosY === 0) {
+        el.classList.remove('on-scroll')
+    }
+}
+
+function throttled(delay, fn) {
+    let lastCall = 0
+    return function (...args) {
+      const now = (new Date()).getTime()
+      if (now - lastCall < delay) {
+        return
+      }
+      lastCall = now
+      return fn(...args)
+    }
+  }
+
+  throttled(200, window.addEventListener('scroll', siteHeaderInit))
 }
 
 export default siteHeader
