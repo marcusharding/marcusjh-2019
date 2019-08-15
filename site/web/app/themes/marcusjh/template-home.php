@@ -24,3 +24,10 @@
 <section class="bg-white h-screen">
 	<?php get_template_part('../marcusjh/assets/src/templates/02-components/featured_work/featured_work'); ?>
 </section>
+
+<!-------------------------
+TESTIMONIALS
+--------------------------->
+<section class="bg-black h-screen">
+	<?php get_template_part('../marcusjh/assets/src/templates/02-components/testimonial/testimonial'); ?>	
+</section>

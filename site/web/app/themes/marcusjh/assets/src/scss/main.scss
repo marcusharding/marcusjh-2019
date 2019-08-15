@@ -31,14 +31,6 @@ $is-oldie: false !default;
 */
 @import '../templates/**/**/**/*';
 
-// @import 'templates/**';
-
-// # PACKAGES
-// ==========================================================================
-
-// # UTILS - http://sass-guidelin.es/#utils-folder
-// ==========================================================================
-
 // # FRAMEWORK - http://sass-guidelin.es/#base-folder
 // ==========================================================================
 
@@ -47,24 +39,8 @@ $is-oldie: false !default;
 @import 'framework/normalize';
 @import 'framework/typography';
 
-// # LAYOUT - http://sass-guidelin.es/#layout-folder
-// ==========================================================================
-
-// # ELEMENTS
-// ==========================================================================
-
-// # OBJECTS
-// ==========================================================================
-
-// Hamburger menu
-
+// HAMBURGER MENU
 @import 'hamburger/hamburgers.scss';
 
-// # COMPONENTS - http://sass-guidelin.es/#components-folder
-// ==========================================================================
-
-// # SITE LAYOUT STRUCTURE
-// ==========================================================================
-
-// # TRUMPS/HELPERS
-// ==========================================================================
+// GLIDEJS
+@import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
