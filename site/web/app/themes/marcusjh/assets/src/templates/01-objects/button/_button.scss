@@ -4,6 +4,7 @@
   cursor: pointer;
   font-weight: 600;
   font-size: 13px;
+  border-radius: 5px;
 }
 
 .btn {
@@ -13,6 +14,7 @@
 .btn--black {
   border: solid black;
   @apply text-black;
+  transition: background-color 0.3s ease;
   &:hover {
     @apply text-white bg-black;
   }
@@ -21,6 +23,7 @@
 .btn--white {
   border: solid white;
   @apply text-white;
+  transition: background-color 0.3s ease;
   &:hover {
     @apply text-black bg-white;
   }

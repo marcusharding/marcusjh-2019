@@ -1,8 +1,14 @@
 .header {
   @apply fixed w-full z-10 py-8;
+  .header-wrapper {
+    transition: transform 300ms ease;
+  }
   &.on-scroll {
+    @apply pt-8 pb-0;
     background-color: rgba(17, 21, 23, 0.3);
     box-shadow: 0px 0px 8px 1px rgba(17, 21, 23, 0.7);
-    @apply py-4;
+    .header-wrapper {
+      transform: translateY(-50%);
+    }
   }
 }

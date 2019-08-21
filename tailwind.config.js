@@ -1,7 +1,8 @@
 const R = require('ramda')
+
 const stripUnits = R.compose(
 	R.head,
-	R.match(/\d+/g)
+	R.match(/\d+/g),
 )
 
 const BASE_FONT_SIZE = 16
@@ -33,7 +34,7 @@ module.exports = {
 				'"Segoe UI"',
 				'Roboto',
 				'"Helvetica Neue"',
-				'Arial'
+				'Arial',
 			],
   		},
 		fontSize: {
@@ -46,7 +47,7 @@ module.exports = {
 			xl: px2rem('25px'),
 			'2xl': px2rem('35px'),
 			'3xl': px2rem('47px'),
-			'4xl': px2rem('80px')
+			'4xl': px2rem('80px'),
 		},
 		colors: {
 			black: '#111517',
@@ -59,11 +60,11 @@ module.exports = {
 				600: '#718096',
 				700: '#4a5568',
 				800: '#2d3748',
-				900: '#1a202c'
+				900: '#1a202c',
 			},
-		},	
+		},
 		},
 	},
   variants: {},
   plugins: [],
-};
+}

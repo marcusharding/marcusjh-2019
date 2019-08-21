@@ -114,9 +114,9 @@ function register_post_types() {
    // Register Quotes
    register_post_type( 'quotes', $quote_args );
    // Register Featured Work
-   register_post_type( 'Featured Work', $featured_work_args );
+   register_post_type( 'featured Work', $featured_work_args );
    // Register Testimonials
-   register_post_type( 'Testimonials', $testimonials_args );
+   register_post_type( 'testimonials', $testimonials_args );
 } 
 
 add_action( 'init', 'register_post_types' );
