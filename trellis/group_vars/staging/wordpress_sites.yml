@@ -3,9 +3,9 @@
 # Define accompanying passwords/secrets in group_vars/production/vault.yml
 
 wordpress_sites:
-  marcusjh.co.uk:
+  marcusjh.staging:
     site_hosts:
-      - canonical: marcusjh.co.uk
+      - canonical: marcusjh.staging.co.uk
         # redirects:
         #   - www.marcusjh.co.uk
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
