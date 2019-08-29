@@ -123,3 +123,6 @@ add_action( 'init', 'register_post_types' );
 
 // Add sage wrapper functionality https://github.com/mcaskill/wp-sage-theme-wrapper
 add_filter('template_include', [ '\\Roots\\Sage\\Wrapper', 'wrap'], 109);
+
+// Set the include path
+// set_include_path('');

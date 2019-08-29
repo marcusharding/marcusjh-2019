@@ -23,4 +23,4 @@ $testimonials = get_posts(array(
             <button class="glide__bullet text-white" data-glide-dir="=<?= $i; ?>"></button>
         <?php endforeach; ?>
     </div>
-</div>d
+</div>
