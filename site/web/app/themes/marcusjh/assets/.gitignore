@@ -1,5 +1,5 @@
-dist/css/*
-dist/js/*
+# dist/css/*
+# dist/js/*
 svg/sprites/standalone/*
 !svg/sprites/standalone
 !svg/sprites/output
