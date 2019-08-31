@@ -17,8 +17,8 @@ $quotes = get_posts(array(
             $quoter = get_field('quoter', $id); 
             ?>
 
-            <p class="text-white uppercase py-12 text-lg text-medium">Quote of the day</p>
-            <p class="text-white text-4xl py-12 quote text-bold"><?= $quoteText; ?></p>
+            <p class="text-white uppercase py-12 text-lg">Quote of the day</p>
+            <p class="text-white text-2xl lg:text-4xl py-12 quote text-bold"><?= $quoteText; ?></p>
             <p class="text-white py-12"><?= $quoter; ?></p>
         <?php endforeach; ?>
     </div>

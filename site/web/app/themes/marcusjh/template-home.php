@@ -21,7 +21,7 @@
 <!-------------------------
  FEATURED WORK
 --------------------------->
-<section class="bg-white py-24">
+<section class="bg-white py-12 lg:py-24">
 	<div class="wrapper">
 		<p class="uppercase text-grey-900 text-lg text-bold pb-12">Featured Work</p>
 		<?php get_template_part('../marcusjh/assets/src/templates/02-partials/featured_work/featured_work'); ?>

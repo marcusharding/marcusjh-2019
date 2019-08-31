@@ -8,7 +8,7 @@
 ?>
 
     <?php if(isset($projects)): ?>
-        <div class="flex">
+        <div class="lg:flex">
             <?php foreach ($projects as $project) : ?>
                 <?php include($_SERVER['DOCUMENT_ROOT'].'/app/themes/marcusjh/assets/src/templates/03-components/teaser/teaser-featured-work.php'); ?>
             <?php endforeach; ?>

@@ -8,7 +8,7 @@ $menu = wp_get_nav_menu_items( 'primary_menu');
 
 <footer class="bg-black h-100 pt-8">
 	<div class="wrapper">
-		<ul class="flex justify-center pb-12">
+		<ul class="lg:flex justify-center pb-12">
 			<?php foreach($menu as $item): ?>
 				<li class="">
 					<a class="footer__menu text-white uppercase m-4" data-hover="<?= $item->title; ?>" href="<?= $item->url;?>">
