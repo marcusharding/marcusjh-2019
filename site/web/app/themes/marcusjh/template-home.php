@@ -2,6 +2,9 @@
 /**
  * Template Name:  Homepage Template
  */
+
+ use marcusjh\lib\Extras;
+
 ?>
 
 <!-------------------------

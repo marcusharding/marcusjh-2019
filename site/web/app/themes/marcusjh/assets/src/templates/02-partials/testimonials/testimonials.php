@@ -12,7 +12,7 @@ $testimonials = get_posts(array(
         <ul class="glide__slides relative list-reset w-full flex flex-no-wrap whitespace-no-wrap overflow-hidden">
             <?php foreach($testimonials as $testimonial): ?>
                 <li class="glide__slide">
-                <?php include($_SERVER['DOCUMENT_ROOT'].'/app/themes/marcusjh/assets/src/templates/03-components/testimonial/testimonial.php'); ?>
+                <?php include '03-components/testimonial/testimonial.php'; ?>
                 </li>
             <?php endforeach; ?>
         </ul>

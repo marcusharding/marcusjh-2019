@@ -125,4 +125,4 @@ add_action( 'init', 'register_post_types' );
 add_filter('template_include', [ '\\Roots\\Sage\\Wrapper', 'wrap'], 109);
 
 // Set the include path
-// set_include_path('');
+set_include_path('/srv/www/marcusjh.test/current/web/app/themes/marcusjh/assets/src/templates/');
