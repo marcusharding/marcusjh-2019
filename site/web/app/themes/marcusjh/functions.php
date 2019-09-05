@@ -2,10 +2,41 @@
 /**
  * MyFirstTheme's functions and definitions
  *
- * @package MyFirstTheme
- * @since MyFirstTheme 1.0
+ * @package marcusjh
+ * @since marcusjh 1.0
  */
+
+$marcusjh_includes = [
+    'lib/',
+  ];
+
+  // If file is a directory, recursively iterate over all contents of it and
+// require_once all contents with the .php. If its a file, just require_once it.
+
+foreach ($marcusjh_includes as $file) {
+    if (!$filepath = locate_template($file)) {
+        trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
+    }
+
+    if (is_dir($filepath)) {
+        $iterator = new RecursiveIteratorIterator(
+            new RecursiveDirectoryIterator($filepath)
+        );
+
+        $files = new RegexIterator($iterator, '/^.+\.php$/', RecursiveRegexIterator::GET_MATCH);
+
+        foreach ($files as $file) {
+            require_once $file[0];
+        }
+    } else {
+        require_once $filepath;
+    }
+}
+
+unset($file, $filepath, $iterator);
  
+
+
 /**
  * First, let's set the maximum content width based on the theme's design and stylesheet.
  * This will limit the width of all uploaded images and embeds.

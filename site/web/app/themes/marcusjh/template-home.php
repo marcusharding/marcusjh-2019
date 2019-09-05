@@ -3,22 +3,49 @@
  * Template Name:  Homepage Template
  */
 
- use marcusjh\lib\Extras;
+use marcusjh\lib\Extras;
+use marcusjh\lib\Utils;
 
+$quotes = get_posts(array(
+    'post_type'   => 'quotes',
+    'post_status' => 'publish',
+    'posts_per_page' => 1,
+    )
+);
+
+$projects = get_posts(array(
+	'post_type'   => 'featured Work',
+	'post_status' => 'publish',
+	'posts_per_page' => 3,
+	)
+);
+
+$testimonials = get_posts(array(
+    'post_type'   => 'testimonials',
+    'post_status' => 'publish',
+    'posts_per_page' => 3,
+    )
+);
 ?>
 
 <!-------------------------
  HOMEPAGE HERO
 --------------------------->
 <section>
-	<?php get_template_part('../marcusjh/assets/src/templates/03-components/homepage_hero/homepage-hero'); ?>
+	<?= Utils\ob_load_template_part('templates/03-components/homepage_hero/homepage-hero', [
+		'video' => get_field('homepage_video'),
+		'heading' => get_field('heading'),
+		'subHeading' => get_field('sub_heading'),
+	]); ?>
 </section>
 
 <!-------------------------
  QUOTE OF THE DAY 
 --------------------------->
 <section class="bg-black h-screen">
-	<?php get_template_part('../marcusjh/assets/src/templates/03-components/quote/quote'); ?>
+	<?= Utils\ob_load_template_part('templates/03-components/quote/quote' , [
+		'quotes' => $quotes
+	]); ?>
 </section>
 
 <!-------------------------
@@ -27,7 +54,9 @@
 <section class="bg-white py-12 lg:py-24">
 	<div class="wrapper">
 		<p class="uppercase text-grey-900 text-lg text-bold pb-12">Featured Work</p>
-		<?php get_template_part('../marcusjh/assets/src/templates/02-partials/featured_work/featured_work'); ?>
+		<?= Utils\ob_load_template_part('templates/02-partials/featured_work/featured_work' , [
+			'projects' => $projects
+		]); ?>
 	</div>
 </section>
 
@@ -35,7 +64,9 @@
 TESTIMONIALS
 --------------------------->
 <section class="bg-black py-24">
-	<?php get_template_part('../marcusjh/assets/src/templates/02-partials/testimonials/testimonials'); ?>	
+	<?= Utils\ob_load_template_part('templates/02-partials/testimonials/testimonials' , [
+		'testimonials' => $testimonials
+	]); ?>
 </section>
 
 <!-------------------------
@@ -44,6 +75,6 @@ CONTACT
 <section class="bg-white py-24">
 	<div class="wrapper">
 		<p class="uppercase text-grey-900 text-lg text-bold pb-12">Lets work together</p>
-		<?php get_template_part('../marcusjh/assets/src/templates/02-components/contact_form/contact_form.php'); ?>	
+			<?= Utils\ob_load_template_part('templates/03-components/contact_form/contact_form'); ?>
 	</div>
 </section>

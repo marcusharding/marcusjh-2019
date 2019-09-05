@@ -1,11 +1,3 @@
-<?php
-$quotes = get_posts(array(
-    'post_type'   => 'quotes',
-    'post_status' => 'publish',
-    'posts_per_page' => 1,
-    )
-);
-?>
 
 <?php if( $quotes ): ?>
     <div class="wrapper h-screen flex flex-col justify-center">

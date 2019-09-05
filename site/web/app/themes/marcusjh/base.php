@@ -1,5 +1,5 @@
 <?php
-use Roots\Sage;
+use Roots\Sage\Wrapper;
 ?>
 
 <!doctype html>
@@ -13,23 +13,23 @@ use Roots\Sage;
         <![endif]-->
         <?php
             do_action('get_header');
-            get_template_part('./assets/src/templates/04-global/header/header');
+            get_template_part('templates/04-global/header/header');
         ?>
         <div class="" role="document">
             <div class="">
                 <main class="main">
-                    <?php include Sage\template_path(); ?>
+                    <?php include Wrapper\template_path(); ?>
                 </main><!-- /.main -->
                 <?php if (false) : ?>
                     <aside class="sidebar">
-                        <?php include Sage\sidebar_path(); ?>
+                        <?php include Wrapper\sidebar_path(); ?>
                     </aside><!-- /.sidebar -->
                 <?php endif; ?>
             </div><!-- /.content -->
         </div><!-- /.wrap -->
         <?php
             do_action('get_footer');
-            get_template_part('./assets/src/templates/04-global/footer/footer');
+            get_template_part('templates/04-global/footer/footer');
             wp_footer();
         ?>
     </body>
