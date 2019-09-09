@@ -20,7 +20,7 @@ $menu = wp_get_nav_menu_items( 'primary_menu');
 			<?php endforeach; ?>
 		</ul>
 		<div class="text-right pb-4 pt-12">
-			<p class="text-white">Site by <span class="text-extra-bold uppercase">MarcusJH</span></a></p>
+			<p class="text-white">Site by <a href="/"><span class="text-extra-bold uppercase">MarcusJH</span></a></p>
 		</div>
 	</div>
 </footer>

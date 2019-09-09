@@ -1,7 +1,9 @@
 .glide__slide {
+  transition: 300ms ease-in;
   opacity: 0.5;
 }
 
 .glide__slide--active {
+  transition: 300ms ease-in;
   opacity: 1;
 }

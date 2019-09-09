@@ -11,11 +11,16 @@
 		</video>
 	<?php endif; ?>
 	<div class="wrapper h-screen flex flex-col justify-center items-center relative text-center">
-		<div class="">
+		<div class="pb-12">
 			<H1 class="text-white text-2xl text-bold uppercase"><?= $heading; ?></H1>
 			<h2 class="text-white text-xl mb-8 text-light"><?= $subHeading; ?></h2>
-			<a href="/about/" class="page-scroll btn btn--white text-white">Tell Me More</a>
+			<!-- <a href="/about/" class="page-scroll btn btn--white text-white">Tell Me More</a> -->
 		</div>
+		<!-- <div class="scroll-downs">
+			<div class="mousey">
+				<div class="scroller"></div>
+			</div>
+		</div> -->
 	</div>
 </div>
 
