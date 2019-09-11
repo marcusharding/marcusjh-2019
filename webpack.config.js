@@ -1,47 +1,76 @@
-const path = require("path");
-const webpack = require("webpack");
+const path = require('path');
+const webpack = require('webpack');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
 
   // Paths
-  const rootDir = path.resolve(__dirname + "/site/web/app/themes/marcusjh/assets");
-  const outputDir = 'dist';
+  // const rootDir = path.resolve(__dirname + '/site/web/app/themes/marcusjh/assets');
+  // const outputDir = 'dist';
 
-  context: path.resolve(
-    __dirname + "/site/web/app/themes/marcusjh/assets/src/js"
-  ),
+  context: path.join(__dirname, '/site/web/app/themes/marcusjh/assets/src/js'),
   entry: {
-    app: "./app.js"
+    app: './app.js',
   },
   output: {
-    path: path.resolve(
-      __dirname + "/site/web/app/themes/marcusjh/assets/dist/js"
-    ),
-    filename: "[name].bundle.js"
+    path: path.resolve(__dirname, '/site/web/app/themes/marcusjh/assets/dist'),
+    filename: '[name].bundle.js',
   },
   module: {
     rules: [
       {
         test: /\.(js)$/,
         exclude: /node_modules/,
-        use: ["babel-loader", "eslint-loader"]
+        use: ['babel-loader', 'eslint-loader'],
       },
       {
         test: /\.svg$/,
-        use: [
-            'svg-sprite-loader',
-            'svgo-loader'
-        ]
+          use: [
+            {
+              loader: 'svg-sprite-loader',
+              options: {
+              extract: true,
+              publicPath: '../svg/',
+              symbolId: 'icon--[name]', // id attr to identify sprites
+              spriteFilename: 'spritesheet.svg',
+              runtimeCompat: true,
+            },
+          },
+          {
+            loader: 'svgo-loader',
+            options: {
+              plugins: [
+                {
+                    removeTitle: true,
+                },
+                {
+                    cleanupIDs: true,
+                },
+                {
+                    removeUselessStrokeAndFill: true,
+                },
+                {
+                    removeDoctype: true,
+                },
+                {
+                    removeUselessDefs: true,
+                },
+                {
+                    useShortTags: false,
+                },
+            ],
+            },
+          },
+        ],
       },
     ],
   },
   resolve: {
-    extensions: ["*", ".js"]
+    extensions: ['*', '.js'],
   },
    plugins: [
     new SpriteLoaderPlugin({
-      plainSprite: true
+      plainSprite: true,
     })
   ]
 };

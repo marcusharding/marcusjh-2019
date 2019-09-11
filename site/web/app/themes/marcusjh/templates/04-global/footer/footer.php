@@ -3,6 +3,9 @@ FOOTER
 ------------>
 
 <?php 
+use marcusjh\lib\Extras;
+use marcusjh\lib\Utils;
+
 $menu = wp_get_nav_menu_items( 'primary_menu');
 ?>
 
@@ -19,8 +22,38 @@ $menu = wp_get_nav_menu_items( 'primary_menu');
 				</li>
 			<?php endforeach; ?>
 		</ul>
-		<div class="text-right pb-4 pt-12">
-			<p class="text-white">Site by <a href="/"><span class="text-extra-bold uppercase">MarcusJH</span></a></p>
+		<div class="flex justify-between pb-4 pt-12">
+			<div>
+				<?= Utils\ob_load_template_part('templates/03-components/social/social.php', [
+					'theme' => 'light',
+					'className' => 'w-6 h-6',
+					'social' => [
+						[
+							'title' => 'twitter',
+							'href' => '',
+							'iconWidth' => ''
+						],
+						[
+							'title' => 'linkedin',
+							'href' => 'https://www.linkedin.com/in/marcusjh/',
+							'iconWidth' => ''
+						],
+						[
+							'title' => 'email',
+							'href' => '',
+							'iconWidth' => ''
+						],
+						[
+							'title' => 'github',
+							'href' => 'https://github.com/marcusharding',
+							'iconWidth' => ''
+						],
+					]
+				]); ?>
+			</div>
+			<div>
+				<p class="text-white">Site by <a href="/"><span class="text-extra-bold uppercase">MarcusJH</span></a></p>
+			</div>
 		</div>
 	</div>
 </footer>

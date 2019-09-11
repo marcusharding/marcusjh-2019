@@ -42,9 +42,28 @@ $testimonials = get_posts(array(
 <!-------------------------
  QUOTE OF THE DAY 
 --------------------------->
-<section class="bg-black h-screen">
+<section class="bg-primary h-screen">
 	<?= Utils\ob_load_template_part('templates/03-components/quote/quote' , [
 		'quotes' => $quotes
+	]); ?>
+</section>
+
+<!-------------------------
+ What I WORK WITH
+--------------------------->
+<section class="bg-white h-screen">
+	<div class="wrapper py-12 lg:py-24">
+		<p class="uppercase text-grey-900 text-lg text-bold pb-12">What I Work With</p>
+		
+	</div>
+</section>
+
+<!-------------------------
+TESTIMONIALS
+--------------------------->
+<section class="bg-primary py-12 lg:py-24">
+	<?= Utils\ob_load_template_part('templates/02-partials/testimonials/testimonials' , [
+		'testimonials' => $testimonials
 	]); ?>
 </section>
 
@@ -61,20 +80,11 @@ $testimonials = get_posts(array(
 </section>
 
 <!-------------------------
-TESTIMONIALS
---------------------------->
-<section class="bg-black py-24">
-	<?= Utils\ob_load_template_part('templates/02-partials/testimonials/testimonials' , [
-		'testimonials' => $testimonials
-	]); ?>
-</section>
-
-<!-------------------------
 CONTACT 
 --------------------------->
-<section class="bg-white py-24">
+<section class="bg-primary py-24">
 	<div class="wrapper">
-		<p class="uppercase text-grey-900 text-lg text-bold pb-12">Lets work together</p>
-			<?= Utils\ob_load_template_part('templates/03-components/contact_form/contact_form'); ?>
+		<p class="uppercase text-white text-lg text-bold pb-12">Lets work together</p>
+		<?= Utils\ob_load_template_part('templates/03-components/contact_form/contact_form'); ?>
 	</div>
 </section>

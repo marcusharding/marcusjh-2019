@@ -50,7 +50,7 @@ module.exports = {
 			'4xl': px2rem('80px'),
 		},
 		colors: {
-			black: '#111517',
+			primary: '#111517',
 			grey: {
 				100: '#f7fafc',
 				200: '#f2f2f2',

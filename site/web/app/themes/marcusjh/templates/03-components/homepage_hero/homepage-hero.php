@@ -1,6 +1,3 @@
-<!-- Grab fields needed first -->
-<?php 
- ?>
 
 <!-- HERO -->
 <div class="section-video">
@@ -16,11 +13,6 @@
 			<h2 class="text-white text-xl mb-8 text-light"><?= $subHeading; ?></h2>
 			<!-- <a href="/about/" class="page-scroll btn btn--white text-white">Tell Me More</a> -->
 		</div>
-		<!-- <div class="scroll-downs">
-			<div class="mousey">
-				<div class="scroller"></div>
-			</div>
-		</div> -->
 	</div>
 </div>
 
