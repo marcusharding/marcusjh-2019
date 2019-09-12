@@ -129,7 +129,7 @@ exports.style = style
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
-let build = gulp.parallel(style, watch, webpack, clean)
+let build = gulp.parallel(style, clean, webpack, watch)
 
 /*
  * You can still use `gulp.task` to expose tasks

@@ -49,7 +49,7 @@ $testimonials = get_posts(array(
 </section>
 
 <!-------------------------
- What I WORK WITH
+ WHAT I WORK WITH
 --------------------------->
 <section class="bg-white h-screen">
 	<div class="wrapper py-12 lg:py-24">
@@ -85,6 +85,8 @@ CONTACT
 <section class="bg-primary py-24">
 	<div class="wrapper">
 		<p class="uppercase text-white text-lg text-bold pb-12">Lets work together</p>
-		<?= Utils\ob_load_template_part('templates/03-components/contact_form/contact_form'); ?>
+		<?= Utils\ob_load_template_part('templates/forms/lets-work-together/lets-work-together', [
+			'shortcode' => get_field('form_shortcode')
+		]); ?>
 	</div>
 </section>

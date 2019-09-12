@@ -1,0 +1,41 @@
+.form-a__container{
+
+    @apply flex flex-wrap;
+
+    .form-item{
+        width: 35%;
+        @apply mb-8;
+        @apply text-white;
+        label{
+            width: 70%;
+        }
+        input{
+            height: 70%;
+        }
+    }
+
+    input {
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 5px;
+    }
+
+    textarea{
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 5px;
+        height: 70%;
+    }
+
+    .submit-button{
+        input {
+            border: none;
+        }
+    }
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+}
+
