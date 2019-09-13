@@ -5,6 +5,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<meta name="description" content="Marcus Harding Portfolio">
 	<meta name="author" content="Marcus Harding">
+	<meta name="google-site-verification" content="EQjFhTsKzSdDGVGGaDnUs0Mg4juf65-JD4zO1v_rMFQ" />
 	<link rel="icon" href="favicon.ico">
 	<title><?php echo get_bloginfo( 'name' ); ?></title>
 	<!-- core CSS -->
