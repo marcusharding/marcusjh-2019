@@ -1,3 +1,5 @@
+
+// FEATURED WORK TEASER
 .teaser-featured-work__container {
   @apply bg-grey-900 mb-8;
   border: #111517 solid;
@@ -12,4 +14,13 @@
   &:hover {
     transform: translateY(-5%);
   }
+}
+
+// TESTIMONIAL TEASER
+.testimonial__container{
+  @apply bg-white p-8;
+  border-radius: 5px;
+  border-width: 0px;
+  border: #111517 solid;
+  transition: transform 300ms ease;
 }

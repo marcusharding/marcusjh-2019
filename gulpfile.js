@@ -27,14 +27,17 @@ let paths = {
   styles: {
     src: [
       './site/web/app/themes/marcusjh/assets/src/scss/**/**.scss',
-      './site/web/app/themes/marcusjh/assets/src/templates/**/**.scss'
+      './site/web/app/themes/marcusjh/templates/**/**.scss'
     ],
     dest: './site/web/app/themes/marcusjh/assets/dist/css/'
   },
   webpack: {
     src: './site/web/app/themes/marcusjh/assets/src/js/**/**.js',
     build: './site/web/app/themes/marcusjh/assets/dist/js/'
-  }
+  },
+  clean: {
+    dest: './site/web/app/themes/marcusjh/assets/dist/',
+  },
 }
 
 
@@ -45,7 +48,7 @@ let paths = {
 function clean() {
   return (
     gulp
-      .src(paths.webpack.build)
+      .src(paths.clean.dest)
       // .pipe(gprint(paths.webpack.build))
       .pipe(vinylPaths(del))
   )
@@ -125,6 +128,8 @@ exports.watch = watch
 // This allows you to run it from the commandline using
 // $ gulp style
 exports.style = style
+exports.clean = clean
+exports.webpack = webpack
 
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`

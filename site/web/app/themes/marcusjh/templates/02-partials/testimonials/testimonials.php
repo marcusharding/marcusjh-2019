@@ -4,19 +4,23 @@ use marcusjh\lib\Utils;
 
 $slides = array();
 foreach($testimonials as $slide):
-    $slides[] =  Utils\ob_load_template_part('templates/03-components/slides/slide-testimonial.php', [
+    $slides[] =  Utils\ob_load_template_part('templates/07-slides/slide-testimonial.php', [
         'slide' => $slide
     ]);
 endforeach;
 ?>
 
 
-<?= Utils\ob_load_template_part('templates/container/carousel/carousel.php', [
+<?= Utils\ob_load_template_part('templates/06-container/carousel/carousel.php', [
     'id' => 'testimonialCarousel',
     'overflow' => 'hidden',
     'pagination' => true,
     'options' => [
-        'perView' => 1
+        'perView' => 2,
+        'peek' => [
+            'before' => 0,
+            'after' => 300
+        ],
     ],
     'slides' => $slides
 ]);?>

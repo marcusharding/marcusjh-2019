@@ -51,10 +51,12 @@ $testimonials = get_posts(array(
 <!-------------------------
  WHAT I WORK WITH
 --------------------------->
-<section class="bg-white h-screen">
+<section class="bg-white overflow-hidden">
 	<div class="wrapper py-12 lg:py-24">
 		<p class="uppercase text-grey-900 text-lg text-bold pb-12">What I Work With</p>
-		
+		<?= Utils\ob_load_template_part('templates/02-partials/what-i-work-with/what-i-work-with' , [
+			
+		]); ?>
 	</div>
 </section>
 
@@ -62,9 +64,12 @@ $testimonials = get_posts(array(
 TESTIMONIALS
 --------------------------->
 <section class="bg-primary py-12 lg:py-24">
-	<?= Utils\ob_load_template_part('templates/02-partials/testimonials/testimonials' , [
-		'testimonials' => $testimonials
-	]); ?>
+	<div class="wrapper">
+		<p class="uppercase text-white text-lg text-bold pb-12">What others have to say</p>
+		<?= Utils\ob_load_template_part('templates/02-partials/testimonials/testimonials' , [
+			'testimonials' => $testimonials
+		]); ?>
+	</div>
 </section>
 
 <!-------------------------
@@ -85,7 +90,7 @@ CONTACT
 <section class="bg-primary py-24">
 	<div class="wrapper">
 		<p class="uppercase text-white text-lg text-bold pb-12">Lets work together</p>
-		<?= Utils\ob_load_template_part('templates/forms/lets-work-together/lets-work-together', [
+		<?= Utils\ob_load_template_part('templates/05-forms/lets-work-together/lets-work-together', [
 			'shortcode' => get_field('form_shortcode')
 		]); ?>
 	</div>

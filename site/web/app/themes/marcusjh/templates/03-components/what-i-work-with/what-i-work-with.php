@@ -1,7 +1,6 @@
 <?php
 use marcusjh\lib\Extras;
 use marcusjh\lib\Utils;
-
 if ( empty($href) ) $href = '#0';
 if ( empty($target) ) $target = '';
 if ( empty($theme) ) $theme = 'white';
@@ -10,25 +9,16 @@ if ( empty($flexModifier) ) $flexModifier = '';
 ?>
 
 <ul class="flex items-center <?= $flexModifier; ?>">
-    <?php foreach($social as $item):?>
+    <?php foreach($technologies as $item):?>
 
-    <?php
-        if($theme == 'dark'){
-            $themeModifier = 'text-black';
-        }
-        else{
-            $themeModifier = 'text-white';
-        }
-    ?>
-
-    <li class="mr-2">
-        <a href="<?= $item['href']; ?>"
+    <li class="mr-8">
+        <a
             target=""
-            class="<?= $className; ?> flex items-center justify-center <?= $themeModifier; ?>"
+            class="<?= $className; ?> flex items-center justify-center"
         >
-            <?= Utils\ob_load_template_part('templates/08-helpers/icon/icon.php', [
+            <?= Utils\ob_load_template_part('templates/08-helpers/icon/icon', [
                 'name' => $item['title'],
-                'className' => 'w-12'
+                'className' => 'w-56'
             ]); ?>
             <span class="visuallyhidden"><?= $item['title'];?></span>
         </a>
