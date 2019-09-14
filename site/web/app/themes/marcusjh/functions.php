@@ -116,7 +116,7 @@ function register_post_types() {
             ),
         'description' => 'Add a new project',
         'supports' => array( 'title', 'thumbnail' ),
-        'taxonomies' => array( 'projects' ), 
+        'taxonomies' => array( 'projects', 'post_tag' ), 
         'public' => true,
         'menu_position' => 50,
         'menu_icon' => 'dashicons-images-alt2',  

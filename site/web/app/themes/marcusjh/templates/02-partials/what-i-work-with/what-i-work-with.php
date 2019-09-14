@@ -9,6 +9,11 @@ use marcusjh\lib\Utils;
         'className' => 'w-56 h-56',
         'technologies' => [
             [
+                'title' => 'twig',
+                'href' => '',
+                'iconWidth' => ''
+            ],
+            [
                 'title' => 'css3',
                 'href' => '',
                 'iconWidth' => ''

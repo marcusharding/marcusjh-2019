@@ -110,7 +110,15 @@
         padding-bottom: 83.33333333333334%;
     }
 }
+
 .icon--tailwind {
+    width: rem(18px);
+    &:after {
+        padding-bottom: 83.33333333333334%;
+    }
+}
+
+.icon--twig {
     width: rem(18px);
     &:after {
         padding-bottom: 83.33333333333334%;
