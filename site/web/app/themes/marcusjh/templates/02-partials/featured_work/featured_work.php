@@ -4,7 +4,7 @@ use marcusjh\lib\Utils;
 
 $slides = array();
 foreach($projects as $slide):
-    $slides[] =  Utils\ob_load_template_part('templates/03-components/slides/slide-featured-work.php', [
+    $slides[] =  Utils\ob_load_template_part('templates/07-slides/slide-featured-work', [
         'slide' => $slide
     ]);
 endforeach;
@@ -14,7 +14,7 @@ endforeach;
         <!-- Desktop -->
         <div class="hidden lg:flex">
             <?php foreach ($projects as $project) : ?>
-                <?= Utils\ob_load_template_part('templates/03-components/teaser/teaser-featured-work.php' , [
+                <?= Utils\ob_load_template_part('templates/03-components/teaser/teaser-featured-work' , [
                     'project' => $project
 	            ]); ?>
             <?php endforeach; ?>
@@ -22,7 +22,7 @@ endforeach;
 
         <!-- mobile -->
         <div class="lg:hidden">
-            <?= Utils\ob_load_template_part('templates/container/carousel/carousel.php' , [
+            <?= Utils\ob_load_template_part('templates/06-container/carousel/carousel' , [
                 'id' => 'workCarousel',
                 'overflow' => 'visible',
                 'pagination' => true,
