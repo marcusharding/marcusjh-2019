@@ -5,6 +5,7 @@ if ( empty($options) ) $options = '';
 if ( empty($overflow) ) $overflow = 'hidden';
 if ( empty($pagination) ) $pagination = '';
 if ( empty($controls) ) $controls = '';
+if ( empty($liClassName) ) $liClassName = '';
 ?>
 
 <div
@@ -19,7 +20,7 @@ data-module="slider"
     <div class="glide__track overflow-hidden relative" data-glide-el="track">
         <ul class="glide__slides relative list-reset w-full flex flex-no-wrap whitespace-no-wrap overflow-hidden">
             <?php foreach($slides as $i => $slide): ?>
-                <li class="glide__slide">
+                <li class="glide__slide <?= $liClassName; ?>">
                     <?php echo $slide; ?>
                 </li>
             <?php endforeach; ?>

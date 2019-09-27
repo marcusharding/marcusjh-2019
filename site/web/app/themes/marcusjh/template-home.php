@@ -42,21 +42,25 @@ $testimonials = get_posts(array(
 <!-------------------------
  QUOTE OF THE DAY 
 --------------------------->
-<section class="bg-primary h-screen">
-	<?= Utils\ob_load_template_part('templates/03-components/quote/quote' , [
-		'quotes' => $quotes
-	]); ?>
+<section class="bg-primary h-screen flex flex-col justify-center">
+	<div class="wrapper py-24">
+		<p class="text-white uppercase py-12 text-xl text-bold">Quote of the day</p>
+		<?= Utils\ob_load_template_part('templates/03-components/quote/quote' , [
+			'quotes' => $quotes
+		]); ?>
+	</div>
 </section>
 
 <!-------------------------
  WHAT I WORK WITH
 --------------------------->
 <section class="bg-white overflow-hidden">
-	<div class="wrapper py-12 lg:py-24">
-		<p class="uppercase text-grey-900 text-lg text-bold pb-12">What I Work With</p>
-		<?= Utils\ob_load_template_part('templates/02-partials/what-i-work-with/what-i-work-with' , [
-			
-		]); ?>
+	<div class="py-12 lg:py-24">
+		<p class="wrapper uppercase text-grey-900 text-xl text-bold pb-12">What I Work With</p>
+		<div class="mx-12">
+			<?= Utils\ob_load_template_part('templates/02-partials/what-i-work-with/what-i-work-with' , [
+			]); ?>
+		</div>
 	</div>
 </section>
 
@@ -65,7 +69,7 @@ TESTIMONIALS
 --------------------------->
 <section class="bg-primary py-12 lg:py-24">
 	<div class="wrapper">
-		<p class="uppercase text-white text-lg text-bold pb-12">What others have to say</p>
+		<p class="uppercase text-white text-xl text-bold pb-12">What others have to say</p>
 		<?= Utils\ob_load_template_part('templates/02-partials/testimonials/testimonials' , [
 			'testimonials' => $testimonials
 		]); ?>
@@ -77,7 +81,7 @@ TESTIMONIALS
 --------------------------->
 <section class="bg-white py-12 lg:py-24">
 	<div class="wrapper">
-		<p class="uppercase text-grey-900 text-lg text-bold pb-12">Featured Work</p>
+		<p class="uppercase text-grey-900 text-xl text-bold pb-12">Featured Work</p>
 		<?= Utils\ob_load_template_part('templates/02-partials/featured_work/featured_work' , [
 			'projects' => $projects
 		]); ?>
@@ -85,13 +89,12 @@ TESTIMONIALS
 </section>
 
 <!-------------------------
-CONTACT 
+LETS WORK TOGETHER
 --------------------------->
 <section class="bg-primary py-24">
-	<div class="wrapper">
-		<p class="uppercase text-white text-lg text-bold pb-12">Lets work together</p>
-		<?= Utils\ob_load_template_part('templates/05-forms/lets-work-together/lets-work-together', [
-			'shortcode' => get_field('form_shortcode')
-		]); ?>
+	<div class="wrapper text-center">
+		<p class="uppercase text-white text-xl text-bold pb-8">Lets work together</p>
+		<p class="text-white pb-8">Have a potential project idea? Then lets talk.</p>
+		<a href="/contact" class="btn btn--white">contact</a>
 	</div>
 </section>

@@ -15,6 +15,7 @@ endforeach;
     'id' => 'testimonialCarousel',
     'overflow' => 'hidden',
     'pagination' => true,
+    'liClassName' => 'testimonial-teaser-slide',
     'options' => [
         'perView' => 2,
         'peek' => [

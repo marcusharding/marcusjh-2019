@@ -6,7 +6,7 @@ use marcusjh\lib\Utils;
 <div class="py-12">
     <?= Utils\ob_load_template_part('templates/03-components/what-i-work-with/what-i-work-with', [
         'theme' => 'dark',
-        'className' => 'w-56 h-56',
+        'className' => 'w-32 h-32',
         'technologies' => [
             [
                 'title' => 'twig',
