@@ -3,6 +3,7 @@
     $content = get_field('content', $id); 
     $siteLink = get_field('site_link', $id);
     $postLink = get_permalink($id);
+    $tags = get_tags($id);
 ?>
 
 <a href="<?= $postLink; ?>">
@@ -12,9 +13,12 @@
         </div>
         <div class="p-8 pt-4">
             <h1 class="text-md text-white text-bold"><?= $project->post_title; ?></h1>
-            <div class="text-white">
+            <div class="text-white mb-4">
                 <?= wp_trim_words($content, 20, '...'); ?>
             </div>
+            <?php foreach($tags as $i => $tag): ?>
+               <p class="text-white"><?= $tag->name; ?></p>
+            <?php endforeach; ?>
         </div>
     </div>
 </a>

@@ -6,6 +6,8 @@
 
 use marcusjh\lib\Extras;
 use marcusjh\lib\Utils;
+
+$id = $post->ID;
 ?>
 
 <!-------------------------
@@ -19,7 +21,9 @@ PAGE HERO
 PROJECT
 --------------------------->
 <section>
-    
+	<?= Utils\ob_load_template_part('templates/02-partials/project_content/project_content', [
+		'id' => $id
+	]); ?>
 </section>
 
 

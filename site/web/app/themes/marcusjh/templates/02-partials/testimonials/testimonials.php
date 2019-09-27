@@ -18,9 +18,11 @@ endforeach;
     'liClassName' => 'testimonial-teaser-slide',
     'options' => [
         'perView' => 2,
+        'startAt' => 1,
+        'focusAt' => 'center',
         'peek' => [
-            'before' => 0,
-            'after' => 300
+            'before' => 100,
+            'after' => 100
         ],
     ],
     'slides' => $slides

@@ -31,22 +31,26 @@ $menu = wp_get_nav_menu_items( 'primary_menu');
 						[
 							'title' => 'twitter',
 							'href' => '',
-							'iconWidth' => ''
+							'iconWidth' => '',
+							'className' => 'self-end'
 						],
 						[
 							'title' => 'linkedin',
 							'href' => 'https://www.linkedin.com/in/marcusjh/',
-							'iconWidth' => ''
+							'iconWidth' => '',
+							'className' => 'self-end'
 						],
 						[
 							'title' => 'email',
 							'href' => '',
-							'iconWidth' => ''
+							'iconWidth' => '',
+							'className' => 'self-end'
 						],
 						[
 							'title' => 'github',
 							'href' => 'https://github.com/marcusharding',
-							'iconWidth' => ''
+							'iconWidth' => '',
+							'className' => 'self-end'
 						],
 					]
 				]); ?>
