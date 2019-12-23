@@ -55,11 +55,15 @@ $testimonials = get_posts(array(
  WHAT I WORK WITH
 --------------------------->
 <section class="bg-white overflow-hidden relative">
-	<div class="py-12 lg:py-24">
-		<p class="wrapper text-grey-900 text-2xl text-bold pb-12">What I work with</p>
-		
-	</div>
 	<div class="bg-grey-300 absolute right-0 top-0 bottom-0 w-3/5 h-full"></div>
+	<div class="py-12 lg:py-24 relative">
+		<p class="wrapper text-grey-900 text-2xl text-bold pb-12">What I work with</p>
+		<div class="wrapper">
+			<?= Utils\ob_load_template_part('templates/02-partials/what-i-work-with/work-with.php', [
+			
+			])?>
+		</div>
+	</div>
 </section>
 
 
