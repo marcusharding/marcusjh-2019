@@ -1,16 +1,19 @@
 
 function siteHeader(node) {
     const el = node
+    const logo = document.getElementById('logo')
     // const scrollPosY = window.pageYOffset | document.body.scrollTop
 
 
     function siteHeaderInit() {
     const scrollPosY = window.pageYOffset | document.body.scrollTop
     if (scrollPosY >= 100) {
+        logo.classList.add('logo-on-scroll')
         el.classList.add('on-scroll')
     }
 
     if (scrollPosY === 0) {
+        logo.classList.remove('logo-on-scroll')
         el.classList.remove('on-scroll')
     }
 }

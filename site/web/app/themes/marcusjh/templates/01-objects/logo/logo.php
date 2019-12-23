@@ -1,7 +1,7 @@
 <!-- Logo -->
 
-<a class="navbar-brand uppercase text-white text-xl lg:text-2xl text-extra-bold tracking-wider z-10" href="/">
-	marcusjh
+<a id="logo" class="logo navbar-brand uppercase text-white text-xl lg:text-2xl tracking-wider z-10" href="/">
+	<span class="text-extra-bold">marcusjh</span><span class="text-thin">dev</span>
 </a>
 
 <!-- <a class="w-1/5">

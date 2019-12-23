@@ -1,7 +1,6 @@
 <?php
 use marcusjh\lib\Extras;
 use marcusjh\lib\Utils;
-
 $id = $slide->ID;
 ?>
 
@@ -13,4 +12,3 @@ $id = $slide->ID;
         'image' => get_field('image', $id),
         'className' => 'h-full'
     ]); ?>
-
