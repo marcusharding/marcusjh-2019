@@ -1,6 +1,10 @@
-// ==========================================================================
-// # HOMEPAGE HERO
-// ==========================================================================
+i {
+  font-style: normal!important;
+}
+
+em {
+  font-style: normal!important;
+}
 
 .header-wrapper {
   margin-left: auto;
@@ -29,38 +33,102 @@
   object-fit: cover;
 }
 
-// Scroll down animation 
-.scroll-downs {
+// TEXT CHANGE ANIMATION
+
+
+.cd-headline {
+  font-size: 4rem;
+}
+
+.cd-subhead {
+  font-size: 3.5rem;
+}
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.cd-words-wrapper b {
+  display: inline-block;
   position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width: 0px;
-    height: auto;
-} 
-.mousey {
-  @apply mb-12;
-  width: 0px;
-    padding: 11px 12px;
-    height: 15px;
-    border: 1.5px solid #fff;
-    border-radius: 21px;
-    opacity: .75;
-    box-sizing: content-box;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
 }
-.scroller {
-  width: 3px;
-  height: 10px;
-  border-radius: 25%;
-  background-color: #fff;
-  animation-name: scroll;
-  animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-  animation-iteration-count: infinite;
+.cd-words-wrapper b.is-visible {
+  position: relative;
 }
-@keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
+
+
+/* --------------------------------
+
+xrotate-2
+
+-------------------------------- */
+// .cd-headline.rotate-2 .cd-words-wrapper {
+//   perspective: 300px;
+// }
+.cd-headline.rotate-2 i, .cd-headline.rotate-2 em {
+  display: inline-block;
+  backface-visibility: hidden;
+}
+.cd-headline.rotate-2 i {
+  transform-style: preserve-3d;
+  transform: translateZ(-20px) rotateX(90deg);
+  opacity: 0;
+}
+.is-visible .cd-headline.rotate-2 i {
+  opacity: 1;
+}
+.cd-headline.rotate-2 i.in {
+  animation: cd-rotate-2-in 0.4s forwards;
+}
+.cd-headline.rotate-2 i.out {
+  animation: cd-rotate-2-out 0.4s forwards;
+}
+.cd-headline.rotate-2 em {
+  transform: translateZ(20px);
+}
+
+.no-csstransitions .cd-headline.rotate-2 i {
+  transform: rotateX(0deg);
+  opacity: 0;
+}
+.no-csstransitions .cd-headline.rotate-2 i em {
+  transform: scale(1);
+}
+
+.no-csstransitions .cd-headline.rotate-2 .is-visible i {
+  opacity: 1;
+}
+
+@keyframes cd-rotate-2-in {
+  0% {
+    opacity: 0;
+    transform: translateZ(-20px) rotateX(90deg);
+  }
+  60% {
+    opacity: 1;
+    transform: translateZ(-20px) rotateX(-10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(-20px) rotateX(0deg);
+  }
+}
+
+@keyframes cd-rotate-2-out {
+  0% {
+    opacity: 1;
+    transform: translateZ(-20px) rotateX(0);
+  }
+  60% {
+    opacity: 0;
+    transform: translateZ(-20px) rotateX(-100deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-20px) rotateX(-90deg);
+  }
 }

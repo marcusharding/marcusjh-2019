@@ -20,6 +20,8 @@ $testimonials = get_posts(array(
     )
 );
 
+$workWith = array(1, 2, 3, 4);
+
 ?>
 
 <!-------------------------
@@ -28,20 +30,19 @@ $testimonials = get_posts(array(
 <section>
 	<?= Utils\ob_load_template_part('templates/03-components/homepage_hero/homepage-hero', [
 		'video' => get_field('homepage_video'),
-		'heading' => get_field('heading'),
 		'subHeading' => get_field('sub_heading'),
 	]); ?>
 </section>
 
 <!-------------------------
- ABOUT 
+ ABOUT
 --------------------------->
-<section class="bg-primary py-12 lg:py-24 relative about-svg__container">
+<section id="aboutSection" class="bg-primary py-12 lg:py-24 relative about-svg__container">
 	<div class="wrapper">
 		<p class="text-white text-2xl text-bold pb-12">What do I do</p>
 		<?= Utils\ob_load_template_part('templates/02-partials/what-i-do/what-i-do', [
 			'heading' => get_field('caption_text'),
-			'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies ornare tristique. Sed ac orci ligula. Duis fermentum quam facilisis congue molestie. Morbi id tempus tortor, quis vestibulum risus. Cras iaculis sagittis ultrices. Vestibulum vel auctor urna, ac vulputate risus. Suspendisse maximus metus erat, id accumsan est convallis non.'
+			'text' => get_field('about_text')
 		]); ?>
 	</div>
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="-450 150 900 800">
@@ -60,7 +61,83 @@ $testimonials = get_posts(array(
 		<p class="wrapper text-grey-900 text-2xl text-bold pb-12">What I work with</p>
 		<div class="wrapper">
 			<?= Utils\ob_load_template_part('templates/02-partials/what-i-work-with/work-with.php', [
-			
+				'fakeArray' => $workWith,
+				'title0' => 'Front-End',
+				'title1' => 'Back-End',
+				'title2' => 'FrameWorks',
+				'title3' => 'CMS',
+				'classNames0' => 'w-16 h-auto',
+				'classNames1' => 'w-16 h-auto',
+				'classNames2' => 'w-16 h-auto',
+				'classNames3' => 'w-24 h-auto',
+				'technologies0' => [
+					[
+						'title' => 'html5',
+						'href' => '',
+						'iconWidth' => '',
+					],
+					[
+						'title' => 'css3',
+						'href' => '',
+						'iconWidth' => '',
+					],
+					[
+						'title' => 'sass',
+						'href' => '',
+						'iconWidth' => '',
+					],
+					[
+						'title' => 'tailwind',
+						'href' => '',
+						'iconWidth' => '',
+					],
+					[
+						'title' => 'js',
+						'href' => '',
+						'iconWidth' => '',
+					],
+				],
+				'technologies1' => [
+					[
+						'title' => 'php',
+						'href' => '',
+						'iconWidth' => '',
+					],
+					[
+						'title' => 'git',
+						'href' => '',
+						'iconWidth' => '',
+					],
+				],
+				'technologies2' => [
+					[
+						'title' => 'twig',
+						'href' => '',
+						'iconWidth' => '',
+					],
+					[
+						'title' => 'react',
+						'href' => '',
+						'iconWidth' => '',
+					],
+				],
+				'technologies3' => [
+					[
+						'title' => 'craft',
+						'href' => '',
+						'iconWidth' => '',
+					],
+					[
+						'title' => 'wordpress',
+						'href' => '',
+						'iconWidth' => '',
+					],
+					[
+						'title' => 'netlify',
+						'href' => '',
+						'iconWidth' => '',
+					],
+				],
 			])?>
 		</div>
 	</div>

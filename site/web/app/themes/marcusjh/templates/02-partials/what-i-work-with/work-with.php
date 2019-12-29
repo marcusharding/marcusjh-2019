@@ -2,21 +2,23 @@
 use marcusjh\lib\Extras;
 use marcusjh\lib\Utils;
 
-$fakeArray = array(1, 1, 1, 1);
+
+
 ?>
 
 <div class="flex justify-between">
     <?php foreach($fakeArray as $i => $item): ?>
+
+        <?php $technologies = ${'technologies'.$i}; ?>
+        <?php $heading = ${'title'.$i}; ?>
+        <?php $classNames = ${'classNames'.$i}; ?>
+
         <?= Utils\ob_load_template_part('templates/03-components/teaser/teaser-work-with.php', [
             'theme' => 'dark',
-            'className' => 'w-32 h-32',
-            'technologies' => [
-                [
-                    'title' => 'twig',
-                    'href' => '',
-                    'iconWidth' => ''
-                ]
-            ]
+            'className' => $classNames,
+            'heading' => $heading,
+            'technologies' => $technologies,
+            'index' => $i,
         ])?>
     <?php endforeach; ?>
 </div>

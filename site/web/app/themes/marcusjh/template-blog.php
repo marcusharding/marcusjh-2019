@@ -16,14 +16,14 @@ $quotes = get_posts(array(
 <!-------------------------
 PAGE HERO
 --------------------------->
-<section class="relative h-screen">
-    <?= Utils\ob_load_template_part('templates/03-components/generic_hero/generic_hero'); ?>
+<section class="relative bg-primary h-screen">
+
 </section>
 
 <!-------------------------
- QUOTE OF THE DAY 
+ QUOTE OF THE DAY
 --------------------------->
-<section class="bg-primary h-screen flex flex-col justify-center">
+<section class="bg-grey-700 h-screen flex flex-col justify-center">
 	<div class="wrapper py-24">
 		<p class="text-white uppercase py-12 text-xl text-bold">Quote of the day</p>
 		<?= Utils\ob_load_template_part('templates/03-components/quote/quote' , [

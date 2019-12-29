@@ -4,6 +4,8 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
 
+  mode: 'none',
+
   // Paths
   // const rootDir = path.resolve(__dirname + '/site/web/app/themes/marcusjh/assets');
   // const outputDir = 'dist';

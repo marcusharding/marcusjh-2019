@@ -70,3 +70,10 @@
     @apply border-none p-0;
   }
 }
+
+.g-nav__link.page-active {
+    &:after {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}

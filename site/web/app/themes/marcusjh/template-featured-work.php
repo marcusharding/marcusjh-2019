@@ -13,17 +13,12 @@ $projects = get_posts(array(
 );
 ?>
 
-<!-------------------------
-PAGE HERO
---------------------------->
-<section class="relative h-screen">
-    <?= Utils\ob_load_template_part('templates/03-components/generic_hero/generic_hero'); ?>
-</section>
+
 
 <!-------------------------
  ARHIVE FEATURED WORK
 --------------------------->
-<section class="bg-white py-12 lg:py-24">
+<section class="bg-grey-700 py-12 lg:py-24 h-screen flex justify-center items-center">
 	<div class="wrapper">
 		<?= Utils\ob_load_template_part('templates/02-partials/featured_work/featured_work' , [
 			'projects' => $projects

@@ -18,7 +18,6 @@ let gulp = require('gulp')
   webpack_config = require('./webpack.config.js')
   cleanCSS = require('gulp-clean-css')
   purgecss = require('gulp-purgecss')
-
 // ==========================================================================
 // # PATHS
 // ==========================================================================
@@ -80,11 +79,11 @@ function style() {
         .on('error', sass.logError)
         // Use postcss with autoprefixer and compress the compiled file using cssnano
         .pipe(postcss([cssnano(), require('tailwindcss'), autoprefixer()]))
-        // Include cleanCSS 
+        // Include cleanCSS
         .pipe(cleanCSS({compatibility: 'ie8'}))
         // Write the sourcemaps
         .pipe(sourcemaps.write())
-        // purge css 
+        // purge css
         // .pipe(purgecss({
         //   content: paths.styles.src
         // })
@@ -94,12 +93,12 @@ function style() {
         .pipe(browserSync.stream())
     )
   }
-  
+
   // A simple task to reload the page
   function reload() {
       browserSync.reload()
       return (
-          clean(),
+          // clean(),
           style(),
           webpack()
       )

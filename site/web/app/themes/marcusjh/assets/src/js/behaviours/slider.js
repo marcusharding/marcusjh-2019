@@ -25,7 +25,7 @@ const slide = new Glide(node, {
 })
 
     slide.mount({
- Controls, Breakpoints, Keyboard, Swipe 
+ Controls, Breakpoints, Keyboard, Swipe,
 })
 
 return () => {

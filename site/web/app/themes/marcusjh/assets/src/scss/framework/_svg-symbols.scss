@@ -132,3 +132,16 @@
     }
 }
 
+.icon--react {
+    width: rem(18px);
+    &:after {
+        padding-bottom: 83.33333333333334%;
+    }
+}
+.icon--netlify {
+    width: rem(18px);
+    &:after {
+        padding-bottom: 83.33333333333334%;
+    }
+}
+
