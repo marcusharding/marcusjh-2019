@@ -1,3 +1,8 @@
+<?php
+use marcusjh\lib\Extras;
+use marcusjh\lib\Utils;
+?>
+
 
 <!-- HERO -->
 <div class="section-video">
@@ -20,6 +25,44 @@
 			<h2 class="text-white mb-8 text-light cd-subhead"><?= $subHeading; ?></h2>
     </div>
     <a data-scroll href="#aboutSection" class="btn btn--white">Find out more</a>
+  </div>
+  <div class="absolute right-0 bottom-0 mr-4 mb-4">
+    <?= Utils\ob_load_template_part('templates/03-components/social/social.php', [
+      'theme' => 'light',
+      'className' => 'w-8 h-8',
+      'social' => [
+        [
+          'title' => 'email',
+          'href' => '',
+          'iconWidth' => 'mailto:marcus@marcusjh.co.uk',
+          'className' => 'self-end'
+        ],
+        [
+          'title' => 'linkedin',
+          'href' => 'https://www.linkedin.com/in/marcusjh/',
+          'iconWidth' => '',
+          'className' => 'self-end'
+        ],
+        [
+          'title' => 'github',
+          'href' => 'https://github.com/marcusharding',
+          'iconWidth' => '',
+          'className' => 'self-end'
+        ],
+        [
+          'title' => 'instagram',
+          'href' => 'https://www.instagram.com/marcusjhdev/',
+          'iconWidth' => '',
+          'className' => 'self-end'
+        ],
+        [
+          'title' => 'twitter',
+          'href' => 'https://twitter.com/marcusjhdev',
+          'iconWidth' => '',
+          'className' => 'self-end'
+        ],
+      ]
+    ]); ?>
 	</div>
 </div>
 

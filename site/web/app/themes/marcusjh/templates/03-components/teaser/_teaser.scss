@@ -31,8 +31,10 @@
 
 // WORK WITH TEASER
 .teaser-work-with__container{
+  display: flex;
   @apply bg-white p-4;
   border: #111517 solid;
+  height: 200px;
   border-radius: 5px;
   border-width: 0px;
   box-shadow: 0px 4px 12px rgba(17, 21, 23, 0.7);
@@ -41,3 +43,23 @@
     transform: scale(1.05);
   }
 }
+
+.teaser-work-with__container:hover ~ .teaser-work-with__span {
+  transform: scale(1.05);
+}
+
+.teaser-work-with__span {
+  border: #111517 solid;
+    border-radius: 5px;
+    border-width: 0px;
+    box-shadow: 0px 4px 12px rgba(17, 21, 23, 0.7);
+    padding: 6px;
+    background-color: #f5f5f5;
+}
+
+.teaser-work-with__span {
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+

@@ -2,7 +2,7 @@
 FOOTER
 ------------>
 
-<?php 
+<?php
 use marcusjh\lib\Extras;
 use marcusjh\lib\Utils;
 
@@ -28,27 +28,33 @@ $menu = wp_get_nav_menu_items( 'primary_menu');
 					'theme' => 'light',
 					'className' => 'w-6 h-6',
 					'social' => [
-						[
-							'title' => 'twitter',
+            [
+							'title' => 'email',
 							'href' => '',
-							'iconWidth' => '',
+							'iconWidth' => 'mailto:marcus@marcusjh.co.uk',
 							'className' => 'self-end'
-						],
-						[
+            ],
+            [
 							'title' => 'linkedin',
 							'href' => 'https://www.linkedin.com/in/marcusjh/',
 							'iconWidth' => '',
 							'className' => 'self-end'
-						],
-						[
-							'title' => 'email',
-							'href' => '',
-							'iconWidth' => '',
-							'className' => 'self-end'
-						],
-						[
+            ],
+            [
 							'title' => 'github',
 							'href' => 'https://github.com/marcusharding',
+							'iconWidth' => '',
+							'className' => 'self-end'
+            ],
+            [
+              'title' => 'instagram',
+              'href' => 'https://www.instagram.com/marcusjhdev/',
+              'iconWidth' => '',
+              'className' => 'self-end'
+            ],
+						[
+							'title' => 'twitter',
+							'href' => 'https://twitter.com/marcusjhdev',
 							'iconWidth' => '',
 							'className' => 'self-end'
 						],
@@ -61,6 +67,6 @@ $menu = wp_get_nav_menu_items( 'primary_menu');
 		</div>
 	</div>
 </footer>
-    
+
 
 <?php wp_footer(); ?>
