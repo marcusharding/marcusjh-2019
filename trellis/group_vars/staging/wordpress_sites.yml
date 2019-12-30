@@ -5,9 +5,9 @@
 wordpress_sites:
   marcusjh.staging:
     site_hosts:
-      - canonical: marcusjh.staging.co.uk
-        # redirects:
-        #   - www.marcusjh.co.uk
+      - canonical: marcusjh-2019.marcusjh.co.uk
+        redirects:
+          - www.marcusjh-2019.marcusjh.co.uk
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:marcusharding/marcusjh-2019.git # replace with your Git repo URL
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
