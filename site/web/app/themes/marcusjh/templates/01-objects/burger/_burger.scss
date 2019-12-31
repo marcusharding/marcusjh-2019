@@ -1,7 +1,11 @@
 .o-burger {
-	// position: relative;
+  // position: relative;
+  width: 2rem;
+  height: 2rem;
+  @screen lg {
 	width: 2.5rem;
-	height: 2.5rem;
+  height: 2.5rem;
+  }
 
 	&.is-active {
 		.o-burger__slice--mid {

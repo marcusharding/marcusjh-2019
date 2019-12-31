@@ -13,7 +13,7 @@ if($index == 3){
 }
 ?>
 
-<div class="w-1/5">
+<div class="mx-auto pb-8 lg:pb-0  w-5/6 lg:w-1/5">
   <div class="teaser-work-with__container">
     <div class="flex flex-wrap w-full justify-center items-center">
         <?php foreach($technologies as $item):?>

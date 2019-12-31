@@ -18,8 +18,8 @@ use marcusjh\lib\Utils;
 				<span class="uppercase">Bespoke</span>
 				<span class="cd-words-wrapper">
 					<b class="is-visible uppercase">Websites</b>
-					<b class="uppercase">Designs</b>
-					<b class="uppercase">Applications</b>
+					<b class="uppercase w-full">Designs</b>
+					<b class="uppercase w-full">Applications</b>
 				</span>
 			</h1>
 			<h2 class="text-white mb-8 text-light cd-subhead"><?= $subHeading; ?></h2>
@@ -29,12 +29,12 @@ use marcusjh\lib\Utils;
   <div class="absolute right-0 bottom-0 mr-4 mb-4">
     <?= Utils\ob_load_template_part('templates/03-components/social/social.php', [
       'theme' => 'light',
-      'className' => 'w-8 h-8',
+      'className' => 'w-4 h-4 lg:w-8 lg:h-8',
       'social' => [
         [
           'title' => 'email',
-          'href' => '',
-          'iconWidth' => 'mailto:marcus@marcusjh.co.uk',
+          'href' => 'mailto:marcus@marcusjh.co.uk',
+          'iconWidth' => '',
           'className' => 'self-end'
         ],
         [

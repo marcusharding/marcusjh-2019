@@ -37,11 +37,17 @@ em {
 
 
 .cd-headline {
+  font-size: 1.7rem;
+  @screen lg{
   font-size: 4rem;
+  }
 }
 
 .cd-subhead {
+  font-size: 1.5rem;
+  @screen lg{
   font-size: 3.5rem;
+  }
 }
 
 .cd-words-wrapper {

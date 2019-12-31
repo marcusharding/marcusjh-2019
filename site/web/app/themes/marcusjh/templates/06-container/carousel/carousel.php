@@ -32,13 +32,13 @@ data-module="slider"
 
         </div>
     <?php endif; ?>
-    
-    <?php if($pagination == true): ?>
+
+    <!-- <?php if($pagination == true): ?> -->
         <div class="glide__bullets wrapper flex justify-center" data-glide-el="controls[nav]">
             <?php foreach($slides as $i => $slide): ?>
                 <button class="glide__bullet text-white" data-glide-dir="=<?= $i; ?>"></button>
             <?php endforeach; ?>
         </div>
-    <?php endif; ?>
+    <!-- <?php endif; ?> -->
 
 </div>

@@ -22,6 +22,13 @@ $testimonials = get_posts(array(
 
 $workWith = array(1, 2, 3, 4);
 
+$slides = array();
+foreach($workWith as $slide):
+    $slides[] =  Utils\ob_load_template_part('templates/07-slides/slide-featured-work', [
+        'slide' => $slide
+    ]);
+endforeach;
+
 ?>
 
 <!-------------------------
@@ -165,8 +172,11 @@ TESTIMONIALS
 		<p class="text-grey-900 text-2xl text-bold pb-12">Featured Work</p>
 		<?= Utils\ob_load_template_part('templates/02-partials/featured_work/featured_work' , [
 			'projects' => $projects
-		]); ?>
-	</div>
+    ]); ?>
+    <div class="text-center pt-8">
+      <a href="/featured-work" class="btn btn--black">View More</a>
+    </div>
+  </div>
 </section>
 
 <!-------------------------

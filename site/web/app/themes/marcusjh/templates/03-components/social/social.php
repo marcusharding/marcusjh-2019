@@ -22,9 +22,10 @@ if ( empty($flexModifier) ) $flexModifier = '';
     ?>
 
     <li class="mr-2">
-        <a href="<?= $item['href']; ?>"
+        <a  data-module="emailClipboard"
+            href="<?= $item['href']; ?>"
             target=""
-            class="<?= $className; ?> flex items-center justify-center <?= $themeModifier; ?>"
+            class="<?= $className; ?> flex items-center justify-center <?= $themeModifier; ?> icons"
         >
             <?= Utils\ob_load_template_part('templates/08-helpers/icon/icon.php', [
                 'name' => $item['title'],

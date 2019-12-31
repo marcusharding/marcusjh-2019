@@ -40,6 +40,9 @@ $is-oldie: false !default;
 @import 'framework/typography';
 @import 'framework/svg-symbols';
 
+// SNIPPETS
+@import 'snippets/mailto';
+
 // HAMBURGER MENU
 @import 'hamburger/hamburgers.scss';
 

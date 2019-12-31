@@ -10,7 +10,7 @@
     transition: transform 600ms ease;
   }
   &.on-scroll {
-    height: auto;
+    height: 35px;
     background-color: rgba(0, 0, 0, 1);
     .header-wrapper {
       transform: translateY(-35%);
@@ -23,5 +23,12 @@
         font-size: 1rem;
       }
     }
+    .o-burger {
+      transform: scale(0.8);
+    }
   }
+}
+
+.o-burger{
+  transition: 300ms;
 }

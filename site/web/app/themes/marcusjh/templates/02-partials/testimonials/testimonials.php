@@ -24,6 +24,19 @@ endforeach;
             'before' => 100,
             'after' => 100
         ],
+        'breakpoints' => [
+          '640' => [
+            'perView' => 1,
+            'peek' => [
+              'before' => 0,
+              'after' => 50
+          ],
+          'focusAt' => 0,
+        ],
+        '768' => [
+          'perView' => 1,
+        ]
+          ],
     ],
     'slides' => $slides
 ]);?>

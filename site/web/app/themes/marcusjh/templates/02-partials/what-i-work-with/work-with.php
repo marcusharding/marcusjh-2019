@@ -1,12 +1,9 @@
 <?php
 use marcusjh\lib\Extras;
 use marcusjh\lib\Utils;
-
-
-
 ?>
 
-<div class="flex justify-between">
+<div class="lg:flex lg:justify-between">
     <?php foreach($fakeArray as $i => $item): ?>
 
         <?php $technologies = ${'technologies'.$i}; ?>
