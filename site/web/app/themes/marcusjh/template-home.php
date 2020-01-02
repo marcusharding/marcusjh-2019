@@ -34,7 +34,7 @@ endforeach;
 <!-------------------------
  HOMEPAGE HERO
 --------------------------->
-<section>
+<section class="h-screen">
 	<?= Utils\ob_load_template_part('templates/03-components/homepage_hero/homepage-hero', [
 		'video' => get_field('homepage_video'),
 		'subHeading' => get_field('sub_heading'),

@@ -5,7 +5,7 @@ use Roots\Sage\Wrapper;
 <!doctype html>
 <html <?php language_attributes(); ?>>
     <?php get_template_part('head'); ?>
-    <body data-module="smoothScroll" <?php body_class(); ?>>
+    <body data-module="smoothScroll" class="bodyNav" <?php body_class(); ?>>
         <div style="display: none">
             <?php include 'assets/dist/svg/spritesheet.svg' ?>
         </div>

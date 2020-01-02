@@ -12,6 +12,13 @@ body {
   margin: 0;
 }
 
+.bodyNav{
+  &.g-nav{
+  height: 100vh;
+  overflow-y: hidden;
+  }
+}
+
 i {
   font-style: normal!important;
 }
