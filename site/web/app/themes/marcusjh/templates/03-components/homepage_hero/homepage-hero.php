@@ -29,7 +29,7 @@ use marcusjh\lib\Utils;
   <div class="absolute right-0 bottom-0 mr-4 mb-4">
     <?= Utils\ob_load_template_part('templates/03-components/social/social.php', [
       'theme' => 'light',
-      'className' => 'w-4 h-4 lg:w-8 lg:h-8',
+      'className' => 'w-6 h-6 lg:w-8 lg:h-8',
       'social' => [
         [
           'title' => 'email',
