@@ -14825,14 +14825,17 @@ var map = {
 	"./instagram.svg": 22,
 	"./js.svg": 23,
 	"./linkedin.svg": 24,
-	"./netlify.svg": 25,
-	"./php.svg": 26,
-	"./react.svg": 27,
-	"./sass.svg": 28,
-	"./tailwind.svg": 29,
-	"./twig.svg": 30,
-	"./twitter.svg": 31,
-	"./wordpress.svg": 32
+	"./logomark.svg": 25,
+	"./mysql.svg": 26,
+	"./netlify.svg": 27,
+	"./php.svg": 28,
+	"./pwa-logo.svg": 29,
+	"./react.svg": 30,
+	"./sass.svg": 31,
+	"./tailwind.svg": 32,
+	"./twig.svg": 33,
+	"./twitter.svg": 34,
+	"./wordpress.svg": 35
 };
 
 
@@ -15012,6 +15015,36 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon--logomark-usage",
+      viewBox: "0 0 40 40",
+      url: "../svg/" + "spritesheet.svg#icon--logomark",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+/* 26 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon--mysql-usage",
+      viewBox: "-18.458 6.58 191.151 132.49",
+      url: "../svg/" + "spritesheet.svg#icon--mysql",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+/* 27 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
       id: "icon--netlify-usage",
       viewBox: "0 0 182 47",
       url: "../svg/" + "spritesheet.svg#icon--netlify",
@@ -15021,7 +15054,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 26 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15036,7 +15069,22 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 27 */
+/* 29 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon--pwa-logo-usage",
+      viewBox: "0 -1.741 256 97.927",
+      url: "../svg/" + "spritesheet.svg#icon--pwa-logo",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15051,7 +15099,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 28 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15066,7 +15114,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 29 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15081,7 +15129,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 30 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15096,7 +15144,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 31 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15111,7 +15159,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 32 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
