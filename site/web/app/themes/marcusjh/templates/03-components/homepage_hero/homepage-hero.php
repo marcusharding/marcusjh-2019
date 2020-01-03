@@ -26,7 +26,7 @@ use marcusjh\lib\Utils;
     </div>
     <a data-scroll href="#aboutSection" class="btn btn--white">Find out more</a>
   </div>
-  <div class="absolute right-0 bottom-0 mr-4 mb-8 lg:mb-4">
+  <div class="absolute right-0 bottom-0 mr-4 mb-4">
     <?= Utils\ob_load_template_part('templates/03-components/social/social.php', [
       'theme' => 'light',
       'className' => 'w-6 h-6 lg:w-8 lg:h-8',

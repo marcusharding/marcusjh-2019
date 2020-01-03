@@ -23,12 +23,7 @@ em {
   background-color: black;
   width: 100%;
   overflow: hidden;
-  height: 100vh;
-  @supports (-webkit-appearance:none) {
-    .os-android & {
-      min-height: calc(100vh - 56px);
-    }
-  }
+  height: 100%;
 }
 
 .section-video video {
