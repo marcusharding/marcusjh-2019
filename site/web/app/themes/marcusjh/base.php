@@ -19,22 +19,14 @@ use Roots\Sage\Wrapper;
             get_template_part('templates/04-global/header/header');
         ?>
         <div class="h-full" role="document">
-                <main class="main h-full">
-                    <?php include Wrapper\template_path(); ?>
-                </main><!-- /.main -->
-                <?php if (false) : ?>
-                    <aside class="sidebar">
-                        <?php include Wrapper\sidebar_path(); ?>
-                    </aside><!-- /.sidebar -->
-                <?php endif; ?>
-                <!-- /.content -->
+          <main class="main h-full">
+              <?php include Wrapper\template_path(); ?>
+              <?php
+                do_action('get_footer');
+                get_template_part('templates/04-global/footer/footer');
+                wp_footer();
+              ?>
+          </main><!-- /.main -->
         </div><!-- /.wrap -->
-        <div class="footer-wrapper">
-          <?php
-              do_action('get_footer');
-              get_template_part('templates/04-global/footer/footer');
-              wp_footer();
-          ?>
-        </div>
     </body>
 </html>
