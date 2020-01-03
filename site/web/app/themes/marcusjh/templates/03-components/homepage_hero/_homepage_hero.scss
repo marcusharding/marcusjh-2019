@@ -13,14 +13,9 @@ em {
 }
 
 // Home hero container
-.home-hero__header {
-  @apply h-screen;
-  @supports (-webkit-appearance:none) {
-    .os-android & {
-      min-height: calc(100vh - 56px);
-    }
-  }
-}
+// .home-hero__header {
+//   min-height: calc(100vh - 56px);
+// }
 
 
 .section-video {
@@ -29,6 +24,11 @@ em {
   width: 100%;
   overflow: hidden;
   height: 100vh;
+  @supports (-webkit-appearance:none) {
+    .os-android & {
+      min-height: calc(100vh - 56px);
+    }
+  }
 }
 
 .section-video video {

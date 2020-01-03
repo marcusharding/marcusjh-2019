@@ -12,7 +12,7 @@ use marcusjh\lib\Utils;
 			<source src="<?= $video['url']; ?>" type="video/mp4">
 		</video>
 	<?php endif; ?>
-	<div class="wrapper h-screen flex flex-col justify-center items-center relative text-center">
+	<div class="wrapper h-full flex flex-col justify-center items-center relative text-center">
 		<div class="pb-12">
 			<h1 data-module="animatedHeadline" class="text-white text-bold uppercase cd-headline letters rotate-2">
 				<span class="uppercase w-full block md:inline">Bespoke</span>
