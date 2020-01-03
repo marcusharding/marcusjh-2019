@@ -12,6 +12,16 @@ em {
   width: 90%;
 }
 
+// Home hero container
+.home-hero__header {
+  @apply h-screen;
+  @supports (-webkit-appearance:none) {
+    .os-android & {
+      min-height: calc(100vh - 56px);
+    }
+  }
+}
+
 
 .section-video {
   position: relative;
