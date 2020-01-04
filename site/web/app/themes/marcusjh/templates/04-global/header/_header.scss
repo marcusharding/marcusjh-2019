@@ -32,3 +32,12 @@
 .o-burger{
   transition: 300ms;
 }
+
+.header-wrapper {
+  width: 100%;
+  @screen lg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  }
+}
