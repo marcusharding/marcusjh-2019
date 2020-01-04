@@ -74,8 +74,8 @@ endforeach;
 				'title2' => 'FrameWorks',
 				'title3' => 'CMS',
 				'classNames0' => 'w-16 h-auto',
-				'classNames1' => 'w-16 h-auto',
-				'classNames2' => 'w-16 h-auto',
+				'classNames1' => 'w-20 h-auto',
+				'classNames2' => 'w-24 h-auto',
 				'classNames3' => 'w-24 h-auto',
 				'technologies0' => [
 					[
@@ -112,6 +112,11 @@ endforeach;
 					],
 					[
 						'title' => 'git',
+						'href' => '',
+						'iconWidth' => '',
+          ],
+          [
+						'title' => 'mysql',
 						'href' => '',
 						'iconWidth' => '',
 					],

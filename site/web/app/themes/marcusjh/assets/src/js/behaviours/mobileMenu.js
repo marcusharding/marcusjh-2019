@@ -7,7 +7,7 @@ function mobileMenu(node) {
   el.onclick = () => {
     siteNav.classList.toggle('is-open')
     burger.classList.toggle('is-active')
-    body.classList.toggle('fixed')
+    body.classList.toggle('overflow-y-hidden')
   }
 }
 

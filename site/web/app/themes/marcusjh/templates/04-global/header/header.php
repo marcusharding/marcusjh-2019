@@ -22,4 +22,3 @@ use marcusjh\lib\Utils;
 	<!-- END Global navigation -->
 </header>
 
-	

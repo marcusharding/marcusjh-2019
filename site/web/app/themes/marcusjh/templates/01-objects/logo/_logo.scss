@@ -1,5 +1,9 @@
 .logo{
     transition: ease 600ms;
+    margin-left: 5%;
+    @screen lg{
+      margin-left: 0;
+    }
 }
 
 .logo-on-scroll{

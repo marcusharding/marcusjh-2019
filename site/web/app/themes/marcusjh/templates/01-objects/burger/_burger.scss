@@ -2,7 +2,9 @@
   // position: relative;
   width: 2rem;
   height: 2rem;
+  margin-right: 5%;
   @screen lg {
+  margin-right: 0;
 	width: 2.5rem;
   height: 2.5rem;
   }

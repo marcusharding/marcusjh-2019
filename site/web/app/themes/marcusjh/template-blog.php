@@ -17,7 +17,10 @@ $quotes = get_posts(array(
 PAGE HERO
 --------------------------->
 <section class="relative bg-primary h-screen">
-
+  <div class="flex justify-center items-center flex-col h-full">
+    <h1 class="text-white text-4xl text-bold">Coming Soon</h1>
+    <p class="text-white text-2xl text-light">Check back for blog posts in the near future</p>
+  </div>
 </section>
 
 <!-------------------------

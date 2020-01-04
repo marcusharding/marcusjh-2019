@@ -10988,7 +10988,7 @@ function mobileMenu(node) {
   el.onclick = () => {
     siteNav.classList.toggle('is-open');
     burger.classList.toggle('is-active');
-    body.classList.toggle('fixed');
+    body.classList.toggle('overflow-y-hidden');
   };
 }
 
@@ -14836,9 +14836,10 @@ var map = {
 	"./react.svg": 30,
 	"./sass.svg": 31,
 	"./tailwind.svg": 32,
-	"./twig.svg": 33,
-	"./twitter.svg": 34,
-	"./wordpress.svg": 35
+	"./tailwindcss-icon.svg": 33,
+	"./twig.svg": 34,
+	"./twitter.svg": 35,
+	"./wordpress.svg": 36
 };
 
 
@@ -15138,6 +15139,21 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon--tailwindcss-icon-usage",
+      viewBox: "0 0 256 154",
+      url: "../svg/" + "spritesheet.svg#icon--tailwindcss-icon",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+/* 34 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
       id: "icon--twig-usage",
       viewBox: "0 0 598.5 748.5",
       url: "../svg/" + "spritesheet.svg#icon--twig",
@@ -15147,7 +15163,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15162,7 +15178,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
