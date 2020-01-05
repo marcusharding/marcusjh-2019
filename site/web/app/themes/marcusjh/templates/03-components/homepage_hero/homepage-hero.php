@@ -13,7 +13,7 @@ use marcusjh\lib\Utils;
 		</video>
 	<?php endif; ?>
 	<div class="wrapper h-full flex flex-col justify-center items-center relative text-center">
-		<div class="pb-12">
+		<div class="pb-12 text-left md:text-center">
 			<h1 data-module="animatedHeadline" class="text-white text-bold uppercase cd-headline letters rotate-2">
 				<span class="uppercase w-full block md:inline">Bespoke</span>
 				<span class="cd-words-wrapper">
@@ -24,7 +24,7 @@ use marcusjh\lib\Utils;
 			</h1>
 			<h2 class="text-white mb-8 text-light cd-subhead"><?= $subHeading; ?></h2>
     </div>
-    <a data-scroll href="#aboutSection" class="btn btn--white">Find out more</a>
+    <a data-scroll href="#aboutSection" class="btn btn--white mr-auto md:mx-auto">Find out more</a>
   </div>
   <div class="absolute right-0 bottom-0 mr-4 mb-4">
     <?= Utils\ob_load_template_part('templates/03-components/social/social.php', [

@@ -102,6 +102,11 @@ endforeach;
 						'title' => 'js',
 						'href' => '',
 						'iconWidth' => '',
+          ],
+          [
+						'title' => 'pwa-logo',
+						'href' => '',
+						'iconWidth' => '',
 					],
 				],
 				'technologies1' => [
