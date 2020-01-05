@@ -3,11 +3,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<meta name="description" content="Marcus Harding Portfolio">
+	<meta name="description" content="MarcusJH Developer">
 	<meta name="author" content="Marcus Harding">
 	<meta name="google-site-verification" content="EQjFhTsKzSdDGVGGaDnUs0Mg4juf65-JD4zO1v_rMFQ" />
-	<link rel="icon" href="/favicon.ico">
+	<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 	<link rel="apple-touch-icon" href="/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 	<title><?php echo get_bloginfo( 'name' ); ?></title>
 	<!-- core CSS -->
 	<link href="<?php echo get_bloginfo('template_directory'); ?>/assets/dist/css/main.css" rel="stylesheet">
