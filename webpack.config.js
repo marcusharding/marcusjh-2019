@@ -1,6 +1,6 @@
-const path = require('path');
-const webpack = require('webpack');
-const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
+const path = require('path')
+const webpack = require('webpack')
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 
 module.exports = {
 

@@ -8,7 +8,7 @@ use marcusjh\lib\Utils;
 <div class="section-video">
 	<div class="overlay"></div>
 	<?php if(!empty($video)): ?>
-		<video autoplay="autoplay" loop="loop" muted="muted" class="opacity-25" playsinline>
+		<video autoplay loop muted playsinline class="opacity-25">
 			<source src="<?= $video['url']; ?>" type="video/mp4">
 		</video>
 	<?php endif; ?>
