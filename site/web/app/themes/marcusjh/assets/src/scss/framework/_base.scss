@@ -21,6 +21,13 @@ em {
   font-style: normal!important;
 }
 
+// Hide ios play button
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
 // FONTS
 
 .text-light {
