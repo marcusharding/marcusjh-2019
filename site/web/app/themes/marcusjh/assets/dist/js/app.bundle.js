@@ -10983,7 +10983,6 @@ function mobileMenu(node) {
   var siteNav = document.getElementById('siteNav');
   var burger = node.querySelector('button');
   var body = document.getElementById('mainBody');
-  console.log(body);
 
   el.onclick = function () {
     siteNav.classList.toggle('is-open');

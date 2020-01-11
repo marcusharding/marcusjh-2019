@@ -12,7 +12,7 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-  <link rel="manifest" href="/manifest.json" />
+  <link rel="manifest" href="<?php echo get_bloginfo('template_directory'); ?>/manifest.json" />
 	<title><?php echo get_bloginfo( 'name' ); ?></title>
 	<!-- core CSS -->
 	<link href="<?php echo get_bloginfo('template_directory'); ?>/assets/dist/css/main.css" rel="stylesheet">
@@ -26,6 +26,6 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-	<link rel="preload" href="/site/web/app/themes/marcusjh/assets/src/fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="<?php echo get_bloginfo('template_directory'); ?>/assets/src/fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link href="<?php echo get_bloginfo('template_directory'); ?>/assets/src/fonts/fonts.css" rel="stylesheet">
 </head>
