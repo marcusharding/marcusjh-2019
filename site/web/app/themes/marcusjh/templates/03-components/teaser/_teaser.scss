@@ -16,6 +16,14 @@
   }
 }
 
+.teaser-featured-work__img-container {
+  border-radius: 5px 5px 0 0;
+}
+
+.teaser-featured-work__img {
+  padding: 5px;
+}
+
 // TESTIMONIAL TEASER
 .testimonial__container{
   @apply bg-white p-8;

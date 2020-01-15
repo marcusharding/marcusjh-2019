@@ -23,8 +23,8 @@
 
 <a href="<?= $postLink; ?>">
     <div class="teaser-featured-work__container">
-        <div class="w-full relative aspect-ratio">
-            <img draggable="false" class="absolute inset-0 object-cover w-full h-full rounded-t" src="<?=$image;?>" />
+        <div class="w-full relative aspect-ratio teaser-featured-work__img-container">
+            <img draggable="false" class="absolute inset-0 object-cover w-full h-full rounded-t teaser-featured-work__img" src="<?=$image;?>" />
         </div>
         <div class="p-8 pt-4">
             <h1 class="text-md text-white text-bold"><?= $slide->post_title; ?></h1>

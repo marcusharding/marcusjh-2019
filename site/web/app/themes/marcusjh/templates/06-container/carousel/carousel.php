@@ -10,7 +10,7 @@ if ( empty($liClassName) ) $liClassName = '';
 
 <div
 id="<?= $id; ?>"
-class="glide w-full relative <?= $className; ?>"
+class="glide w-full relative grabbable <?= $className; ?>"
 data-module="slider"
 <?php if(isset($options)): ?>
     data-options='<?= json_encode($options); ?>'
