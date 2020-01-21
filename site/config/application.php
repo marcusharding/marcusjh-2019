@@ -130,3 +130,7 @@ Config::apply();
 if (!defined('ABSPATH')) {
     define('ABSPATH', $webroot_dir . '/wp/');
 }
+
+// SMTP
+define( 'WPMS_ON', true );
+define( 'WPMS_SMTP_PASS', 'your_password' );
