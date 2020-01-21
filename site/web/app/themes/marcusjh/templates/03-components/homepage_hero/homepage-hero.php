@@ -5,7 +5,7 @@ use marcusjh\lib\Utils;
 
 
 <!-- HERO -->
-<div class="section-video">
+<div id="homepageHeader" class="section-video">
 	<div class="overlay"></div>
 	<?php if(!empty($video)): ?>
 		<video autoplay loop muted playsinline id="headerVideo" class="opacity-25">
@@ -14,7 +14,7 @@ use marcusjh\lib\Utils;
 	<?php endif; ?>
 	<div class="wrapper h-full flex flex-col justify-center items-center relative text-center">
 		<div class="pb-12 text-left md:text-center">
-			<h1 data-module="animatedHeadline" class="text-white text-bold uppercase cd-headline letters rotate-2">
+			<h1 id="animatedHeadline" data-module="animatedHeadline" class="text-white text-bold uppercase cd-headline letters rotate-2">
 				<span class="uppercase w-full block md:inline">Bespoke</span>
 				<span class="cd-words-wrapper">
 					<b class="is-visible uppercase">Websites</b>

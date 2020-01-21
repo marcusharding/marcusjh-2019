@@ -128,3 +128,10 @@ audio {
   vertical-align: middle;
   width: 100%;
 }
+
+// FADEIN
+
+.fade-in-extended {
+	-webkit-animation: fade-in 1.5s linear alternate both;
+	        animation: fade-in 1.5s linear alternate both;
+}
