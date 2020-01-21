@@ -47,9 +47,9 @@
   border-width: 0px;
   box-shadow: 0px 4px 12px rgba(17, 21, 23, 0.7);
   transition: transform 300ms ease;
-  &:hover {
-    transform: scale(1.05);
-  }
+  // &:hover {
+  //   transform: scale(1.05);
+  // }
 }
 
 .teaser-work-with__container:hover ~ .teaser-work-with__span {

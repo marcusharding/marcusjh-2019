@@ -32,6 +32,14 @@ endforeach;
 ?>
 
 <!-------------------------
+SPINNER
+--------------------------->
+<div id="spinner" data-module="spinner" class="">
+  <?= Utils\ob_load_template_part('templates/04-global/spinner/spinner.php', [
+	]); ?>
+</div>
+
+<!-------------------------
  HOMEPAGE HERO
 --------------------------->
 <section class="home-hero__header h-full">
