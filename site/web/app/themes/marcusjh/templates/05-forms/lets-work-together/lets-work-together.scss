@@ -1,7 +1,4 @@
 .form-a__container{
-    @screen lg{
-        @apply flex flex-wrap;
-    }
 
     .form-item{
         @apply text-white mb-4;
@@ -26,21 +23,37 @@
   }
 
     input {
-        background-color: transparent;
-        border: 2px solid white;
-        border-radius: 5px;
+        background-color: transparent !important;
+        border: 2px solid white !important;
+        border-radius: 5px !important;
         width: 100%;
+        color: white !important;
     }
 
     textarea{
-        background-color: transparent;
-        border: 2px solid white;
-        border-radius: 5px;
+        background-color: transparent !important;
+        border: 2px solid white !important;
+        border-radius: 5px !important;
         height: 85%;
         width: 100%;
+        color: white !important;
     }
 
     .submit-button{
+      background-color: transparent !important;
+      border: solid #fff !important;
+      color: #fff !important;
+      transition: background-color .3s ease !important;
+      position: relative !important;
+      text-transform: uppercase !important;
+      padding: 10px 30px !important;
+      font-size: 13px !important;
+    border-radius: 5px !important;
+    display: inline-flex !important;
+    &:hover{
+      color: #000 !important;
+      background-color: #fff !important;
+    }
         input {
             border: none;
         }
