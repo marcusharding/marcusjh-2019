@@ -133,4 +133,4 @@ if (!defined('ABSPATH')) {
 
 // SMTP
 define( 'WPMS_ON', true );
-define( 'WPMS_SMTP_PASS', 'your_password' );
+define( 'WPMS_SMTP_PASS', 'Brendan2013' );
