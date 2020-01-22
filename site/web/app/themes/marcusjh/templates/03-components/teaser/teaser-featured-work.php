@@ -23,7 +23,7 @@
                     <p class="text-white"><?= $tag->name; ?></p>
                   <?php endforeach; ?>
                 </div>
-                <a class="text-white underline" href="<?= $siteLink; ?>">Visit Site</a>
+                <a class="text-white underline" href="<?= $siteLink; ?>" target="_blank">Visit Site</a>
             </div>
         </div>
     </div>
