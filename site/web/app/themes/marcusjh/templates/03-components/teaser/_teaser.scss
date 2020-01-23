@@ -2,11 +2,15 @@
 // FEATURED WORK TEASER
 .teaser-featured-work__container {
   @apply bg-grey-900 mb-8;
+  height: 480px;
   border: #111517 solid;
   border-radius: 5px;
   border-width: 0px;
   box-shadow: 0px 4px 12px rgba(17, 21, 23, 0.7);
   transition: transform 300ms ease;
+  @screen md {
+    height: auto;
+  }
   @screen lg{
     @apply mr-8 mb-0 w-1/3;
   }
