@@ -3,7 +3,7 @@
     $content = get_field('content', $id);
     $siteLink = get_field('site_link', $id);
     $postLink = get_permalink($id);
-    $tags = get_tags($id);
+    $tags = get_the_tags($id);
     $image = get_the_post_thumbnail($id);
 ?>
 
