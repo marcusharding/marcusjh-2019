@@ -18,12 +18,12 @@
                 <?= wp_trim_words($content, 20, '...'); ?>
             </div>
             <div class="flex justify-between items-end">
-                <div class="flex flex-col">
-                  <?php foreach($tags as $i => $tag): ?>
-                    <p class="text-white"><?= $tag->name; ?></p>
-                  <?php endforeach; ?>
-                </div>
-                <a class="text-white underline" href="<?= $siteLink; ?>" target="_blank">Visit Site</a>
+              <div class="flex flex-col">
+                <?php foreach($tags as $i => $tag): ?>
+                  <p class="text-white"><?= $tag->name; ?></p>
+                <?php endforeach; ?>
+              </div>
+              <a class="text-white underline" href="<?= $siteLink; ?>" target="_blank">Visit Site</a>
             </div>
         </div>
     </div>
