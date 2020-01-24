@@ -5,12 +5,22 @@
 use marcusjh\lib\Extras;
 use marcusjh\lib\Utils;
 
-$quotes = get_posts(array(
-    'post_type'   => 'quotes',
-    'post_status' => 'publish',
-    'posts_per_page' => 1,
-    )
+if ( false === ( $quotes = get_transient( 'random_quote' ) ) ) {
+  // It wasn't there, so regenerate the data and save the transient
+
+$args = array(
+  'post_type'   => 'quotes',
+  'orderby'   => 'rand',
+  'posts_per_page' => -1,
+  'post_status' => 'publish',
 );
+
+$quotes = get_posts( $args );
+
+ //Now we store the array for one day.
+  $seconds_until_next_day = strtotime('tomorrow') - time();
+  set_transient( 'random_quote', $quotes, $seconds_until_next_day );
+}
 ?>
 
 <!-------------------------

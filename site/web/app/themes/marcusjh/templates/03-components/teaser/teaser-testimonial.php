@@ -16,6 +16,6 @@
         </div>
     </div>
     <div>
-        <p class="text-primary text-sm lg:text-md"><?= wp_trim_words($testimonialText, 25, '...') ?></p>
+        <p class="text-primary text-sm lg:text-md"><?= wp_trim_words($testimonialText, 70, '...') ?></p>
     </div>
 </div>
