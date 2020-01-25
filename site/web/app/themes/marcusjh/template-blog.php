@@ -11,7 +11,7 @@ if ( false === ( $quotes = get_transient( 'random_quote' ) ) ) {
 $args = array(
   'post_type'   => 'quotes',
   'orderby'   => 'rand',
-  'posts_per_page' => 1,
+  'posts_per_page' => '1',
   'post_status' => 'publish',
 );
 
