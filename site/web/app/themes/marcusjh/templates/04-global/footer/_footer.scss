@@ -10,6 +10,7 @@
     text-transform: uppercase;
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
 
+    @screen lg {
     span{
         position: relative;
         display: inline-block;
@@ -28,7 +29,7 @@
         transition: transform 0.3s;
         font-family: 'Montserrat-Thin';
     }
-    @screen lg {
+
     &:hover{
         span{
             webkit-transform: translateY(-100%);

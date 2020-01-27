@@ -16,21 +16,20 @@ if($index == 3){
 <div class="mx-auto pb-8 lg:pb-0  w-5/6 lg:w-1/5">
   <div class="teaser-work-with__container">
     <div class="flex flex-wrap w-full justify-center items-center">
-        <?php foreach($technologies as $item):?>
-
-            <li class="<?php $modifier; ?> pb-4">
-                <a
-                    target=""
-                    class="<?= $className; ?> flex items-center justify-center"
-                >
-                    <?= Utils\ob_load_template_part('templates/08-helpers/icon/icon', [
-                        'name' => $item['title'],
-                        'className' => 'w-24'
-                    ]); ?>
-                    <span class="visuallyhidden"><?= $item['title'];?></span>
-                </a>
-            </li>
-        <?php endforeach; ?>
+      <?php foreach($technologies as $item):?>
+        <li class="<?php $modifier; ?> pb-4">
+          <a
+              target=""
+              class="<?= $className; ?> flex items-center justify-center"
+          >
+            <?= Utils\ob_load_template_part('templates/08-helpers/icon/icon', [
+                'name' => $item['title'],
+                'className' => 'w-24'
+            ]); ?>
+            <span class="visuallyhidden"><?= $item['title'];?></span>
+          </a>
+        </li>
+      <?php endforeach; ?>
     </div>
   </div>
     <p class="text-center text-medium text-lg">
