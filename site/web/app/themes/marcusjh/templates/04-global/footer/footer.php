@@ -9,7 +9,7 @@ use marcusjh\lib\Utils;
 $menu = wp_get_nav_menu_items( 'primary_menu');
 ?>
 
-<footer class="bg-black h-100 pt-8 relative">
+<footer class="bg-black h-100 pt-8 absolute w-full">
 	<div class="wrapper">
 		<ul class="lg:flex justify-center lg:pb-12">
 			<?php foreach($menu as $item): ?>
