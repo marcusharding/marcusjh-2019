@@ -26,7 +26,7 @@ $quotes = get_posts( $args );
 <!-------------------------
 PAGE HERO
 --------------------------->
-<section class="relative bg-primary h-full">
+<section class="relative bg-primary h-screen">
   <div class="wrapper flex justify-center items-center flex-col h-full text-left lg:text-center">
     <h1 class="text-white text-2xl lg:text-4xl text-bold w-full">Coming Soon</h1>
     <p class="text-white text-xl lg:text-2xl text-light">Check back for blog posts in the near future</p>
