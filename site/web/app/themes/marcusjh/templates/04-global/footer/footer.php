@@ -62,7 +62,7 @@ $menu = wp_get_nav_menu_items( 'primary_menu');
 				]); ?>
 			</div>
 			<div class="text-right">
-				<p class="text-white">Site by <a href="/"><span class="text-extra-bold uppercase">MarcusJH</span></a></p>
+				<p class="text-white">Site by <a href="/" class="uppercase">	<span class="text-extra-bold">marcusjh</span><span class="text-thin">dev</span></a></p>
 			</div>
 		</div>
 	</div>
