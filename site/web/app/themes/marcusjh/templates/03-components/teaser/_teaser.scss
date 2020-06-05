@@ -8,23 +8,22 @@
   border-width: 0px;
   box-shadow: 0px 4px 12px rgba(17, 21, 23, 0.7);
   transition: transform 300ms ease;
+
   @screen md {
     height: auto;
   }
+
   @screen lg{
     @apply mr-8 mb-0 w-1/3;
   }
-
-  @screen lg {
-  &:hover {
-    transform: translateY(-2%);
-  }
-}
 
 }
 
 .teaser-featured-work__content {
   display: grid;
+  a {
+    padding: 10px 15px;
+  }
 }
 
 .teaser-featured-work__img-container {

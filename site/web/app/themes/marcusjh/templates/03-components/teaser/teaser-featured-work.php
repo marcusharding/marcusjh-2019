@@ -14,16 +14,18 @@
         </div>
         <div class="p-8 flex-grow teaser-featured-work__content">
             <h1 class="text-md text-white text-bold"><?= $project->post_title; ?></h1>
-            <div class="text-white mb-4">
+            <div class="text-white mb-8">
                 <?= wp_trim_words($content, 20, '...'); ?>
             </div>
             <div class="flex justify-between items-end">
-              <div class="flex flex-col">
-                <?php foreach($tags as $i => $tag): ?>
-                  <p class="text-white"><?= $tag->name; ?></p>
-                <?php endforeach; ?>
-              </div>
-              <a class="text-white underline" href="<?= $siteLink; ?>" target="_blank">Visit Site</a>
+              <?php if(!empty($tags)): ?>
+                <div class="flex flex-col">
+                  <?php foreach($tags as $i => $tag): ?>
+                    <p class="text-white"><?= $tag->name; ?></p>
+                  <?php endforeach; ?>
+                </div>
+              <?php endif; ?>
+              <a class="btn btn--white ml-auto" href="<?= $siteLink; ?>" target="_blank">View Project</a>
             </div>
         </div>
     </div>

@@ -144,6 +144,11 @@ SPINNER
 						'title' => 'react',
 						'href' => '',
 						'iconWidth' => '',
+          ],
+          [
+						'title' => 'gatsby',
+						'href' => '',
+						'iconWidth' => '',
 					],
 				],
 				'technologies3' => [
@@ -192,7 +197,7 @@ TESTIMONIALS
 			'projects' => $projects
     ]); ?>
     <div class="text-center pt-8">
-      <a href="/featured-work" class="btn btn--black">View More</a>
+      <a href="/featured-work" class="btn btn--black">Find Out More</a>
     </div>
   </div>
 </section>
@@ -204,6 +209,6 @@ LETS WORK TOGETHER
 	<div class="wrapper text-center">
 		<p class="uppercase text-white text-2xl text-bold pb-8">Lets work together</p>
 		<p class="text-white pb-8 text-lg">Have a potential project idea? Then lets talk.</p>
-		<a href="/contact" class="btn btn--white">contact</a>
+		<a href="/contact" class="btn btn--white">contact me</a>
 	</div>
 </section>
