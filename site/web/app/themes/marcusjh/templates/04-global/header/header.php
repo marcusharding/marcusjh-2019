@@ -8,7 +8,7 @@ use marcusjh\lib\Utils;
 ?>
 
 <header data-module="siteHeader" id="siteHeader" class="header">
-	<div class="header-wrapper flex justify-between">
+	<div class="header-wrapper flex justify-between items-center">
 		<!-- Include logo -->
 		<?= Utils\ob_load_template_part('templates/01-objects/logo/logo.php' , [
 		]); ?>

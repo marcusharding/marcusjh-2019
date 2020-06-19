@@ -34,8 +34,8 @@ endforeach;
 <!-------------------------
 SPINNER
 --------------------------->
-<div id="spinner" data-module="spinner" class="">
-  <?= Utils\ob_load_template_part('templates/04-global/spinner/spinner.php', [
+<div id="homeLoading" data-module="homeLoading" class="">
+  <?= Utils\ob_load_template_part('templates/04-global/homeLoading/homeLoading.php', [
 	]); ?>
 </div>
 

@@ -1,10 +1,11 @@
 /* eslint-disable */
+import Headroom from 'headroom.js'
 
 function siteHeader(node) {
+
     const el = node
     const logo = document.getElementById('logo')
     // const scrollPosY = window.pageYOffset | document.body.scrollTop
-
 
     function siteHeaderInit() {
     const scrollPosY = window.pageYOffset | document.body.scrollTop
@@ -32,6 +33,9 @@ function throttled(delay, fn) {
   }
 
   throttled(200, window.addEventListener('scroll', siteHeaderInit))
+
+  const headroom = new Headroom(el)
+  headroom.init()
 }
 
 export default siteHeader

@@ -25,7 +25,7 @@
                   <?php endforeach; ?>
                 </div>
               <?php endif; ?>
-              <a class="btn btn--white ml-auto" href="<?= $siteLink; ?>" target="_blank">View Project</a>
+              <a class="text-white underline ml-auto" href="<?= $siteLink; ?>" target="_blank">View project</a>
             </div>
         </div>
     </div>

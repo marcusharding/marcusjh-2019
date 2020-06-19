@@ -21,9 +21,6 @@
 
 .teaser-featured-work__content {
   display: grid;
-  a {
-    padding: 10px 15px;
-  }
 }
 
 .teaser-featured-work__img-container {
@@ -57,14 +54,9 @@
   border-width: 0px;
   box-shadow: 0px 4px 12px rgba(17, 21, 23, 0.7);
   transition: transform 300ms ease;
-  // &:hover {
-  //   transform: scale(1.05);
-  // }
 }
 
-// .teaser-work-with__container:hover ~ .teaser-work-with__span {
-//   transform: scale(1.05);
-// }
+
 
 .teaser-work-with__span {
   border: #111517 solid;
@@ -75,9 +67,5 @@
     background-color: #f5f5f5;
 }
 
-// .teaser-work-with__span {
-//   &:hover {
-//     transform: scale(1.05);
-//   }
-// }
+
 

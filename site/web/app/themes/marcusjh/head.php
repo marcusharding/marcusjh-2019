@@ -24,7 +24,10 @@
   <link rel="manifest" href="<?php echo get_bloginfo('template_directory'); ?>/manifest.json" />
 	<title><?php echo get_bloginfo( 'name' ); ?></title>
 	<!-- core CSS -->
-	<link href="<?php echo get_bloginfo('template_directory'); ?>/assets/dist/css/main.css" rel="stylesheet">
+  <link href="<?php echo get_bloginfo('template_directory'); ?>/assets/dist/css/main.css" rel="stylesheet">
+  <!-- PACE.JS -->
+  <script src="<?php echo get_bloginfo('template_directory'); ?>/assets/src/js/behaviours/pace.js"></script>
+  <link href="<?php echo get_bloginfo('template_directory'); ?>/assets/src/scss/pace.css" rel="stylesheet" />
 	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 	<script type="module" src="<?php echo get_bloginfo('template_directory'); ?>/assets/dist/js/app.bundle.js"></script>

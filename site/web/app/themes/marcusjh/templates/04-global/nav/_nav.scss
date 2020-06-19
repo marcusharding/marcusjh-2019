@@ -41,29 +41,8 @@
   outline: none;
   text-transform: uppercase;
 
-  // global nav hover after element to show
-  &:after {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.7);
-    content: '';
-    opacity: 0;
-    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
-    transition: opacity 0.3s, transform 0.3s;
-    -webkit-transform: translateY(10px);
-    -moz-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-
   &:hover {
-    &:after {
-      transform: translateY(0px);
-      opacity: 1;
-    }
+    color: #29d;
   }
 
   @screen md {
@@ -72,8 +51,5 @@
 }
 
 .g-nav__link.page-active {
-    &:after {
-      transform: translateY(0px);
-      opacity: 1;
-    }
+    color: #29d;
 }

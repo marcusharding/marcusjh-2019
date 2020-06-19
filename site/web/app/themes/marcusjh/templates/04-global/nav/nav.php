@@ -19,7 +19,7 @@ if ( empty($modifier) ) $modifier = '';
       <?php endif; ?>
 
 			<li class="md:ml-4 lg:flex-auto pb-12 lg:pb-0">
-				<a class="g-nav__link <?= $modifier; ?> text-thin" href="<?= $item->url;?>">
+				<a class="g-nav__link <?= $modifier; ?> text-light" href="<?= $item->url;?>">
 					<?= $item->title; ?>
 				</a>
 			</li>

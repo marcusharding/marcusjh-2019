@@ -16,9 +16,16 @@ $projects = get_posts(array(
 
 
 <!-------------------------
- ARHIVE FEATURED WORK
+ ARCHIVE FEATURED WORK
 --------------------------->
 <section class="bg-grey-700 py-12 lg:py-24 h-screen flex justify-center items-center">
+  <!-- <div class="">
+    <p>Top Notch.</p>
+    <div>
+    <p>Featured Work</p>
+    <p>Find out what can be created with great code and seamless collaboration</p>
+    </div>
+  </div> -->
 	<div class="wrapper">
 		<?= Utils\ob_load_template_part('templates/02-partials/featured_work/featured_work' , [
 			'projects' => $projects
