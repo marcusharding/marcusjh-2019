@@ -11258,15 +11258,18 @@ function emailClipboard() {
 __webpack_require__.r(__webpack_exports__);
 function homeLoading(node) {
   var video = document.getElementById('headerVideo');
-  var body = document.getElementById('mainBody'); // const el = node
+  var body = document.getElementById('mainBody');
+  var delayInMilliseconds = 2000; // const el = node
 
   var container = node.childNodes;
   body.classList.remove('relative');
   body.classList.add('fixed');
   video.addEventListener('loadeddata', function () {
-    body.classList.remove('fixed');
-    body.classList.add('relative');
-    container[1].classList.add('isActive');
+    setTimeout(function () {
+      body.classList.remove('fixed');
+      body.classList.add('relative');
+      container[1].classList.add('isActive');
+    }, delayInMilliseconds);
   });
 }
 

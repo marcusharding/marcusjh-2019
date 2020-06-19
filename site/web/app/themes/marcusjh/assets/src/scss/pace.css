@@ -36,7 +36,7 @@
 }
 
 .pace .pace-activity {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 2000;
   top: 15px;
@@ -53,6 +53,13 @@
   -o-animation: pace-spinner 400ms linear infinite;
   animation: pace-spinner 400ms linear infinite;
 }
+
+@media only screen and (min-width: 1024px) {
+  .pace .pace-activity {
+    display: block;
+  }
+ }
+
 
 @-webkit-keyframes pace-spinner {
   0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
