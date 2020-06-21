@@ -3,9 +3,10 @@ use marcusjh\lib\Extras;
 use marcusjh\lib\Utils;
 
 $slides = array();
-foreach($projects as $slide):
+foreach($projects as $i => $slide):
     $slides[] =  Utils\ob_load_template_part('templates/07-slides/slide-featured-work', [
-        'slide' => $slide
+        'slide' => $slide,
+        'index' => $i
     ]);
 endforeach;
 ?>
@@ -13,9 +14,10 @@ endforeach;
     <?php if(isset($projects)): ?>
         <!-- Desktop -->
         <div class="hidden lg:flex">
-            <?php foreach ($projects as $project) : ?>
+            <?php foreach ($projects as $i => $project) : ?>
                 <?= Utils\ob_load_template_part('templates/03-components/teaser/teaser-featured-work' , [
-                    'project' => $project
+                    'project' => $project,
+                    'index' => $i,
 	            ]); ?>
             <?php endforeach; ?>
         </div>

@@ -8,7 +8,7 @@
 ?>
 
 <!-- <a href=""> -->
-    <div class="teaser-featured-work__container flex flex-col">
+    <div data-aos="fade-up" data-aos-delay="<?= $index . '00';?>" class="teaser-featured-work__container flex flex-col">
         <div class="w-full relative aspect-ratio bg-white teaser-featured-work__img-container">
             <img alt="" draggable="false" class="absolute inset-0 object-cover w-full h-full rounded-t teaser-featured-work__img" src="<?= $image; ?>"> </img>
         </div>

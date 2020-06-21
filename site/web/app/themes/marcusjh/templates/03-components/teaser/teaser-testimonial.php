@@ -2,7 +2,7 @@
     if ( empty($className) ) $className = '';
 ?>
 
-<div class="testimonial__container <?= $className; ?>">
+<div data-aos="fade-up" data-aos-delay="<?= $index . '00';?>" class="testimonial__container <?= $className; ?>">
     <div class="flex justify-between mb-8">
         <div class="w-1/3">
             <div class="w-full relative aspect-ratio">

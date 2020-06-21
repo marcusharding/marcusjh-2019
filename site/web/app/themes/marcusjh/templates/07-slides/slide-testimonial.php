@@ -10,5 +10,6 @@ $id = $slide->ID;
         'position' => get_field('position', $id),
         'company' => get_field('company', $id),
         'image' => get_field('image', $id),
-        'className' => 'h-full'
+        'className' => 'h-full',
+        'index' => $index,
     ]); ?>

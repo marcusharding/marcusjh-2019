@@ -3,9 +3,10 @@ use marcusjh\lib\Extras;
 use marcusjh\lib\Utils;
 
 $slides = array();
-foreach($testimonials as $slide):
+foreach($testimonials as $i => $slide):
     $slides[] =  Utils\ob_load_template_part('templates/07-slides/slide-testimonial.php', [
-        'slide' => $slide
+        'slide' => $slide,
+        'index' => $i,
     ]);
 endforeach;
 ?>
