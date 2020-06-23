@@ -48,6 +48,8 @@ module.exports = {
 			'2xl': px2rem('35px'),
 			'3xl': px2rem('47px'),
 			'4xl': px2rem('80px'),
+			'5xl': px2rem('100px'),
+			'6xl': px2rem('120px'),
 		},
 		colors: {
 			primary: '#111517',

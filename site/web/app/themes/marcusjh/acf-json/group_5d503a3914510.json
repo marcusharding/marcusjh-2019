@@ -1,12 +1,12 @@
 {
     "key": "group_5d503a3914510",
-    "title": "[ SOURCE ] - FEATURED WORK",
+    "title": "[ POST-TYPE ] - FEATURED WORK",
     "fields": [
         {
             "key": "field_5d503a9a7bd32",
             "label": "Content",
             "name": "content",
-            "type": "wysiwyg",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,10 +16,10 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         },
         {
             "key": "field_5d503baf7bd34",
@@ -36,6 +36,30 @@
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_5ef1f1459cb0b",
+            "label": "Main Image",
+            "name": "main_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -55,5 +79,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1565545206
+    "modified": 1592916377
 }

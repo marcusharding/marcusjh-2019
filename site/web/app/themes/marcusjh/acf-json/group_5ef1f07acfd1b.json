@@ -1,0 +1,23 @@
+{
+    "key": "group_5ef1f07acfd1b",
+    "title": "[ PAGE ] - BLOG",
+    "fields": [],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "19"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1592914068
+}
