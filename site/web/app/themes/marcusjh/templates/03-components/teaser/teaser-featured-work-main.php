@@ -11,7 +11,9 @@
 
 <div data-index="<?= $index; ?>" class="small-project__container">
   <div class="aspect-ratio h-auto project-img__container">
+    <a href="<?= $postLink; ?>">
     <img alt="" draggable="false" class="absolute top-0 left-0 w-full h-full rounded-t" src="<?= $main_image; ?>"> </img>
+    </a>
   </div>
   <div class="flex flex-col caption__container">
     <h1 class="text-2xl text-primary text-bold w-2/3"><?= $project->post_title; ?></h1>

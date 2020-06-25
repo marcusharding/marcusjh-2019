@@ -8,13 +8,25 @@ use marcusjh\lib\Extras;
 use marcusjh\lib\Utils;
 
 $id = $post->ID;
+$content = get_field('content', $id);
+$siteLink = get_field('site_link', $id);
+$image = get_the_post_thumbnail($id);
+$main_image = get_field('main_image', $id);
+$hero_image = get_field('hero_image', $id);
+$hero_caption_heading = get_field('hero_caption_heading', $id);
+$hero_caption_content = get_field('hero_caption_content', $id);
 ?>
 
 <!-------------------------
 PAGE HERO
 --------------------------->
 <section class="relative h-screen">
-    <?= Utils\ob_load_template_part('templates/03-components/generic_hero/generic_hero'); ?>
+    <?= Utils\ob_load_template_part('templates/03-components/generic_hero/generic_hero', [
+      'hero' => $hero_image,
+      'captionModifier' => true,
+      'captionHeading' => $hero_caption_heading,
+      'captionContent' => $hero_caption_content
+    ]); ?>
 </section>
 
 <!-------------------------

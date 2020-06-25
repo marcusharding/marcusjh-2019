@@ -11302,8 +11302,22 @@ function featuredWorkLoop(node) {
 
   var arr = _toConsumableArray(featuredProjects);
 
+  var heroProjectIndex = 0;
   arr.forEach(function (project) {
-    return console.log(project);
+    var currentIndex = project.dataset.index;
+    var parsedIndex = parseInt(currentIndex);
+
+    if (parsedIndex === heroProjectIndex + 3) {
+      heroProjectIndex += 3;
+    }
+
+    if (parsedIndex === heroProjectIndex) {
+      project.classList.remove('small-project__container');
+      project.classList.add('hero-project__container');
+    } else {
+      project.classList.remove('hero-project__container');
+      project.classList.add('small-project__container');
+    }
   });
 }
 
