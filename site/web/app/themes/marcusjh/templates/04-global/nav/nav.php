@@ -1,11 +1,14 @@
 <?php
 $menu = wp_get_nav_menu_items( 'primary_menu');
 global $post;
+$id = $post->ID;
+$nav_colour_modifier = get_field('nav_colour_modifier', $id);
 
 if ( empty($modifier) ) $modifier = '';
+if ( empty($nav_colour_modifier) ) $modifier = null;
 ?>
 
-<!-- PAGE ID'S IN RELATION TO OBJECT ID'S
+<!-- PAGE ID'S
 
 Homepage: 7
 Featured work: 17
@@ -28,7 +31,7 @@ Contact: 21
       <?php endif; ?>
 
 			<li class="md:ml-4 lg:flex-auto pb-12 lg:pb-0">
-        <a class="g-nav__link <?= $post->ID === 7 ? 'text-white' : ''; ?> <?= $post->ID === 21 ? 'text-white' : ''; ?> <?= $modifier; ?> text-light" href="<?= $item->url;?>">
+        <a class="g-nav__link <?= $modifier; ?> text-light <?= $nav_colour_modifier === null ? null : 'text-' . $nav_colour_modifier; ?>" href="<?= $item->url;?>">
 					<?= $item->title; ?>
 				</a>
 			</li>

@@ -56,8 +56,6 @@
   transition: transform 300ms ease;
 }
 
-
-
 .teaser-work-with__span {
   border: #111517 solid;
     border-radius: 5px;
@@ -66,6 +64,48 @@
     padding: 6px;
     background-color: #f5f5f5;
 }
+
+// Teaser Featured Work Main
+
+//HERO PROJECT
+.hero-project__container {
+  display: flex;
+  width: 100%;
+
+  .project-img__container {
+    width: 66.666667%;
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .caption__container {
+    width: 33.333333%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// SMALL PROJECT
+.small-project__container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 1rem;
+
+  .project-img__container {
+    width: 100%;
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .caption__container {
+
+  }
+}
+
+
 
 
 

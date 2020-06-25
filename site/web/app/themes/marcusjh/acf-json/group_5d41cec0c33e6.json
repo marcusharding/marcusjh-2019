@@ -19,6 +19,25 @@
             "endpoint": 0
         },
         {
+            "key": "field_5ef47ed91c759",
+            "label": "nav colour modifier",
+            "name": "nav_colour_modifier",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5d41cee2cdb76",
             "label": "Homepage Video",
             "name": "homepage_video",
@@ -184,5 +203,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1577641203
+    "modified": 1593081608
 }
