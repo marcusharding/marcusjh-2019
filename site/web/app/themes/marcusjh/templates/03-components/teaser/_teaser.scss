@@ -74,8 +74,14 @@
 
   .project-img__container {
     width: 66.666667%;
+    padding-top: 40%;
+
     img {
       object-fit: contain;
+      transition: transform .2s;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -90,13 +96,17 @@
 .small-project__container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 48%;
   // padding-right: 1rem;
 
   .project-img__container {
     width: 100%;
     img {
       object-fit: cover;
+      transition: transform .2s;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 

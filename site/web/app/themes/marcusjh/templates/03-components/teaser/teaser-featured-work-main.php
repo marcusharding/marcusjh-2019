@@ -9,10 +9,11 @@
 
 ?>
 
-<div data-index="<?= $index; ?>" class="small-project__container">
-  <div class="aspect-ratio h-auto project-img__container">
+<div data-index="<?= $index; ?>" class="py-8 small-project__container">
+  <div class="aspect-ratio h-auto project-img__container overflow-hidden rounded-t">
     <a href="<?= $postLink; ?>">
-    <img alt="" draggable="false" class="absolute top-0 left-0 w-full h-full rounded-t" src="<?= $main_image; ?>"> </img>
+        <img alt="" draggable="false" class="absolute top-0 left-0 w-full h-full rounded-t" src="<?= $main_image; ?>"> </img>
+        <div class="project__overlay"></div>
     </a>
   </div>
   <div class="flex flex-col caption__container">

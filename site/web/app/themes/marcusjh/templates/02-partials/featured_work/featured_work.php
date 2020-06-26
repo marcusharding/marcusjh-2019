@@ -15,7 +15,7 @@ Contact: 21
 
     <?php if(isset($projects)): ?>
         <!-- Desktop -->
-        <div data-module="featuredWorkLoop" class="hidden lg:flex <?= $post->ID === 7 ? null : 'lg:flex-wrap'; ?>">
+        <div data-module="featuredWorkLoop" class="hidden lg:flex <?= $post->ID === 7 ? null : 'lg:flex-wrap'; ?> justify-between">
           <?php foreach ($projects as $i => $project) : ?>
 
             <?php if($post->ID === 7): ?>
