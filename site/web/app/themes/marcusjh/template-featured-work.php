@@ -28,7 +28,8 @@ $projects = get_posts(array(
   </div>
 	<div class="header-wrapper">
 		<?= Utils\ob_load_template_part('templates/02-partials/featured_work/featured_work' , [
-			'projects' => $projects
+      'projects' => $projects,
+      'heroProjectModifier' => true
 		]); ?>
 	</div>
 </section>

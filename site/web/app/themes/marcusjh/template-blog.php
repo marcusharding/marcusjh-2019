@@ -21,22 +21,37 @@ $quotes = get_posts( $args );
   $seconds_until_next_day = strtotime('tomorrow') - time();
   set_transient( 'random_quote', $quotes, $seconds_until_next_day );
 }
+
+$blogPosts = get_posts(array(
+	'post_type'   => 'post',
+	'post_status' => 'publish',
+	'posts_per_page' => -1,
+	)
+);
 ?>
 
 <!-------------------------
 PAGE HERO
 --------------------------->
-<section class="relative bg-primary h-screen">
-  <div class="wrapper flex justify-center items-center flex-col h-full text-left lg:text-center">
-    <h1 class="text-white text-2xl lg:text-4xl text-bold w-full">Coming Soon</h1>
-    <p class="text-white text-xl lg:text-2xl text-light">Check back for blog posts in the near future</p>
+<section class="py-12 lg:py-24 h-auto flex flex-col justify-center items-center">
+  <div class="py-32 w-full wrapper flex justify-between">
+    <p class="text-primary text-5xl text-SemiBold w-full">My Blog.</p>
+    <div class="flex flex-col items-end">
+    <p class="text-primary pb-6 text-xl text-bold">Find Out</p>
+    <p class="text-primary text-2xl text-right">Everything related to Web Development, Client and personal projects plus much more</p>
+    </div>
   </div>
+	<div class="header-wrapper">
+		<?= Utils\ob_load_template_part('templates/02-partials/blog_posts/blog_posts' , [
+      'blogPosts' => $blogPosts,
+		]); ?>
+	</div>
 </section>
 
 <!-------------------------
  QUOTE OF THE DAY
 --------------------------->
-<section class="bg-grey-700 h-screen flex flex-col justify-center">
+<section class="hero-section__container bg-grey-700 h-screen flex flex-col justify-center mb-24">
 	<div class="wrapper py-24">
 		<p class="text-white uppercase py-12 text-xl text-bold">Quote of the day</p>
 		<?= Utils\ob_load_template_part('templates/03-components/quote/quote' , [

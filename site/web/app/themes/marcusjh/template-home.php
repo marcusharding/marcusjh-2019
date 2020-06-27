@@ -194,7 +194,8 @@ TESTIMONIALS
 	<div class="wrapper relative">
 		<p class="text-grey-900 text-2xl text-bold pb-12">Featured Work</p>
 		<?= Utils\ob_load_template_part('templates/02-partials/featured_work/featured_work' , [
-			'projects' => $projects
+      'projects' => $projects,
+      'heroProjectModifier' => false
     ]); ?>
     <div class="text-center pt-8">
       <a href="/featured-work" class="btn btn--black">Find Out More</a>

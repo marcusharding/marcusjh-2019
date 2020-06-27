@@ -115,6 +115,30 @@
   }
 }
 
+// TEASER BLOG POST
+
+.blog-post__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.blog-post__link {
+  &:hover {
+    .project-img__container {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
 
 
 
