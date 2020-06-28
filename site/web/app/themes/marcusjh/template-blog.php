@@ -34,14 +34,14 @@ $blogPosts = get_posts(array(
 PAGE HERO
 --------------------------->
 <section class="py-12 lg:py-24 h-auto flex flex-col justify-center items-center">
-  <div class="py-32 w-full wrapper flex justify-between">
-    <p class="text-primary text-5xl text-SemiBold w-full">My Blog.</p>
-    <div class="flex flex-col items-end">
+  <div class="py-24 lg:py-32 wrapper flex flex-col lg:flex-row justify-between">
+    <p class="text-primary text-3xl lg:text-5xl text-SemiBold w-full pb-12 lg:pb-0">My Blog.</p>
+    <div class="flex flex-col lg:items-end">
     <p class="text-primary pb-6 text-xl text-bold">Find Out</p>
-    <p class="text-primary text-2xl text-right">Everything related to Web Development, Client and personal projects plus much more</p>
+    <p class="text-primary text-xl lg:text-right">Everything related to Web Development, Client and personal projects plus much more</p>
     </div>
   </div>
-	<div class="header-wrapper">
+	<div class="wrapper-90">
 		<?= Utils\ob_load_template_part('templates/02-partials/blog_posts/blog_posts' , [
       'blogPosts' => $blogPosts,
 		]); ?>

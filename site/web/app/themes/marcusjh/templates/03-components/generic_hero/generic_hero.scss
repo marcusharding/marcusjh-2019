@@ -1,3 +1,7 @@
 .generic-hero{
     @apply relative w-full h-full;
 }
+
+.featured-work-hero__position {
+  object-position: 60%;
+}

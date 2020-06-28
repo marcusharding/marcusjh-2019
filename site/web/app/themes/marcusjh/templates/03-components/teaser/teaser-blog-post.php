@@ -8,7 +8,7 @@
     $title = get_the_title($id);
 ?>
 
-<div data-index="<?= $index; ?>" class="small-project__container relative">
+<div data-index="<?= $index; ?>" class="pb-12 lg:pb-0 small-project__container relative">
   <a href="<?= $postLink; ?>" class="blog-post__link">
     <div class="aspect-ratio h-auto project-img__container overflow-hidden rounded-t">
       <img alt="" draggable="false" class="absolute top-0 left-0 w-full h-full rounded-t" src="<?= $thumbnail; ?>"> </img>

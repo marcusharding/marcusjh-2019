@@ -19,8 +19,8 @@ $projects = get_posts(array(
  ARCHIVE FEATURED WORK
 --------------------------->
 <section class="py-12 lg:py-24 h-auto flex flex-col justify-center items-center">
-  <div class="py-32 w-full wrapper flex justify-between">
-    <p class="text-primary text-5xl text-SemiBold w-full">Top Notch.</p>
+  <div class="py-24 lg:py-32 wrapper flex flex-col lg:flex-row justify-between">
+    <p class="text-primary text-5xl text-SemiBold w-full pb-12 lg:pb-0">Top Notch.</p>
     <div>
     <p class="text-primary pb-6 text-2xl text-medium">Featured Work</p>
     <p class="text-primary text-lg">Find out what can be created with great code and seamless collaboration</p>

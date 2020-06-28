@@ -19,10 +19,10 @@
 );
 ?>
 
-<div class="wrapper py-24 w-full">
-  <div class="w-1/2">
-    <h1 class="text-bold text-3xl">The outcome</h1>
-    <h1 class="text-2xl"><?= $caption_a; ?></h1>
+<div class="wrapper py-12 lg:py-24">
+  <div class="lg:w-1/2">
+    <h1 class="text-bold text-2xl lg:text-3xl">The outcome</h1>
+    <h1 class="text-xl lg:text-2xl"><?= $caption_a; ?></h1>
     <!-- <div class="flex w-1/2 h-full justify-between items-center">
       <div class="w-2/3 h-full relative bg-white">
         <img alt="" draggable="false" class="absolute inset-0 object-cover w-full h-full" src="<?= $thumbnail; ?>"> </img>
@@ -38,12 +38,12 @@
   </div>
 </div>
 
-<div class="wrapper w-full flex flex-col items-end py-24">
-    <h1 class="text-bold text-3xl">Location-Based Application</h1>
+<div class="wrapper flex flex-col lg:items-end py-12 lg:py-24">
+    <h1 class="text-bold text-2xl lg:text-3xl">Location-Based Application</h1>
     <?php if(!empty($tags)): ?>
       <div class="flex flex-col">
         <?php foreach($tags as $i => $tag): ?>
-          <p class="text-2xl"><?= $tag->name; ?></p>
+          <p class="text-xl lg:text-2xl"><?= $tag->name; ?></p>
         <?php endforeach; ?>
       </div>
     <?php endif; ?>
@@ -53,9 +53,9 @@
 
 </div>
 
-<div class="wrapper w-full py-24">
+<div class="py-12 lg:py-24">
 
-  <p class="text-xl text-semiBold">Related Projects</p>
+  <p class="wrapper text-xl text-semiBold">Related Projects</p>
 
   <?= Utils\ob_load_template_part('templates/02-partials/featured_work/featured_work' , [
     'projects' => $projects,

@@ -50,6 +50,22 @@
   position: relative;
 }
 
+.hamburger-modifier-white {
+  &,
+  &::before,
+  &::after {
+    background-color: white;
+  }
+}
+
+.hamburger-modifier-black {
+  &,
+  &::before,
+  &::after {
+    background-color: black;
+  }
+}
+
 .hamburger-inner {
   display: block;
   top: 50%;
@@ -60,7 +76,6 @@
   &::after {
     width: $hamburger-layer-width;
     height: $hamburger-layer-height;
-    background-color: $hamburger-layer-color;
     border-radius: $hamburger-layer-border-radius;
     position: absolute;
     transition-property: transform;
