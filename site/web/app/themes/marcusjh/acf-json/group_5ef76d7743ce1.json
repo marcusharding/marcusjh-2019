@@ -25,7 +25,7 @@
             "key": "field_5ef76d8d1707a",
             "label": "content",
             "name": "content",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -35,10 +35,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -60,5 +60,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1593273870
+    "modified": 1593430939
 }

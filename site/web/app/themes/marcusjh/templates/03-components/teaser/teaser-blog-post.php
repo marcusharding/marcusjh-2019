@@ -13,8 +13,8 @@
     <div class="aspect-ratio h-auto project-img__container overflow-hidden rounded-t">
       <img alt="" draggable="false" class="absolute top-0 left-0 w-full h-full rounded-t" src="<?= $thumbnail; ?>"> </img>
       <div class="blog-post__overlay">
-        <h1 class="text-bold text-white text-xl"><?= $title; ?></h1>
-        <p class="text-white text-lg"><?= $caption; ?></p>
+        <h1 class="text-bold text-white text-lg lg:text-xl"><?= $title; ?></h1>
+        <p class="text-white lg:text-lg"><?= $caption; ?></p>
       </div>
     </div>
   </a>

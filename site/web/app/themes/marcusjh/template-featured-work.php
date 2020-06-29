@@ -11,6 +11,13 @@ $projects = get_posts(array(
 	'posts_per_page' => -1,
 	)
 );
+
+global $post;
+
+$id = $post->ID;
+
+$caption = get_field('caption', $id);
+$heading = get_field('heading', $id);
 ?>
 
 
@@ -20,13 +27,13 @@ $projects = get_posts(array(
 --------------------------->
 <section class="py-12 lg:py-24 h-auto flex flex-col justify-center items-center">
   <div class="py-24 lg:py-32 wrapper flex flex-col lg:flex-row justify-between">
-    <p class="text-primary text-5xl text-SemiBold w-full pb-12 lg:pb-0">Top Notch.</p>
+    <p class="text-primary text-5xl text-SemiBold w-full pb-12 lg:pb-0"><?= $heading; ?></p>
     <div>
     <p class="text-primary pb-6 text-2xl text-medium">Featured Work</p>
-    <p class="text-primary text-lg">Find out what can be created with great code and seamless collaboration</p>
+    <p class="text-primary text-lg"><?= $caption; ?></p>
     </div>
   </div>
-	<div class="header-wrapper">
+	<div class="wrapper-90">
 		<?= Utils\ob_load_template_part('templates/02-partials/featured_work/featured_work' , [
       'projects' => $projects,
       'heroProjectModifier' => true
