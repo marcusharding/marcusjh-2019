@@ -3,7 +3,7 @@ use marcusjh\lib\Extras;
 use marcusjh\lib\Utils;
 global $post;
 
-// $heroProjectModifier === true ? $heroProject = 'featuredWorkLoop' : $heroProject = '';
+$heroProjectModifier === true ? $heroProject = "featuredWorkLoop" : $heroProject = null;
 
 $slides = array();
 foreach($projects as $i => $slide):
@@ -25,7 +25,11 @@ Contact: 21
 
     <?php if(isset($projects)): ?>
         <!-- Desktop -->
-        <div data-module="featuredWorkLoop" class="lg:flex <?= $post->ID === 7 ? null : 'lg:flex-wrap'; ?> justify-between <?= $post->ID === 7 ? 'hidden' : null; ?>">
+        <div <?php if(isset($heroProject)):?>
+                data-module="<?= $heroProject; ?>"
+              <?php endif; ?>
+          class="lg:flex <?= $post->ID === 7 ? null : 'lg:flex-wrap'; ?> justify-between <?= $post->ID === 7 ? 'hidden' : null; ?>">
+
           <?php foreach ($projects as $i => $project) : ?>
 
             <?php if($post->ID === 7): ?>

@@ -1,7 +1,27 @@
 {
     "key": "group_5ef1f07acfd1b",
     "title": "[ PAGE ] - BLOG",
-    "fields": [],
+    "fields": [
+        {
+            "key": "field_5efb349f2c2ea",
+            "label": "nav colour modifier",
+            "name": "nav_colour_modifier",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
     "location": [
         [
             {
@@ -16,8 +36,10 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1592914068
+    "modified": 1593521420
 }
