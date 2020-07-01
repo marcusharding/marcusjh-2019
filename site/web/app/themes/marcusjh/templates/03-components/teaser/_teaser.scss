@@ -69,9 +69,11 @@
 
 //HERO PROJECT
 .hero-project__container {
+
   @media only screen and (min-width: 1024px) {
     width: 100%;
    }
+
   .project-img__container {
     @media only screen and (min-width: 1024px) {
       width: 66.666667%;
@@ -82,10 +84,6 @@
       object-fit: cover;
       @media only screen and (min-width: 1024px) {
         object-fit: contain;
-        transition: transform .2s;
-       }
-      &:hover {
-        transform: scale(1.1);
       }
     }
   }
@@ -99,6 +97,7 @@
   }
 }
 
+
 // SMALL PROJECT
 .small-project__container {
   flex-direction: column;
@@ -110,37 +109,67 @@
     width: 100%;
     img {
       object-fit: cover;
-      transition: transform .2s;
-      &:hover {
-        transform: scale(1.1);
-      }
     }
   }
+}
 
-  .caption__container {
-
+.project__container {
+  .project-img__container {
+  img {
+    transition: transform .2s;
+  }
+  &:hover {
+    img{
+        transform: scale(1.1);
+    }
+    .project-post__overlay {
+      opacity: 1;
+      p {
+        opacity: 1;
+      }
+      a {
+        opacity: 1;
+      }
+      hr {
+        opacity: 1;
+        width: 33.333333%;
+      }
+    }
+    }
   }
 }
 
 .project-post__overlay {
   @media only screen and (min-width: 1024px) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
     transition: 300ms ease-in;
-    &:hover {
-      opacity: 1;
+    p {
+      opacity: 0;
+      transition: 200ms ease-in;
+      transition-delay: 850ms;
+    }
+    a {
+      opacity: 0;
+      transition: 200ms ease-in;
+      transition-delay: 250ms;
+    }
+    hr {
+      opacity: 0;
+      width: 0%;
+      transition: 200ms ease-in;
+      transition-delay: 500ms;
     }
    }
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  opacity: 0;
-  transition: 300ms ease-in;
 }
 
 
@@ -175,8 +204,3 @@
     }
   }
 }
-
-
-
-
-

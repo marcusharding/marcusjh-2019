@@ -10,15 +10,14 @@
 ?>
 
 <!-- DESKTOP -->
-<div data-aos="fade-up" data-aos-delay="<?= $index . '00';?>" data-index="<?= $index; ?>" class="hidden lg:flex py-8 small-project__container relative">
+<div data-aos="fade-up" data-aos-delay="<?= $index . '00';?>" data-index="<?= $index; ?>" class="hidden lg:flex py-8 small-project__container relative project__container">
   <div class="aspect-ratio h-auto project-img__container overflow-hidden rounded-t">
     <a href="<?= $postLink; ?>">
       <img alt="" draggable="false" class="absolute top-0 left-0 w-full h-full rounded-t" src="<?= $main_image; ?>"> </img>
         <div class="project-post__overlay">
             <a href="<?= $postLink; ?>" class="uppercase text-white text-xl text-bold">View Project</a>
-            <hr class="w-1/3 text-white my-4">
+            <hr class="text-white my-4">
             <div class="flex flex-wrap justify-center">
-              <!-- <p class="text-white text-md pr-2"><</p> -->
               <?php foreach($tags as $i => $tag): ?>
 
                 <?php
@@ -26,7 +25,6 @@
                 ?>
               <p class="text-white text-md pr-2 pb-2"><?= $tag->name; ?> <?= $i === $len - 1 ? null : '|' ?></p>
               <?php endforeach; ?>
-              <!-- <p class="text-white text-md pr-2">/></p> -->
             </div>
         </div>
         </a>
@@ -38,7 +36,7 @@
 </div>
 
 <!-- MOBILE -->
-<div data-aos="fade-up" data-aos-delay="<?= $index . '00';?>" data-index="<?= $index; ?>" class="wrapper lg:hidden py-8">
+<div data-aos="fade-up" data-aos-delay="<?= $index . '00';?>" data-index="<?= $index; ?>" class="lg:hidden py-8">
     <div class="aspect-ratio h-auto project-img__container overflow-hidden rounded-t">
       <a href="<?= $postLink; ?>">
           <img alt="" draggable="false" class="absolute top-0 left-0 w-full h-full rounded-t" src="<?= $main_image; ?>"> </img>
