@@ -14,8 +14,6 @@
 $nav_colour_modifier = get_field('nav_colour_modifier', $id);
 if ( empty($nav_colour_modifier) ) $modifier = null;
 
-
-
  $projects = get_posts(array(
 	'post_type'   => 'featured Work',
   'post_status' => 'publish',
@@ -33,11 +31,11 @@ $testimonials = get_posts(array(
 );
 
 foreach($testimonials as $i => $testimonial):
-    $id = $testimonial->ID;
-    $testimonialText = get_field('testimonial', $id);
-    $provider = get_field('testimonial_provider', $id);
-    $position = get_field('position', $id);
-    $company = get_field('company', $id);
+  $id = $testimonial->ID;
+  $testimonialText = get_field('testimonial', $id);
+  $provider = get_field('testimonial_provider', $id);
+  $position = get_field('position', $id);
+  $company = get_field('company', $id);
 endforeach;
 
 ?>
@@ -56,32 +54,29 @@ endforeach;
 </div>
 
 <div class="wrapper flex flex-col lg:items-end py-12 lg:py-24">
-    <h1 class="text-bold text-2xl lg:text-3xl">Location-Based Application</h1>
-    <?php if(!empty($tags)): ?>
-      <div class="flex flex-col">
-        <?php foreach($tags as $i => $tag): ?>
-          <p class="text-xl lg:text-2xl"><?= $tag->name; ?></p>
-        <?php endforeach; ?>
-      </div>
-    <?php endif; ?>
-  </div>
+  <h1 class="text-bold text-2xl lg:text-3xl">Location-Based Application</h1>
+  <?php if(!empty($tags)): ?>
+    <div class="flex flex-col">
+      <?php foreach($tags as $i => $tag): ?>
+        <p class="text-xl lg:text-2xl"><?= $tag->name; ?></p>
+      <?php endforeach; ?>
+    </div>
+  <?php endif; ?>
+</div>
 
 <div class="h-auto py-24 hero-section__container" style="background-color:<?= $block_colour;?>;">
-    <div class="wrapper relative">
-        <blockquote class="pb-12 <?= $nav_colour_modifier === null ? null : 'blockquote--' . $nav_colour_modifier; ?>">
-          <P class="<?= $nav_colour_modifier === null ? null : 'text-' . $nav_colour_modifier; ?> text-md lg:text-2xl"><?= wp_trim_words($testimonialText, 70, '...') ?></P>
-        </blockquote>
-        <p class="text-bold text-lg pb-2 <?= $nav_colour_modifier === null ? null : 'text-' . $nav_colour_modifier; ?>"><?= $provider; ?></p>
-        <p class="text-md pb-2 <?= $nav_colour_modifier === null ? null : 'text-' . $nav_colour_modifier; ?>"><?= $position; ?></p>
-        <p class="text-md pb-2 <?= $nav_colour_modifier === null ? null : 'text-' . $nav_colour_modifier; ?>"><?= $company; ?></p>
-    </div>
-</div>
+  <div class="wrapper relative">
+    <blockquote class="pb-12 <?= $nav_colour_modifier === null ? null : 'blockquote--' . $nav_colour_modifier; ?>">
+      <P class="<?= $nav_colour_modifier === null ? null : 'text-' . $nav_colour_modifier; ?> text-md lg:text-2xl"><?= wp_trim_words($testimonialText, 70, '...') ?></P>
+    </blockquote>
+    <p class="text-bold text-lg pb-2 <?= $nav_colour_modifier === null ? null : 'text-' . $nav_colour_modifier; ?>"><?= $provider; ?></p>
+    <p class="text-md pb-2 <?= $nav_colour_modifier === null ? null : 'text-' . $nav_colour_modifier; ?>"><?= $position; ?></p>
+    <p class="text-md pb-2 <?= $nav_colour_modifier === null ? null : 'text-' . $nav_colour_modifier; ?>"><?= $company; ?></p>
+  </div>
 </div>
 
 <div class="wrapper py-12 lg:py-24">
-
   <p class="text-xl text-semiBold">Related Projects</p>
-
   <?= Utils\ob_load_template_part('templates/02-partials/featured_work/featured_work' , [
     'projects' => $projects,
     'heroProjectModifier' => false

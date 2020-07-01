@@ -29,8 +29,8 @@ $heading = get_field('heading', $id);
   <div class="py-24 lg:py-32 wrapper flex flex-col lg:flex-row justify-between">
     <p class="text-primary text-5xl text-SemiBold w-full pb-12 lg:pb-0"><?= $heading; ?></p>
     <div>
-    <p class="text-primary pb-6 text-2xl text-medium">Featured Work</p>
-    <p class="text-primary text-lg"><?= $caption; ?></p>
+      <p class="text-primary pb-6 text-2xl text-medium">Featured Work</p>
+      <p class="text-primary text-lg"><?= $caption; ?></p>
     </div>
   </div>
 	<div class="wrapper-90">

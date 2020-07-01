@@ -11,36 +11,36 @@
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
 
     @screen lg {
-    span{
-        position: relative;
-        display: inline-block;
-        -webkit-transition: -webkit-transform 0.3s;
-        -moz-transition: -moz-transform 0.3s;
-        transition: transform 0.3s
+      span{
+      position: relative;
+      display: inline-block;
+      -webkit-transition: -webkit-transform 0.3s;
+      -moz-transition: -moz-transform 0.3s;
+      transition: transform 0.3s
     }
 
     &:before{
-        position: absolute;
-        top: 100%;
-        content: attr(data-hover);
-        font-weight: 700;
-        -webkit-transition: -webkit-transform 0.3s;
-        -moz-transition: -moz-transform 0.3s;
-        transition: transform 0.3s;
-        font-family: 'Montserrat-Thin';
+      position: absolute;
+      top: 100%;
+      content: attr(data-hover);
+      font-weight: 700;
+      -webkit-transition: -webkit-transform 0.3s;
+      -moz-transition: -moz-transform 0.3s;
+      transition: transform 0.3s;
+      font-family: 'Montserrat-Thin';
     }
 
     &:hover{
-        span{
-            webkit-transform: translateY(-100%);
-            -moz-transform: translateY(-100%);
-            transform: translateY(-100%);
-        }
-        &:before{
-            webkit-transform: translateY(-100%);
-            -moz-transform: translateY(-100%);
-            transform: translateY(-100%);
-        }
+      span{
+          webkit-transform: translateY(-100%);
+          -moz-transform: translateY(-100%);
+          transform: translateY(-100%);
+      }
+      &:before{
+          webkit-transform: translateY(-100%);
+          -moz-transform: translateY(-100%);
+          transform: translateY(-100%);
+      }
     }
   }
 }

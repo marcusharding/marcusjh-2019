@@ -19,8 +19,8 @@ if($index == 3){
       <?php foreach($technologies as $item):?>
         <li class="<?php $modifier; ?> pb-4">
           <a
-              target=""
-              class="<?= $className; ?> flex items-center justify-center"
+            target=""
+            class="<?= $className; ?> flex items-center justify-center"
           >
             <?= Utils\ob_load_template_part('templates/08-helpers/icon/icon', [
                 'name' => $item['title'],
@@ -32,8 +32,8 @@ if($index == 3){
       <?php endforeach; ?>
     </div>
   </div>
-    <p class="text-center text-medium text-lg">
-      <span class="teaser-work-with__span"><?= $heading; ?></span>
-    </p>
+  <p class="text-center text-medium text-lg">
+    <span class="teaser-work-with__span"><?= $heading; ?></span>
+  </p>
 </div>
 

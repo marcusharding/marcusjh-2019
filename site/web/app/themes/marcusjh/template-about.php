@@ -14,7 +14,7 @@ PAGE HERO
 --------------------------->
 <section class="relative h-screen bg-primary">
 	<div class="relative flex justify-center items-center h-full">
-	<?= Utils\ob_load_template_part('templates/03-components/about_hero/about_hero'); ?>
+	  <?= Utils\ob_load_template_part('templates/03-components/about_hero/about_hero'); ?>
 	</div>
 </section>
 

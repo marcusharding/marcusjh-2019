@@ -14,13 +14,11 @@ Homepage: 7
 Featured work: 17
 Blog: 19
 Contact: 21
-
 -->
 
 <nav id="siteNav" class="g-nav mobile-menu overflow-hidden">
 	<ul class="g-nav__list justify-center align-center overflow py-20 lg:py-0">
     <?php foreach($menu as $item): ?>
-
       <?php if(isset($post->ID)): ?>
         <?php if($post->ID == $item->object_id) {
             $modifier = 'page-active';
