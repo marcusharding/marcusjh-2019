@@ -6,6 +6,7 @@
  $caption_a = get_field('caption_a', $id);
  $hero_image_b = get_field('hero_image_b', $id);
  $block_colour = get_field('block_colour', $id);
+ $project_type = get_field('project_type', $id);
 
  use marcusjh\lib\Extras;
  use marcusjh\lib\Utils;
@@ -53,15 +54,20 @@ endforeach;
   </div>
 </div>
 
-<div class="wrapper flex flex-col lg:items-end py-12 lg:py-24">
-  <h1 class="text-bold text-2xl lg:text-3xl">Location-Based Application</h1>
-  <?php if(!empty($tags)): ?>
-    <div class="flex flex-col">
-      <?php foreach($tags as $i => $tag): ?>
-        <p class="text-xl lg:text-2xl"><?= $tag->name; ?></p>
-      <?php endforeach; ?>
-    </div>
-  <?php endif; ?>
+<div class="wrapper flex flex-col lg:flex-row lg:justify-between py-12 lg:py-24">
+  <div class="flex items-end">
+    <a href="<?= $siteLink; ?>" class="text-2xl underline">Visit Site</a>
+  </div>
+  <div>
+    <h1 class="text-bold text-2xl lg:text-3xl"><?= $project_type; ?></h1>
+    <?php if(!empty($tags)): ?>
+      <div class="flex flex-col">
+        <?php foreach($tags as $i => $tag): ?>
+          <p class="text-xl lg:text-2xl"><?= $tag->name; ?></p>
+        <?php endforeach; ?>
+      </div>
+    <?php endif; ?>
+  </div>
 </div>
 
 <div class="h-auto py-24 hero-section__container" style="background-color:<?= $block_colour;?>;">

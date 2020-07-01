@@ -192,6 +192,10 @@
 }
 
 .blog-post__link {
+  .project-img__container {
+    img {
+      transition: transform 200ms ease-in;
+    }
   &:hover {
     .project-img__container {
       img {
