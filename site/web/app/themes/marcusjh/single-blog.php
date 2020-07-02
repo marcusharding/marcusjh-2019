@@ -24,6 +24,6 @@ $thumbnail = get_the_post_thumbnail($id);
   </div>
 </div>
 
-<div class="py-24 wrapper">
+<div class="py-24 wrapper blog-post__content">
   <?= $content = get_field('content', $id); ?>
 </div>
