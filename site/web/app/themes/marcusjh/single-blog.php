@@ -14,7 +14,7 @@ $caption = get_field('caption', $id);
 $thumbnail = get_the_post_thumbnail($id);
 ?>
 
-<div class="py-12 lg:py-32 wrapper-90">
+<div class="py-12 pt-24 pb-12 lg:py-32 wrapper-90">
   <h1 class="text-bold text-primary text-xl lg:text-3xl lg:w-1/2"><?= $caption; ?></h1>
 </div>
 
@@ -24,6 +24,6 @@ $thumbnail = get_the_post_thumbnail($id);
   </div>
 </div>
 
-<div class="py-24 wrapper blog-post__content">
+<div class="py-12 lg:py-24 wrapper blog-post__content">
   <?= $content = get_field('content', $id); ?>
 </div>
