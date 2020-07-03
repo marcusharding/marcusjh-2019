@@ -31,7 +31,7 @@ blockquote {
     content: close-quote;
     font-size: 4em;
     line-height: 0.1em;
-    margin-right: 0.25em;
+    margin-left: 0.25em;
     vertical-align: -0.4em;
   }
   p {
@@ -50,5 +50,13 @@ blockquote {
   &:before,
   &:after {
     color: #fff;
+  }
+}
+
+.visit-project-site {
+  color: black;
+  transition: 200ms ease-in;
+  &:hover {
+    color: #29d;
   }
 }

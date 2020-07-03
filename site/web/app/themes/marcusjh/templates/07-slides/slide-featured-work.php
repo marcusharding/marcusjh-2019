@@ -13,7 +13,7 @@
   </div>
   <div class="p-8 flex-grow teaser-featured-work__content">
     <h1 class="text-md text-white text-bold"><?= $slide->post_title; ?></h1>
-    <div class="text-white mb-4">
+    <div class="text-white mb-8">
         <?= wp_trim_words($content, 20, '...'); ?>
     </div>
     <div class="flex justify-between items-end">
@@ -24,7 +24,7 @@
           <?php endforeach; ?>
         </div>
       <?php endif; ?>
-      <a class="text-white underline ml-auto" href="<?= $postLink; ?>">View project</a>
+      <a class="text-white underline ml-auto text-right" href="<?= $postLink; ?>">View project</a>
     </div>
   </div>
 </div>

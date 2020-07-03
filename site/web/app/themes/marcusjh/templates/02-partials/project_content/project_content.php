@@ -55,7 +55,7 @@ endforeach;
 </div>
 
 <div class="wrapper flex flex-col lg:flex-row lg:justify-between py-12 lg:py-24">
-  <div class="flex items-end">
+  <div class="flex items-end pb-8 lg:pb-0 visit-project-site">
     <a href="<?= $siteLink; ?>" class="text-2xl underline">Visit Site</a>
   </div>
   <div>

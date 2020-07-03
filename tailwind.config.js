@@ -53,7 +53,8 @@ module.exports = {
 			'7xl': px2rem('120px'),
 		},
 		colors: {
-			primary: '#111517',
+      primary: '#111517',
+      tertiary: '#29d',
 			grey: {
 				100: '#f7fafc',
 				200: '#f2f2f2',
