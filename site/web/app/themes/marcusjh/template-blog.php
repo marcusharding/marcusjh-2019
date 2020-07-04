@@ -28,6 +28,10 @@ $blogPosts = get_posts(array(
 	'posts_per_page' => -1,
 	)
 );
+
+$heading = get_field('heading', $id);
+$sub_heading = get_field('sub_heading', $id);
+$caption = get_field('caption', $id);
 ?>
 
 <!-------------------------
@@ -35,10 +39,10 @@ PAGE HERO
 --------------------------->
 <section class="py-12 lg:py-24 h-auto flex flex-col justify-center items-center">
   <div class="py-24 lg:py-32 wrapper flex flex-col lg:flex-row justify-between">
-    <p class="text-primary text-3xl lg:text-5xl text-SemiBold w-full pb-12 lg:pb-0">My Blog.</p>
+    <p class="text-primary text-3xl lg:text-5xl text-SemiBold w-full pb-12 lg:pb-0"><?= $heading; ?></p>
     <div class="flex flex-col lg:items-end">
-      <p class="text-primary pb-6 text-xl text-bold">Find Out</p>
-      <p class="text-primary text-xl lg:text-right">Everything related to Web Development, Client and personal projects plus much more</p>
+      <p class="text-primary pb-6 text-xl text-bold"><?= $sub_heading; ?></p>
+      <p class="text-primary text-xl lg:text-right"><?= $caption; ?></p>
     </div>
   </div>
 	<div class="wrapper-90">
