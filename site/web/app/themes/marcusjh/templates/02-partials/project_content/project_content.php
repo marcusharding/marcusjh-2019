@@ -18,7 +18,6 @@ if ( empty($nav_colour_modifier) ) $modifier = null;
  $projects = get_posts(array(
 	'post_type'   => 'featured Work',
   'post_status' => 'publish',
-  'orderby' => 'rand',
 	'posts_per_page' => 2,
 	)
 );
@@ -26,7 +25,6 @@ if ( empty($nav_colour_modifier) ) $modifier = null;
 $testimonials = get_posts(array(
   'post_type'   => 'testimonials',
   'post_status' => 'publish',
-  'orderby' => 'rand',
   'posts_per_page' => 1,
   )
 );
@@ -56,7 +54,7 @@ endforeach;
 
 <div class="wrapper flex flex-col lg:flex-row lg:justify-between py-12 lg:py-24">
   <div class="flex items-end pb-8 lg:pb-0 visit-project-site">
-    <a href="<?= $siteLink; ?>" class="text-2xl underline">Visit Site</a>
+    <a href="<?= $siteLink; ?>" target="_blank" class="text-2xl underline">Visit Site</a>
   </div>
   <div>
     <h1 class="text-bold text-2xl lg:text-3xl"><?= $project_type; ?></h1>

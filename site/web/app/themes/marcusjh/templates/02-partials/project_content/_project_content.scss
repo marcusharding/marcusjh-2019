@@ -31,8 +31,10 @@ blockquote {
     content: close-quote;
     font-size: 4em;
     line-height: 0.1em;
+    vertical-align: -0.6em;
+    @screen lg{
     margin-left: 0.25em;
-    vertical-align: -0.4em;
+    }
   }
   p {
     display: inline;
