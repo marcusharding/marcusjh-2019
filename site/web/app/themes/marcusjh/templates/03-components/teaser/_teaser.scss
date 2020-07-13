@@ -237,7 +237,16 @@
     margin: 1rem 0;
   }
 
-  li {
-    margin-bottom: 0.5rem;
+  ul {
+    li {
+      margin-bottom: 0.5rem;
+    }
   }
+}
+
+.language-shell {
+  background: #272822;
+  color: #f8f8f2;
+  line-height: 1.5;
+  padding-left: 10px;
 }
