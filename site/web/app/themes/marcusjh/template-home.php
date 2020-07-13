@@ -32,7 +32,7 @@ endforeach;
 ?>
 
 <!-------------------------
-SPINNER
+HOMELOADING WIDGET
 --------------------------->
 <div id="homeLoading" data-module="homeLoading" class="">
   <?= Utils\ob_load_template_part('templates/04-global/homeLoading/homeLoading.php', [

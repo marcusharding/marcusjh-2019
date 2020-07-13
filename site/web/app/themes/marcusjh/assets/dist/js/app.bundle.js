@@ -11332,8 +11332,10 @@ __webpack_require__.r(__webpack_exports__);
 function homeLoading(node) {
   var video = document.getElementById('headerVideo');
   var body = document.getElementById('mainBody');
-  var delayInMilliseconds = 2000; // const el = node
+  var delayInMilliseconds = 2000; // Local storage
 
+  var ls = window.localStorage;
+  var myValue = ls.getItem('appLoaded');
   var container = node.childNodes;
   body.classList.remove('relative');
   body.classList.add('fixed');
@@ -11341,7 +11343,9 @@ function homeLoading(node) {
     setTimeout(function () {
       body.classList.remove('fixed');
       body.classList.add('relative');
-      container[1].classList.add('isActive');
+      container[1].classList.add('isActive'); // Set local storage state to true after loading splash screen has played once
+
+      ls.setItem('appLoaded', true);
     }, delayInMilliseconds);
   });
 }
