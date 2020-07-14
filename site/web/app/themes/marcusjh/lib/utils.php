@@ -11,6 +11,9 @@ namespace marcusjh\lib\Utils;
  * @param  string $template_name name of the template to be located
  * @param  array  $data          data to be passed into the template to be included
  */
+
+
+
 function ob_load_template_part( $template_name, $data=array() ) {
 
     if ( !strpos($template_name, '.php') ) {
@@ -30,3 +33,14 @@ function ob_load_template_part( $template_name, $data=array() ) {
 
     return $var;
 }
+
+//estimated reading time
+function reading_time($id) {
+
+  $content = get_field('content', $id);
+  $word_count = str_word_count( strip_tags( $content ) );
+  $readingtime = ceil($word_count / 200);
+  $timer = " minute";
+  $totalreadingtime = $readingtime . $timer;
+  return $totalreadingtime;
+  }

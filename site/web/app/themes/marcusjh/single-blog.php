@@ -16,6 +16,7 @@ $thumbnail = get_the_post_thumbnail($id);
 
 <div class="py-12 pt-24 pb-12 lg:py-32 wrapper-90">
   <h1 class="text-bold text-primary text-xl lg:text-3xl lg:w-1/2"><?= $caption; ?></h1>
+  <p class="text-md"><?= Utils\reading_time($id); ?> read</p>
 </div>
 
 <div class="hero-section__container">
