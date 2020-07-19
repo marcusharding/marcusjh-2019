@@ -5,22 +5,22 @@
 use marcusjh\lib\Extras;
 use marcusjh\lib\Utils;
 
-if ( false === ( $quotes = get_transient( 'random_quote' ) ) ) {
-  // It wasn't there, so regenerate the data and save the transient
+// if ( false === ( $quotes = get_transient( 'random_quote' ) ) ) {
+//   // It wasn't there, so regenerate the data and save the transient
 
-$args = array(
+// // $quotes = get_posts( $args );
+
+//  //Now we store the array for one day.
+//   $seconds_until_next_day = strtotime('tomorrow') - time();
+//   set_transient( 'random_quote', $quotes, $seconds_until_next_day );
+// }
+
+$quotes = get_posts(array(
   'post_type'   => 'quotes',
-  'orderby'   => 'rand',
-  'posts_per_page' => '1',
   'post_status' => 'publish',
+  'posts_per_page' => -1,
+  )
 );
-
-$quotes = get_posts( $args );
-
- //Now we store the array for one day.
-  $seconds_until_next_day = strtotime('tomorrow') - time();
-  set_transient( 'random_quote', $quotes, $seconds_until_next_day );
-}
 
 $blogPosts = get_posts(array(
 	'post_type'   => 'post',
@@ -28,6 +28,9 @@ $blogPosts = get_posts(array(
 	'posts_per_page' => -1,
 	)
 );
+
+$random_int = rand(0, sizeOf($quotes));
+$random_quote = $quotes[$random_int];
 
 $heading = get_field('heading', $id);
 $sub_heading = get_field('sub_heading', $id);
@@ -57,9 +60,9 @@ PAGE HERO
 --------------------------->
 <section class="hero-section__container bg-grey-700 h-screen flex flex-col justify-center mb-24">
 	<div class="wrapper py-24">
-		<p class="text-white uppercase py-12 text-xl text-bold">Quote of the day</p>
+		<p class="text-white uppercase py-12 text-xl text-bold">A few quotes I've found along the way</p>
 		<?= Utils\ob_load_template_part('templates/03-components/quote/quote' , [
-			'quotes' => $quotes
+			'quote' => $random_quote
 		]); ?>
 	</div>
 </section>

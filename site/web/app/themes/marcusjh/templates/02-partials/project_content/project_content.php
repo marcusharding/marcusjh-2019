@@ -18,9 +18,12 @@ if ( empty($nav_colour_modifier) ) $modifier = null;
  $projects = get_posts(array(
 	'post_type'   => 'featured Work',
   'post_status' => 'publish',
-	'posts_per_page' => 2,
+	'posts_per_page' => -1,
 	)
 );
+
+$random_int = rand(0, sizeOf($projects));
+$random_projects = $projects[$random_int];
 
 $testimonials = get_posts(array(
   'post_type'   => 'testimonials',
@@ -79,10 +82,12 @@ endforeach;
   </div>
 </div>
 
+<?php var_dump($random_projects); ?>
+
 <div class="wrapper py-12 lg:py-24">
   <p class="text-xl text-semiBold">Related Projects</p>
   <?= Utils\ob_load_template_part('templates/02-partials/featured_work/featured_work' , [
-    'projects' => $projects,
+    'projects' => $random_projects,
     'heroProjectModifier' => false
 	]); ?>
 </div>
