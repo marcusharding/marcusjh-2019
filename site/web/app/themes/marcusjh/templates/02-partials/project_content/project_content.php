@@ -18,27 +18,30 @@ if ( empty($nav_colour_modifier) ) $modifier = null;
  $projects = get_posts(array(
 	'post_type'   => 'featured Work',
   'post_status' => 'publish',
-	'posts_per_page' => -1,
+	'posts_per_page' => 2,
 	)
 );
 
-$random_int = rand(0, sizeOf($projects));
-$random_projects = $projects[$random_int];
+// $random_projects_int = rand(0, sizeOf($projects));
+// $random_projects = $projects[$random_projects_int];
 
 $testimonials = get_posts(array(
   'post_type'   => 'testimonials',
   'post_status' => 'publish',
-  'posts_per_page' => 1,
+  'posts_per_page' => -1,
   )
 );
 
-foreach($testimonials as $i => $testimonial):
-  $id = $testimonial->ID;
-  $testimonialText = get_field('testimonial', $id);
-  $provider = get_field('testimonial_provider', $id);
-  $position = get_field('position', $id);
-  $company = get_field('company', $id);
-endforeach;
+
+$random_testimonial_int = rand(0, sizeOf($testimonials));
+$random_testimonial = $testimonials[$random_testimonial_int];
+
+  $testimonial_id = $random_testimonial->ID;
+  $testimonialText = get_field('testimonial', $testimonial_id);
+  $provider = get_field('testimonial_provider', $testimonial_id);
+  $position = get_field('position', $testimonial_id);
+  $company = get_field('company', $testimonial_id);
+
 
 ?>
 
@@ -82,12 +85,10 @@ endforeach;
   </div>
 </div>
 
-<?php var_dump($random_projects); ?>
-
 <div class="wrapper py-12 lg:py-24">
   <p class="text-xl text-semiBold">Related Projects</p>
   <?= Utils\ob_load_template_part('templates/02-partials/featured_work/featured_work' , [
-    'projects' => $random_projects,
+    'projects' => $projects,
     'heroProjectModifier' => false
 	]); ?>
 </div>
