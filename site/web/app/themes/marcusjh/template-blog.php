@@ -29,7 +29,7 @@ $blogPosts = get_posts(array(
 	)
 );
 
-$random_int = rand(0, sizeOf($quotes));
+$random_int = rand(0, sizeOf($quotes) - 1);
 $random_quote = $quotes[$random_int];
 
 $heading = get_field('heading', $id);

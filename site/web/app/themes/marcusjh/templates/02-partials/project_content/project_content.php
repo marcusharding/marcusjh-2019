@@ -33,7 +33,7 @@ $testimonials = get_posts(array(
 );
 
 
-$random_testimonial_int = rand(0, sizeOf($testimonials));
+$random_testimonial_int = rand(0, sizeOf($testimonials) - 1);
 $random_testimonial = $testimonials[$random_testimonial_int];
 
   $testimonial_id = $random_testimonial->ID;
