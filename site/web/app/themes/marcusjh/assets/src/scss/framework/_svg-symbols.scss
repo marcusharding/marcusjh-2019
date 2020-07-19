@@ -187,3 +187,17 @@
     }
 }
 
+.icon--gulp {
+  width: rem(18px);
+    &:after {
+        padding-bottom: 83.33333333333334%;
+    }
+}
+
+.icon--webpack {
+  width: rem(18px);
+    &:after {
+        padding-bottom: 83.33333333333334%;
+    }
+}
+

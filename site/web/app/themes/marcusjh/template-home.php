@@ -115,6 +115,16 @@ HOMELOADING WIDGET
 						'title' => 'pwa-logo',
 						'href' => '',
 						'iconWidth' => '',
+          ],
+          [
+						'title' => 'gulp',
+						'href' => '',
+						'iconWidth' => '',
+          ],
+          [
+						'title' => 'webpack',
+						'href' => '',
+						'iconWidth' => '',
 					],
 				],
 				'technologies1' => [

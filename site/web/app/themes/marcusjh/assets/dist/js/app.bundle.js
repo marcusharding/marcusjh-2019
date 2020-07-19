@@ -16180,23 +16180,25 @@ var map = {
 	"./gatsby.svg": 24,
 	"./git.svg": 25,
 	"./github.svg": 26,
-	"./html-tag.svg": 27,
-	"./html5.svg": 28,
-	"./instagram.svg": 29,
-	"./js.svg": 30,
-	"./linkedin.svg": 31,
-	"./logomark.svg": 32,
-	"./mysql.svg": 33,
-	"./netlify.svg": 34,
-	"./php.svg": 35,
-	"./pwa-logo.svg": 36,
-	"./react.svg": 37,
-	"./sass.svg": 38,
-	"./tailwind.svg": 39,
-	"./tailwindcss-icon.svg": 40,
-	"./twig.svg": 41,
-	"./twitter.svg": 42,
-	"./wordpress.svg": 43
+	"./gulp.svg": 27,
+	"./html-tag.svg": 28,
+	"./html5.svg": 29,
+	"./instagram.svg": 30,
+	"./js.svg": 31,
+	"./linkedin.svg": 32,
+	"./logomark.svg": 33,
+	"./mysql.svg": 34,
+	"./netlify.svg": 35,
+	"./php.svg": 36,
+	"./pwa-logo.svg": 37,
+	"./react.svg": 38,
+	"./sass.svg": 39,
+	"./tailwind.svg": 40,
+	"./tailwindcss-icon.svg": 41,
+	"./twig.svg": 42,
+	"./twitter.svg": 43,
+	"./webpack.svg": 44,
+	"./wordpress.svg": 45
 };
 
 
@@ -16316,6 +16318,21 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon--gulp-usage",
+      viewBox: "0 0 256 566",
+      url: "../svg/" + "spritesheet.svg#icon--gulp",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+/* 28 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
       id: "icon--html-tag-usage",
       viewBox: "0 0 500 500",
       url: "../svg/" + "spritesheet.svg#icon--html-tag",
@@ -16325,7 +16342,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16340,7 +16357,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16355,7 +16372,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16370,7 +16387,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16385,7 +16402,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16400,7 +16417,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16415,7 +16432,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16430,7 +16447,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16445,7 +16462,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16460,7 +16477,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16475,7 +16492,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16490,7 +16507,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16505,7 +16522,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16520,7 +16537,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16535,7 +16552,7 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16550,7 +16567,22 @@ __webpack_require__.r(__webpack_exports__);
     });
 
 /***/ }),
-/* 43 */
+/* 44 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon--webpack-usage",
+      viewBox: "0 0 128 128",
+      url: "../svg/" + "spritesheet.svg#icon--webpack",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
