@@ -11338,6 +11338,7 @@ function homeLoading(node) {
   var myValue = ls.getItem('appLoaded');
   var container = node.childNodes;
   container[1].classList.add('hidden');
+  body.classList.add('fixed');
 
   if (myValue === null) {
     container[1].classList.remove('hidden');
