@@ -11337,17 +11337,23 @@ function homeLoading(node) {
   var ls = window.localStorage;
   var myValue = ls.getItem('appLoaded');
   var container = node.childNodes;
-  body.classList.remove('relative');
-  body.classList.add('fixed');
-  video.addEventListener('loadeddata', function () {
-    setTimeout(function () {
-      body.classList.remove('fixed');
-      body.classList.add('relative');
-      container[1].classList.add('isActive'); // Set local storage state to true after loading splash screen has played once
+  container[1].classList.add('hidden');
 
-      ls.setItem('appLoaded', true);
-    }, delayInMilliseconds);
-  });
+  if (myValue === null) {
+    container[1].classList.remove('hidden');
+    video.addEventListener('loadeddata', function () {
+      setTimeout(function () {
+        body.classList.remove('fixed');
+        body.classList.add('relative');
+        container[1].classList.add('isActive'); // Set local storage state to true after loading splash screen has played once
+
+        ls.setItem('appLoaded', true);
+      }, delayInMilliseconds);
+    });
+  } else {
+    body.classList.remove('fixed');
+    body.classList.add('relative');
+  }
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (homeLoading);
